@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "normalInputsOnly": true,
+  "sourceSeed": 1,
+  "results": [
+    {
+      "map": "m13",
+      "ticks": 159,
+      "minimumHealth": 70,
+      "finalHealth": 100,
+      "bossTerminalHealth": 0,
+      "finalPhase": "transition"
+    },
+    {
+      "map": "m23",
+      "ticks": 546,
+      "minimumHealth": 50,
+      "finalHealth": 100,
+      "bossTerminalHealth": 0,
+      "finalPhase": "transition"
+    },
+    {
+      "map": "m33",
+      "ticks": 457,
+      "minimumHealth": 50,
+      "finalHealth": 100,
+      "bossTerminalHealth": 0,
+      "finalPhase": "transition"
+    },
+    {
+      "map": "m43",
+      "ticks": 676,
+      "minimumHealth": 6,
+      "finalHealth": 40,
+      "bossTerminalHealth": 0,
+      "finalPhase": "transition"
+    },
+    {
+      "map": "m53",
+      "ticks": 646,
+      "minimumHealth": 50,
+      "finalHealth": 78,
+      "bossTerminalHealth": 0,
+      "finalPhase": "completed"
+    }
+  ]
+}

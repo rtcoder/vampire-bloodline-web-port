@@ -1,0 +1,20 @@
+{
+  "scope": "Independent review of frontend input and modal handling; follow-up limited to the two reported fixes",
+  "findings": [
+    {
+      "priority": "P1",
+      "issue": "Short key/pointer press and release lost between 100 ms updates",
+      "resolution": "Ordered logical input edge queue, consumed once before Game.step",
+      "verification": "Short attack and jump tests reproduced failure then passed; shared-source release test passed"
+    },
+    {
+      "priority": "P2",
+      "issue": "P/Escape resumed gameplay under open help dialog and intercepted native Escape",
+      "resolution": "Block game keyboard shortcuts while help-dialog is open",
+      "verification": "Browser integration P remains paused; native Escape closes dialog and remains paused"
+    }
+  ],
+  "followupReview": "No regression found in limited re-review; 21 platform/source fixture checks passed",
+  "fullBrowserTests": 14,
+  "browserConsoleWarningsAndErrors": []
+}

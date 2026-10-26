@@ -1,0 +1,194 @@
+
+> vampire-bloodline-web-port@0.1.0 test
+> node --test tests/*.test.mjs tests/game-source-fixtures.mjs
+
+TAP version 13
+# Subtest: ordinary input replay completes all 15 sequential campaign maps and final boss
+ok 1 - ordinary input replay completes all 15 sequential campaign maps and final boss
+  ---
+  duration_ms: 118.520375
+  type: 'test'
+  ...
+# Subtest: ordinary input replay completes standalone m31
+ok 2 - ordinary input replay completes standalone m31
+  ---
+  duration_ms: 9.945459
+  type: 'test'
+  ...
+# Subtest: ordinary input replay completes standalone m32
+ok 3 - ordinary input replay completes standalone m32
+  ---
+  duration_ms: 6.39375
+  type: 'test'
+  ...
+# Subtest: ordinary input replay completes standalone m41
+ok 4 - ordinary input replay completes standalone m41
+  ---
+  duration_ms: 5.592875
+  type: 'test'
+  ...
+# Subtest: ordinary input replay completes standalone m42
+ok 5 - ordinary input replay completes standalone m42
+  ---
+  duration_ms: 12.588
+  type: 'test'
+  ...
+# Subtest: ordinary input replay completes standalone m51
+ok 6 - ordinary input replay completes standalone m51
+  ---
+  duration_ms: 6.283375
+  type: 'test'
+  ...
+# Subtest: ordinary input replay completes standalone m52
+ok 7 - ordinary input replay completes standalone m52
+  ---
+  duration_ms: 7.636834
+  type: 'test'
+  ...
+# Subtest: production ActionState adapter completes the same 15-map campaign
+ok 8 - production ActionState adapter completes the same 15-map campaign
+  ---
+  duration_ms: 96.181375
+  type: 'test'
+  ...
+# Subtest: unchanged production default seed completes all 15 maps through production input adapter
+ok 9 - unchanged production default seed completes all 15 maps through production input adapter
+  ---
+  duration_ms: 95.65975
+  type: 'test'
+  ...
+# Subtest: source Sprite collision includes a shared edge and boss health constants
+ok 10 - source Sprite collision includes a shared edge and boss health constants
+  ---
+  duration_ms: 0.728208
+  type: 'test'
+  ...
+# Subtest: source loader starts with health 100 and four right ticks scroll one column
+ok 11 - source loader starts with health 100 and four right ticks scroll one column
+  ---
+  duration_ms: 1.74725
+  type: 'test'
+  ...
+# Subtest: source death arc begins -4 then 0 then 4; presentation commands are read only
+ok 12 - source death arc begins -4 then 0 then 4; presentation commands are read only
+  ---
+  duration_ms: 0.287
+  type: 'test'
+  ...
+# Subtest: source normal jump applies its table and gravity in the same tick
+ok 13 - source normal jump applies its table and gravity in the same tick
+  ---
+  duration_ms: 1.509
+  type: 'test'
+  ...
+# Subtest: source stake consumes ammunition immediately and launches at refire 13
+ok 14 - source stake consumes ammunition immediately and launches at refire 13
+  ---
+  duration_ms: 1.007625
+  type: 'test'
+  ...
+# Subtest: source bite heals 28, inflicts 20, then leaves a cooldown of 11
+ok 15 - source bite heals 28, inflicts 20, then leaves a cooldown of 11
+  ---
+  duration_ms: 0.622583
+  type: 'test'
+  ...
+# Subtest: source transformations retain 16×32 collision rectangle and expire on their exact counters
+ok 16 - source transformations retain 16×32 collision rectangle and expire on their exact counters
+  ---
+  duration_ms: 3.721458
+  type: 'test'
+  ...
+# Subtest: source boss bite changes direction, starts its run, and deals 20 damage
+ok 17 - source boss bite changes direction, starts its run, and deals 20 damage
+  ---
+  duration_ms: 0.540375
+  type: 'test'
+  ...
+# Subtest: source map read EOF preserves unread cells in the last buffer column
+ok 18 - source map read EOF preserves unread cells in the last buffer column
+  ---
+  duration_ms: 0.342833
+  type: 'test'
+  ...
+# Subtest: source map loader carries jump and power counters while replacing player and clearing powers
+ok 19 - source map loader carries jump and power counters while replacing player and clearing powers
+  ---
+  duration_ms: 0.323917
+  type: 'test'
+  ...
+# Subtest: source special jump always moves right and continues after key release
+ok 20 - source special jump always moves right and continues after key release
+  ---
+  duration_ms: 0.183042
+  type: 'test'
+  ...
+# Subtest: source paint-derived pickup bobbing and ray growth occur exactly once per simulation tick
+ok 21 - source paint-derived pickup bobbing and ray growth occur exactly once per simulation tick
+  ---
+  duration_ms: 0.151458
+  type: 'test'
+  ...
+# Subtest: source contact damage has no added invulnerability interval
+ok 22 - source contact damage has no added invulnerability interval
+  ---
+  duration_ms: 0.1135
+  type: 'test'
+  ...
+# Subtest: 10 Hz clock produces 10 steps per second at 30, 60, 120 Hz
+ok 23 - 10 Hz clock produces 10 steps per second at 30, 60, 120 Hz
+  ---
+  duration_ms: 0.781333
+  type: 'test'
+  ...
+# Subtest: pause reset drops hidden time and stops catch-up after callback pauses
+ok 24 - pause reset drops hidden time and stops catch-up after callback pauses
+  ---
+  duration_ms: 0.097291
+  type: 'test'
+  ...
+# Subtest: save refuses malformed coordinates and recovers corrupt or inaccessible storage
+ok 25 - save refuses malformed coordinates and recovers corrupt or inaccessible storage
+  ---
+  duration_ms: 0.166917
+  type: 'test'
+  ...
+# Subtest: simultaneous touch and key sources do not release each other; clear releases everything
+ok 26 - simultaneous touch and key sources do not release each other; clear releases everything
+  ---
+  duration_ms: 0.362041
+  type: 'test'
+  ...
+# Subtest: quick attack tap between ticks is delivered once instead of disappearing
+ok 27 - quick attack tap between ticks is delivered once instead of disappearing
+  ---
+  duration_ms: 8.18225
+  type: 'test'
+  ...
+# Subtest: releasing one source does not create a release edge for another held source
+ok 28 - releasing one source does not create a release edge for another held source
+  ---
+  duration_ms: 0.184959
+  type: 'test'
+  ...
+# Subtest: quick jump tap retains original keyPressed effect before the next tick
+ok 29 - quick jump tap retains original keyPressed effect before the next tick
+  ---
+  duration_ms: 1.0955
+  type: 'test'
+  ...
+# Subtest: open help modal leaves Escape native and does not resume gameplay
+ok 30 - open help modal leaves Escape native and does not resume gameplay
+  ---
+  duration_ms: 0.263875
+  type: 'test'
+  ...
+1..30
+# tests 30
+# suites 0
+# pass 30
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 409.7425

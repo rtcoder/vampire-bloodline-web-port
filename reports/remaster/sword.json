@@ -1,0 +1,69 @@
+{
+  "id": "sword",
+  "variant": "sword",
+  "inputPath": "assets/original/sword.png",
+  "inputSha256": "7fa98444dbc7005d4be487f8284edf000cfc77de407364dc7f2341a3e2c479ac",
+  "inputDimensions": [
+    96,
+    32
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels replicate padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/sword.png",
+  "inferenceInputSha256": "b8c3b163d878a9563aa16039e76d557598ec50cafaa3c721430c96658548b2ab",
+  "rawOutputPath": "assets/ai-raw/sword-fsrcnn.png",
+  "rawOutputSha256": "cee6de3cdec9a39def9514ba1be70cba3599a7e738aaa102c30d8a09cc10b8e8",
+  "rawDimensions": [
+    448,
+    192
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/remastered4x/sword.png",
+  "outputSha256": "7baebc1d9f48b03eed664499ae833173efe0f3cdb5a0d7fadc1b7f31f37d3fb9",
+  "outputDimensions": [
+    384,
+    128
+  ],
+  "baselinePath": "assets/baseline4x/sword.png",
+  "baselineSha256": "fd7455ca8c88601927415868cbae84ec6101d621e0c3f9ccb6741ca206e1b871",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 11.019041218637993,
+    "visibleRgbChangedPixelCount": 2801
+  },
+  "status": "approved",
+  "review": {
+    "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+    "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+    "decision": "approved",
+    "notes": "All3 sword orientations retain exact silhouettes/lengths and original per-stage attachment offsets.",
+    "staticEvidence": "reports/remaster/sword-comparison.png",
+    "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+    "knownLimitations": [
+      "FSRCNN smooths some source dithering and may produce mild local ringing",
+      "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+      "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+    ]
+  }
+}

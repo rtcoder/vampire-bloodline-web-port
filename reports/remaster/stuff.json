@@ -1,0 +1,69 @@
+{
+  "id": "stuff",
+  "variant": "stuff",
+  "inputPath": "assets/original/stuff.png",
+  "inputSha256": "aab8fd1d593a4787196031d31c1431192a3d8e3b8f449b2056478ee006275763",
+  "inputDimensions": [
+    64,
+    104
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels replicate padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/stuff.png",
+  "inferenceInputSha256": "1e325ac35c1105b865fba594b09cb97f6817315153027a3f82f06215802cd1dd",
+  "rawOutputPath": "assets/ai-raw/stuff-fsrcnn.png",
+  "rawOutputSha256": "1a6015b1ba06c51023fa4fcd424460953713318bd7894aafa43e916118aa2484",
+  "rawDimensions": [
+    320,
+    480
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/remastered4x/stuff.png",
+  "outputSha256": "d7b056363655f2a90fa6993687a5e9487d512c8967734819cc3793d3ef5e82c3",
+  "outputDimensions": [
+    256,
+    416
+  ],
+  "baselinePath": "assets/baseline4x/stuff.png",
+  "baselineSha256": "3b1e9b5fd18d064be86c45784353c4e0ee815b255420f8c0e90a9d7b6db83874",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 12.187727203877612,
+    "visibleRgbChangedPixelCount": 48378
+  },
+  "status": "approved",
+  "review": {
+    "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+    "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+    "decision": "approved",
+    "notes": "Pickups, projectiles, slash surfaces and column fragment retained; complete playback and TTL clipping fixture inspected.",
+    "staticEvidence": "reports/remaster/stuff-comparison.png",
+    "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+    "knownLimitations": [
+      "FSRCNN smooths some source dithering and may produce mild local ringing",
+      "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+      "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+    ]
+  }
+}

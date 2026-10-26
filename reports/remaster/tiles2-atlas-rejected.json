@@ -1,0 +1,61 @@
+{
+  "id": "tiles2",
+  "variant": "tiles2",
+  "inputPath": "assets/original/tiles2.png",
+  "inputSha256": "a6f8aec892cb343fd70a0e725ef26def8106134b7f35fa90896c2d543a60c380",
+  "inputDimensions": [
+    160,
+    16
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels wrapped padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/tiles2.png",
+  "inferenceInputSha256": "e207ddb4c7a736d9cadd4a7ffed326151d6838f22fdb0a575e491ed16004f63b",
+  "rawOutputPath": "assets/ai-raw/tiles2-fsrcnn.png",
+  "rawOutputSha256": "251db5b0a69cef1dd7e4200769a74c99245f65b6eda2ac46cc73f56a33dc543c",
+  "rawDimensions": [
+    704,
+    128
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/ai-raw/tiles2-atlas-final-rejected.png",
+  "outputSha256": "c449c9ca128a80d86d814c8a7dfc233b391b0f70368d65f9ce2dbb26d4976100",
+  "outputDimensions": [
+    640,
+    64
+  ],
+  "baselinePath": "assets/baseline4x/tiles2.png",
+  "baselineSha256": "84d013bf5fe70064b525ded21db7aea357ccdde4225e1d7a7a1cfa882147dfdd",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 11.2919189453125,
+    "visibleRgbChangedPixelCount": 37022
+  },
+  "status": "rejected",
+  "review": {
+    "decision": "rejected",
+    "reason": "Live gameplay shows dark tile grid from unrelated whole-atlas inference context. Superseded by isolated per-tile wrapped inference.",
+    "evidence": "reports/browser/ai-seams-before.png"
+  }
+}

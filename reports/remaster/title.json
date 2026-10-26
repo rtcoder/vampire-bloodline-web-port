@@ -1,0 +1,69 @@
+{
+  "id": "title",
+  "variant": "title",
+  "inputPath": "assets/original/title.png",
+  "inputSha256": "c6a67c3da3005ac6ee62b567a1142d2a1013bde463511962db8be416984f4cc9",
+  "inputDimensions": [
+    111,
+    33
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels replicate padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/title.png",
+  "inferenceInputSha256": "db0cfe65db03c849500918e8f7bebf2f9d19b05a9f07a7446aa016af22f7891c",
+  "rawOutputPath": "assets/ai-raw/title-fsrcnn.png",
+  "rawOutputSha256": "90affc295b6cb444299aacaa0cdf0c3f4350239d9ac98d1477f951c01b7911b3",
+  "rawDimensions": [
+    508,
+    196
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/remastered4x/title.png",
+  "outputSha256": "5923c1378bc896fb72fdd3a7b383fd5ff498911aa9dd2b13c3cf971613b3c2db",
+  "outputDimensions": [
+    444,
+    132
+  ],
+  "baselinePath": "assets/baseline4x/title.png",
+  "baselineSha256": "4b06a344aa1dda7f2e6acc38fa17f2622a616bd123cbb1b234918218b9d518bb",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 13.681899298916507,
+    "visibleRgbChangedPixelCount": 37267
+  },
+  "status": "approved",
+  "review": {
+    "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+    "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+    "decision": "approved",
+    "notes": "VAMPIRE BLOODLINE wording, turquoise/red colors and logo geometry preserved.",
+    "staticEvidence": "reports/remaster/title-comparison.png",
+    "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+    "knownLimitations": [
+      "FSRCNN smooths some source dithering and may produce mild local ringing",
+      "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+      "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+    ]
+  }
+}

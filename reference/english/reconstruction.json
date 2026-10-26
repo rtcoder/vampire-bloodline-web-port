@@ -1,0 +1,24 @@
+{
+  "method": "Strings: interpreted actual ConstantValue fields and <clinit>; mainCanvas: ES CFR source + independently verified EN literal changes",
+  "replacements": {
+    "cargando": 1,
+    "cargando gráficos": 1,
+    "vampire :": 2,
+    "ayuda": 4,
+    "sonido : on": 2,
+    "sonido : off": 2,
+    "Menú principal": 1,
+    "jugar": 1,
+    "opciones": 2,
+    "salir del juego": 1,
+    "Diseño: Paul Jacobson, Daniel Rammelt~~Código: Daniel Rammelt.~~Arte: Paul Jacobson, Matthew Risley.~~Productor: Nic Garner.~~Producido por Mforma Europe.~Software copyright 2003 Mforma Group.": 2,
+    "créditos": 1,
+    "historia": 1,
+    "ayuda general": 1,
+    "controles del jugador": 1,
+    "¿Continuar?": 1,
+    "reiniciar el juego?": 1,
+    "reiniciar el juego": 1
+  },
+  "unmatched": []
+}

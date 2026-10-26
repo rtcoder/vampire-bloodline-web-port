@@ -1,0 +1,839 @@
+{
+  "pool": [
+    null,
+    {
+      "tag": 10,
+      "value": "0041007a"
+    },
+    {
+      "tag": 7,
+      "value": "007b"
+    },
+    {
+      "tag": 8,
+      "value": "007c"
+    },
+    {
+      "tag": 8,
+      "value": "007d"
+    },
+    {
+      "tag": 8,
+      "value": "007e"
+    },
+    {
+      "tag": 8,
+      "value": "007f"
+    },
+    {
+      "tag": 9,
+      "value": "00400080"
+    },
+    {
+      "tag": 7,
+      "value": "0043"
+    },
+    {
+      "tag": 8,
+      "value": "0081"
+    },
+    {
+      "tag": 8,
+      "value": "0082"
+    },
+    {
+      "tag": 8,
+      "value": "0083"
+    },
+    {
+      "tag": 8,
+      "value": "0084"
+    },
+    {
+      "tag": 8,
+      "value": "0085"
+    },
+    {
+      "tag": 8,
+      "value": "0086"
+    },
+    {
+      "tag": 8,
+      "value": "0087"
+    },
+    {
+      "tag": 8,
+      "value": "0088"
+    },
+    {
+      "tag": 8,
+      "value": "0089"
+    },
+    {
+      "tag": 8,
+      "value": "008a"
+    },
+    {
+      "tag": 8,
+      "value": "008b"
+    },
+    {
+      "tag": 8,
+      "value": "008c"
+    },
+    {
+      "tag": 8,
+      "value": "008d"
+    },
+    {
+      "tag": 8,
+      "value": "008e"
+    },
+    {
+      "tag": 8,
+      "value": "008f"
+    },
+    {
+      "tag": 8,
+      "value": "0090"
+    },
+    {
+      "tag": 8,
+      "value": "0091"
+    },
+    {
+      "tag": 8,
+      "value": "0092"
+    },
+    {
+      "tag": 8,
+      "value": "0093"
+    },
+    {
+      "tag": 8,
+      "value": "0094"
+    },
+    {
+      "tag": 8,
+      "value": "0095"
+    },
+    {
+      "tag": 8,
+      "value": "0096"
+    },
+    {
+      "tag": 8,
+      "value": "0097"
+    },
+    {
+      "tag": 8,
+      "value": "0098"
+    },
+    {
+      "tag": 8,
+      "value": "0099"
+    },
+    {
+      "tag": 8,
+      "value": "009a"
+    },
+    {
+      "tag": 8,
+      "value": "009b"
+    },
+    {
+      "tag": 8,
+      "value": "009c"
+    },
+    {
+      "tag": 8,
+      "value": "009d"
+    },
+    {
+      "tag": 8,
+      "value": "009e"
+    },
+    {
+      "tag": 8,
+      "value": "009f"
+    },
+    {
+      "tag": 8,
+      "value": "00a0"
+    },
+    {
+      "tag": 8,
+      "value": "00a1"
+    },
+    {
+      "tag": 8,
+      "value": "00a2"
+    },
+    {
+      "tag": 8,
+      "value": "00a3"
+    },
+    {
+      "tag": 8,
+      "value": "00a4"
+    },
+    {
+      "tag": 8,
+      "value": "00a5"
+    },
+    {
+      "tag": 8,
+      "value": "00a6"
+    },
+    {
+      "tag": 8,
+      "value": "00a7"
+    },
+    {
+      "tag": 8,
+      "value": "00a8"
+    },
+    {
+      "tag": 8,
+      "value": "00a9"
+    },
+    {
+      "tag": 8,
+      "value": "00aa"
+    },
+    {
+      "tag": 8,
+      "value": "00ab"
+    },
+    {
+      "tag": 8,
+      "value": "00ac"
+    },
+    {
+      "tag": 8,
+      "value": "00ad"
+    },
+    {
+      "tag": 8,
+      "value": "00ae"
+    },
+    {
+      "tag": 8,
+      "value": "00af"
+    },
+    {
+      "tag": 8,
+      "value": "00b0"
+    },
+    {
+      "tag": 8,
+      "value": "00b1"
+    },
+    {
+      "tag": 8,
+      "value": "00b2"
+    },
+    {
+      "tag": 8,
+      "value": "00b3"
+    },
+    {
+      "tag": 8,
+      "value": "00b4"
+    },
+    {
+      "tag": 8,
+      "value": "00b5"
+    },
+    {
+      "tag": 8,
+      "value": "00b6"
+    },
+    {
+      "tag": 9,
+      "value": "004000b7"
+    },
+    {
+      "tag": 7,
+      "value": "00b8"
+    },
+    {
+      "tag": 7,
+      "value": "00b9"
+    },
+    {
+      "tag": 1,
+      "value": "ruleString"
+    },
+    {
+      "tag": 1,
+      "value": "[Ljava/lang/String;"
+    },
+    {
+      "tag": 1,
+      "value": "cutString"
+    },
+    {
+      "tag": 1,
+      "value": "[[Ljava/lang/String;"
+    },
+    {
+      "tag": 1,
+      "value": "creditString"
+    },
+    {
+      "tag": 1,
+      "value": "Ljava/lang/String;"
+    },
+    {
+      "tag": 1,
+      "value": "ConstantValue"
+    },
+    {
+      "tag": 8,
+      "value": "00ba"
+    },
+    {
+      "tag": 1,
+      "value": "String1"
+    },
+    {
+      "tag": 8,
+      "value": "00bb"
+    },
+    {
+      "tag": 1,
+      "value": "String2"
+    },
+    {
+      "tag": 8,
+      "value": "00bc"
+    },
+    {
+      "tag": 1,
+      "value": "String3"
+    },
+    {
+      "tag": 8,
+      "value": "00bd"
+    },
+    {
+      "tag": 1,
+      "value": "String5"
+    },
+    {
+      "tag": 8,
+      "value": "00be"
+    },
+    {
+      "tag": 1,
+      "value": "String6"
+    },
+    {
+      "tag": 8,
+      "value": "00bf"
+    },
+    {
+      "tag": 1,
+      "value": "String7"
+    },
+    {
+      "tag": 8,
+      "value": "00c0"
+    },
+    {
+      "tag": 1,
+      "value": "String8"
+    },
+    {
+      "tag": 8,
+      "value": "00c1"
+    },
+    {
+      "tag": 1,
+      "value": "String10"
+    },
+    {
+      "tag": 8,
+      "value": "00c2"
+    },
+    {
+      "tag": 1,
+      "value": "String11"
+    },
+    {
+      "tag": 8,
+      "value": "00c3"
+    },
+    {
+      "tag": 1,
+      "value": "String12"
+    },
+    {
+      "tag": 8,
+      "value": "00c4"
+    },
+    {
+      "tag": 1,
+      "value": "String13"
+    },
+    {
+      "tag": 8,
+      "value": "00c5"
+    },
+    {
+      "tag": 1,
+      "value": "String14"
+    },
+    {
+      "tag": 8,
+      "value": "00c6"
+    },
+    {
+      "tag": 1,
+      "value": "String15"
+    },
+    {
+      "tag": 8,
+      "value": "00c7"
+    },
+    {
+      "tag": 1,
+      "value": "String16"
+    },
+    {
+      "tag": 8,
+      "value": "00c8"
+    },
+    {
+      "tag": 1,
+      "value": "String19"
+    },
+    {
+      "tag": 8,
+      "value": "00c9"
+    },
+    {
+      "tag": 1,
+      "value": "String24"
+    },
+    {
+      "tag": 8,
+      "value": "00ca"
+    },
+    {
+      "tag": 1,
+      "value": "String25"
+    },
+    {
+      "tag": 8,
+      "value": "00cb"
+    },
+    {
+      "tag": 1,
+      "value": "String26"
+    },
+    {
+      "tag": 8,
+      "value": "00cc"
+    },
+    {
+      "tag": 1,
+      "value": "String27"
+    },
+    {
+      "tag": 8,
+      "value": "00cd"
+    },
+    {
+      "tag": 1,
+      "value": "String30"
+    },
+    {
+      "tag": 8,
+      "value": "00ce"
+    },
+    {
+      "tag": 1,
+      "value": "String31"
+    },
+    {
+      "tag": 8,
+      "value": "00cf"
+    },
+    {
+      "tag": 1,
+      "value": "String32"
+    },
+    {
+      "tag": 8,
+      "value": "00d0"
+    },
+    {
+      "tag": 1,
+      "value": "<init>"
+    },
+    {
+      "tag": 1,
+      "value": "()V"
+    },
+    {
+      "tag": 1,
+      "value": "Code"
+    },
+    {
+      "tag": 1,
+      "value": "<clinit>"
+    },
+    {
+      "tag": 12,
+      "value": "00760077"
+    },
+    {
+      "tag": 1,
+      "value": "java/lang/String"
+    },
+    {
+      "tag": 1,
+      "value": "Three hundred years ago Vampires walked the earth, living in the shadows and darkness and preying on the innocent.~~Many people lived in fear of Vampires and of their ruler, Count Dracula. He was killed many times but always rose again. It seemed that Dracula truly was immortal.~~Finally, Dr. Von Jäger hatched a plan. Dracula needed to be dismembered and his remains locked away in secret and remote locations. If successful, Vampires will have truly been beaten.~~So it happened and the Vampire nation was wiped out. However, one remained alive, Count Dracula's heir, his daughter Eve! If she could retrieve all the parts of Dracula's body and bring them together, he could be reborn. Only he had the power to rebuild the Vampire dynasty..."
+    },
+    {
+      "tag": 1,
+      "value": "Screen Layout~~~Top Left Corner - Health Meter. As Eve loses health the glass bulb will drain of blood. It will fill up whenever she feeds.~~Bottom Right Corner - Weapon Meter. Displays the number of stakes Eve has, or if she is able to bite an enemy.~~Power Ups~~Eve can collect these to temporarily transform or speed up.~~Bat - Control the bat up, down, left or right using the standard directional controls.~~Super Speed - Standard controls, but enemies will slow down.~~Vapour - Standard controls. Makes Eve invisible to enemy characters."
+    },
+    {
+      "tag": 1,
+      "value": "4 / D-pad Left - Move Left.~~6 / D-pad Right - Move Right.~~2 / D-pad Up - Jump Up (Eve can be controlled in mid-jump using the left and right keys). If Eve is standing by a ladder, press 2 to make her climb it.~~8 / D-pad Down  - Climb down ladders.~~(Extra Key Controls)~~3 - Fast Jump. Eve will jump diagonally up and right.~~5 / Fire - Attack. If Eve has stakes, pressing 5 will make her throw one of them. If Eve is within close range of a Vampire hunter she will perform a biting attack and regain some energy."
+    },
+    {
+      "tag": 1,
+      "value": "2 / Left Directional Keypad - Move left. ~~ * / Directional keyboard right. - Move right. ~~ 1 / Directional keyboard up - Jump (Eva can be controlled in the middle of a jump with the right and left keys). If Eva is standing next to a ladder, press 1 / Up to make her go up. ~~ 3 / Directional pad down - Go down the stairs. ~~ 0 - Quick jump. Eva will jump diagonally up and to the right. ~~ # / Shoot - Attack. If Eva has stakes, press # / Shoot for her to throw one. If Eva is near a vampire hunter, she will try to bite off and regain some energy."
+    },
+    {
+      "tag": 12,
+      "value": "00420043"
+    },
+    {
+      "tag": 1,
+      "value": "Level 1"
+    },
+    {
+      "tag": 1,
+      "value": "The first part of my father's remains are hidden down here somewhere, but I had better be careful it could be heavily guarded..."
+    },
+    {
+      "tag": 1,
+      "value": "Level 2"
+    },
+    {
+      "tag": 1,
+      "value": "They're definitely hiding it here, why would all these vampire hunters be around?"
+    },
+    {
+      "tag": 1,
+      "value": "Level 3"
+    },
+    {
+      "tag": 1,
+      "value": "So we finally meet."
+    },
+    {
+      "tag": 1,
+      "value": "And you are?"
+    },
+    {
+      "tag": 1,
+      "value": "Joanna Von Jäger."
+    },
+    {
+      "tag": 1,
+      "value": "Von Jäger!!!"
+    },
+    {
+      "tag": 1,
+      "value": "YES! And I will now finish what my grandfather set out to do and wipe the filth of your kind from the Earth. Forever!!!"
+    },
+    {
+      "tag": 1,
+      "value": "You got lucky this time vampire!"
+    },
+    {
+      "tag": 1,
+      "value": "Level 4"
+    },
+    {
+      "tag": 1,
+      "value": "I'm sure I've been here before, killed here, fed here!"
+    },
+    {
+      "tag": 1,
+      "value": "Level 5"
+    },
+    {
+      "tag": 1,
+      "value": "Damn! The sun is about to rise, and if I don't move fast they'll move the remains, I'll have to risk it."
+    },
+    {
+      "tag": 1,
+      "value": "Level 6"
+    },
+    {
+      "tag": 1,
+      "value": "It appears you are stronger than I thought."
+    },
+    {
+      "tag": 1,
+      "value": "I will drink your blood this time!"
+    },
+    {
+      "tag": 1,
+      "value": "NEVER!!"
+    },
+    {
+      "tag": 1,
+      "value": "I have killed many of your army and you shall follow them."
+    },
+    {
+      "tag": 1,
+      "value": "DIE!!!"
+    },
+    {
+      "tag": 1,
+      "value": "Damn you! I think I broke a nail!"
+    },
+    {
+      "tag": 1,
+      "value": "Level 7"
+    },
+    {
+      "tag": 1,
+      "value": "I sense of Dracula's remains are here, most likely in a cave somewhere up here."
+    },
+    {
+      "tag": 1,
+      "value": "Level 8"
+    },
+    {
+      "tag": 1,
+      "value": "HSSSS sunrise again! How can this be taking so long?"
+    },
+    {
+      "tag": 1,
+      "value": "Level 9"
+    },
+    {
+      "tag": 1,
+      "value": "You are indeed a mighty warrior to have made it this far without dying."
+    },
+    {
+      "tag": 1,
+      "value": "Yes and you are getting weaker, hand over my fathers remains and I will kill you quickly."
+    },
+    {
+      "tag": 1,
+      "value": "You will never get Dracula's remains!"
+    },
+    {
+      "tag": 1,
+      "value": "Hrmmph!"
+    },
+    {
+      "tag": 1,
+      "value": "Level 10"
+    },
+    {
+      "tag": 1,
+      "value": "I don't believe it, this Castle is, WAS my father's, the Von Jägers will pay for all eternity for this!"
+    },
+    {
+      "tag": 1,
+      "value": "Level 11"
+    },
+    {
+      "tag": 1,
+      "value": "I still remember some of the hidden passages here, I'll get my father's body together quicker than they realise."
+    },
+    {
+      "tag": 1,
+      "value": "Level 12"
+    },
+    {
+      "tag": 1,
+      "value": "HA Ha ha ha, you fool did you honestly think we didn't know about the hidden passages? We deliberately lead you here on purpose."
+    },
+    {
+      "tag": 1,
+      "value": "I have defeated you 3 times, you are no match for the daughter of Count Dracula!"
+    },
+    {
+      "tag": 1,
+      "value": "Dracula was defeated by a Von Jäger, and so shall you!"
+    },
+    {
+      "tag": 1,
+      "value": "you win again vampire, but there is no way you will find the last piece!"
+    },
+    {
+      "tag": 1,
+      "value": "Level 13"
+    },
+    {
+      "tag": 1,
+      "value": "Nearly done, I'm so tired but soon my father will be restored and darkness can reign supreme."
+    },
+    {
+      "tag": 1,
+      "value": "Level 14"
+    },
+    {
+      "tag": 1,
+      "value": "Ha, they hid my father's heart in his own crypt! How fitting that his rebirth will take place here."
+    },
+    {
+      "tag": 1,
+      "value": "Level 15"
+    },
+    {
+      "tag": 1,
+      "value": "Well I hoped you would make it this far."
+    },
+    {
+      "tag": 1,
+      "value": "So you could finally kill me? HA!"
+    },
+    {
+      "tag": 1,
+      "value": "You may laugh, but I am going to destroy you."
+    },
+    {
+      "tag": 1,
+      "value": "I'll make you suffer the worst fate. You'll become the first of our new Dynasty of vampires."
+    },
+    {
+      "tag": 1,
+      "value": "NEVER!!! This ends NOW…"
+    },
+    {
+      "tag": 1,
+      "value": "No Nooooooooo."
+    },
+    {
+      "tag": 1,
+      "value": "And now my Father will be Reborn and he will take you as his first!"
+    },
+    {
+      "tag": 1,
+      "value": "..."
+    },
+    {
+      "tag": 1,
+      "value": "I am REBORN!!!"
+    },
+    {
+      "tag": 12,
+      "value": "00440045"
+    },
+    {
+      "tag": 1,
+      "value": "Strings"
+    },
+    {
+      "tag": 1,
+      "value": "java/lang/Object"
+    },
+    {
+      "tag": 1,
+      "value": "Design: Paul Jacobson, Daniel Rammelt ~~ Code: Daniel Rammelt. ~~ Art: Paul Jacobson, Matthew Risley. ~~ Producer: Nic Garner. ~~ Produced by Mforma Europe. ~ Software copyright 2003 Mforma Group."
+    },
+    {
+      "tag": 1,
+      "value": "Game over!"
+    },
+    {
+      "tag": 1,
+      "value": "vampire:"
+    },
+    {
+      "tag": 1,
+      "value": "bloodline"
+    },
+    {
+      "tag": 1,
+      "value": "play"
+    },
+    {
+      "tag": 1,
+      "value": "help"
+    },
+    {
+      "tag": 1,
+      "value": "options"
+    },
+    {
+      "tag": 1,
+      "value": "exit game"
+    },
+    {
+      "tag": 1,
+      "value": "sound"
+    },
+    {
+      "tag": 1,
+      "value": "on"
+    },
+    {
+      "tag": 1,
+      "value": "off"
+    },
+    {
+      "tag": 1,
+      "value": "Main menu"
+    },
+    {
+      "tag": 1,
+      "value": "back"
+    },
+    {
+      "tag": 1,
+      "value": "exit"
+    },
+    {
+      "tag": 1,
+      "value": "Continue?"
+    },
+    {
+      "tag": 1,
+      "value": "loading"
+    },
+    {
+      "tag": 1,
+      "value": "credits"
+    },
+    {
+      "tag": 1,
+      "value": "story"
+    },
+    {
+      "tag": 1,
+      "value": "general help"
+    },
+    {
+      "tag": 1,
+      "value": "player controls"
+    },
+    {
+      "tag": 1,
+      "value": "reset game"
+    },
+    {
+      "tag": 1,
+      "value": "graphics"
+    },
+    {
+      "tag": 1,
+      "value": "sprites"
+    }
+  ],
+  "bodyOffset": 5967,
+  "bodySha256": "bf35eb1d1127ea08a112ae89316561ca8a4182d1d62ca557b66f2c4ba5889d95"
+}

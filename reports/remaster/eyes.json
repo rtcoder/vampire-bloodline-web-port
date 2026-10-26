@@ -1,0 +1,69 @@
+{
+  "id": "eyes",
+  "variant": "eyes",
+  "inputPath": "assets/original/eyes.png",
+  "inputSha256": "f90617b0a807ea0d856e03f7bbda27fe4d59c11408f92578aea840efdd7b019a",
+  "inputDimensions": [
+    29,
+    12
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels replicate padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/eyes.png",
+  "inferenceInputSha256": "d92ae354b192918eeb54e053db10fdb82f03fa8508c2c897020a3ebd6da5c6a7",
+  "rawOutputPath": "assets/ai-raw/eyes-fsrcnn.png",
+  "rawOutputSha256": "4a7ee08e5bfcb84259c788e3844ba1fdebdf10767439968fbb87ee7fc14fa995",
+  "rawDimensions": [
+    180,
+    112
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/remastered4x/eyes.png",
+  "outputSha256": "c3dcaba82d421ca7df966d2241e230c6c90c144449dfddc9e7c92da09a968f4f",
+  "outputDimensions": [
+    116,
+    48
+  ],
+  "baselinePath": "assets/baseline4x/eyes.png",
+  "baselineSha256": "0e352edd9f65a17dd7b059b89fad8203e9a90d4db95c0624124b83706494e3d5",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 13.968091475095786,
+    "visibleRgbChangedPixelCount": 5477
+  },
+  "status": "approved",
+  "review": {
+    "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+    "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+    "decision": "approved",
+    "notes": "Exact eye crop preserved; enhancement stays inside original dimensions.",
+    "staticEvidence": "reports/remaster/eyes-comparison.png",
+    "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+    "knownLimitations": [
+      "FSRCNN smooths some source dithering and may produce mild local ringing",
+      "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+      "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+    ]
+  }
+}

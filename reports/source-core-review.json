@@ -1,0 +1,141 @@
+{
+  "scope": "Independent static mechanical review and robustness smoke, not original MIDlet equivalence or campaign completion",
+  "normalization": "Java local variable types/casts normalized; compared decompiled reference to translated JS method bodies",
+  "methodsExactAfterNormalization": [
+    "mainCanvas.getTileVal",
+    "mainCanvas.addParticle",
+    "mainCanvas.adjustOnSlope",
+    "Sprite.draw",
+    "Sprite.isCollidingWith",
+    "Sprite.setCollisionRectangle",
+    "Sprite.setPosition",
+    "GraphicObjectManager.drawPlayer",
+    "GraphicObjectManager.paintSprites"
+  ],
+  "intentionalDifferences": [
+    "mainCanvas.updateGame changes screen/timer transitions into phase/events; method body otherwise matches normalized reference",
+    "Full tile repaint replaces opaque draw cache; original cached row placement reduces to sourceY*16-ofsY",
+    "Rendering-side mutations captured once per simulation tick in recorded commands"
+  ],
+  "confirmedRegressions": [],
+  "smoke": {
+    "steps": 45000,
+    "deathsAndReloads": 208,
+    "transitions": 0,
+    "exceptionOrNonfiniteCounts": 0,
+    "inputSeed": 1297,
+    "gameSeed": 12345,
+    "mapResults": [
+      {
+        "id": "m11",
+        "steps": 3000,
+        "deaths": 1,
+        "transitions": 0,
+        "errors": []
+      },
+      {
+        "id": "m12",
+        "steps": 3000,
+        "deaths": 15,
+        "transitions": 0,
+        "errors": []
+      },
+      {
+        "id": "m13",
+        "steps": 3000,
+        "deaths": 13,
+        "transitions": 0,
+        "errors": []
+      },
+      {
+        "id": "m21",
+        "steps": 3000,
+        "deaths": 14,
+        "transitions": 0,
+        "errors": []
+      },
+      {
+        "id": "m22",
+        "steps": 3000,
+        "deaths": 45,
+        "transitions": 0,
+        "errors": []
+      },
+      {
+        "id": "m23",
+        "steps": 3000,
+        "deaths": 10,
+        "transitions": 0,
+        "errors": []
+      },
+      {
+        "id": "m31",
+        "steps": 3000,
+        "deaths": 7,
+        "transitions": 0,
+        "errors": []
+      },
+      {
+        "id": "m32",
+        "steps": 3000,
+        "deaths": 23,
+        "transitions": 0,
+        "errors": []
+      },
+      {
+        "id": "m33",
+        "steps": 3000,
+        "deaths": 9,
+        "transitions": 0,
+        "errors": []
+      },
+      {
+        "id": "m41",
+        "steps": 3000,
+        "deaths": 4,
+        "transitions": 0,
+        "errors": []
+      },
+      {
+        "id": "m42",
+        "steps": 3000,
+        "deaths": 26,
+        "transitions": 0,
+        "errors": []
+      },
+      {
+        "id": "m43",
+        "steps": 3000,
+        "deaths": 11,
+        "transitions": 0,
+        "errors": []
+      },
+      {
+        "id": "m51",
+        "steps": 3000,
+        "deaths": 11,
+        "transitions": 0,
+        "errors": []
+      },
+      {
+        "id": "m52",
+        "steps": 3000,
+        "deaths": 7,
+        "transitions": 0,
+        "errors": []
+      },
+      {
+        "id": "m53",
+        "steps": 3000,
+        "deaths": 12,
+        "transitions": 0,
+        "errors": []
+      }
+    ]
+  },
+  "limitations": [
+    "No compatible original MIDlet runtime available",
+    "Random smoke did not finish any map; cannot establish campaign playability",
+    "Normalized source comparison is not independent bytecode execution"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "variant": "after",
+  "metric": "mean absolute RGB difference across x=0 and x=63 when repeating selected periodic tile",
+  "scope": "known periodic floor/wall/water fragments; does not require unrelated tiles to have identical edges",
+  "passed": true,
+  "records": [
+    {
+      "asset": "tiles1",
+      "tile": 0,
+      "beforeMeanAbsoluteRgbBoundaryJump": 40.505208333333336,
+      "afterMeanAbsoluteRgbBoundaryJump": 2.40625,
+      "maximumAcceptedBoundaryJump": 4.0,
+      "passed": true
+    },
+    {
+      "asset": "tiles1",
+      "tile": 9,
+      "beforeMeanAbsoluteRgbBoundaryJump": 6.807291666666667,
+      "afterMeanAbsoluteRgbBoundaryJump": 2.046875,
+      "maximumAcceptedBoundaryJump": 3.4036458333333335,
+      "passed": true
+    },
+    {
+      "asset": "tiles2",
+      "tile": 0,
+      "beforeMeanAbsoluteRgbBoundaryJump": 10.572916666666666,
+      "afterMeanAbsoluteRgbBoundaryJump": 2.6041666666666665,
+      "maximumAcceptedBoundaryJump": 4.0,
+      "passed": true
+    },
+    {
+      "asset": "tiles3",
+      "tile": 0,
+      "beforeMeanAbsoluteRgbBoundaryJump": 14.369791666666666,
+      "afterMeanAbsoluteRgbBoundaryJump": 2.703125,
+      "maximumAcceptedBoundaryJump": 4.0,
+      "passed": true
+    },
+    {
+      "asset": "tiles4",
+      "tile": 0,
+      "beforeMeanAbsoluteRgbBoundaryJump": 17.255208333333332,
+      "afterMeanAbsoluteRgbBoundaryJump": 3.734375,
+      "maximumAcceptedBoundaryJump": 4.0,
+      "passed": true
+    }
+  ]
+}

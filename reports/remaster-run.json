@@ -1,0 +1,2937 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-26T20:06:53.139136+00:00",
+  "actualNeuralInferencePerformed": true,
+  "generativeEditAttempt": "reports/remaster/player-imagegen-rejected.json",
+  "modelSource": "https://github.com/Saafke/FSRCNN_Tensorflow",
+  "modelLicense": "Apache-2.0; tools/models/FSRCNN-LICENSE.txt",
+  "records": [
+    {
+      "id": "background",
+      "variant": "background",
+      "inputPath": "assets/original/background.png",
+      "inputSha256": "0e91ddc9df646b63edc37e5c6d5dcf9632ff5b2449190efed76313691942b55b",
+      "inputDimensions": [
+        176,
+        208
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/background.png",
+      "inferenceInputSha256": "4ad54ce7bfde2ecabc8f4b8ed531f5785954331cca46f0e766c16d6d72a810d5",
+      "rawOutputPath": "assets/ai-raw/background-fsrcnn.png",
+      "rawOutputSha256": "4292bebd54a3345139092b6d1f012b4e559199c14b9b7d679798e0ab98aa6e3a",
+      "rawDimensions": [
+        768,
+        896
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/background.png",
+      "outputSha256": "83998a3c3d49333b41f2bc875b4c8a9de6874070174c83f7e1bff1d3504a3a69",
+      "outputDimensions": [
+        704,
+        832
+      ],
+      "baselinePath": "assets/baseline4x/background.png",
+      "baselineSha256": "6facab1dafef273fc60aab82508d5b318f06e985006ae1b2e4cede4ce2a6a1ed",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 0.7148949683129371,
+        "visibleRgbChangedPixelCount": 213496
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "Castle silhouette and dark red palette retained; English canonical runtime variant separately inferred and reviewed.",
+        "staticEvidence": "reports/remaster/background-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "boss_jvh",
+      "variant": "boss_jvh",
+      "inputPath": "assets/original/boss_jvh.png",
+      "inputSha256": "99052ec7fbc2146663f91586d640df73bc2a9967e9c3b90180ed9c2e6f946fee",
+      "inputDimensions": [
+        768,
+        32
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/boss_jvh.png",
+      "inferenceInputSha256": "b31f7d7080f7b8169962426c7415d7c99c555edd5123cde4fcea7af35c66220b",
+      "rawOutputPath": "assets/ai-raw/boss_jvh-fsrcnn.png",
+      "rawOutputSha256": "f0dbe6772ed2c7d777d990121567f88315c171f5b1d3cb991ee4ebbaf2e82c22",
+      "rawDimensions": [
+        3136,
+        192
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/boss_jvh.png",
+      "outputSha256": "28ba00440e8ea6069a34847364df311e4ca4eefd382e23dafa7c3b889bfd0d97",
+      "outputDimensions": [
+        3072,
+        128
+      ],
+      "baselinePath": "assets/baseline4x/boss_jvh.png",
+      "baselineSha256": "93ee96806b7c4532c101517e91550e03a92824b73b11a34211fdf24e0a8b6ea6",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 21.77101302397792,
+        "visibleRgbChangedPixelCount": 88607
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "All24 source slots preserved; blonde hair, black outfit, weapon and both facing sequences stable in playback.",
+        "staticEvidence": "reports/remaster/boss_jvh-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "coffin",
+      "variant": "coffin",
+      "inputPath": "assets/original/coffin.png",
+      "inputSha256": "87dc9aa4e08aaa4a62789b42e3125f75b80840106e5db5eb2cf84c77e0a7b8ff",
+      "inputDimensions": [
+        140,
+        67
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/coffin.png",
+      "inferenceInputSha256": "84c2075d54be88fcfd6d3ac2fa5c5d8eb450b376a1f16d9cfa1ea30ce5ad7645",
+      "rawOutputPath": "assets/ai-raw/coffin-fsrcnn.png",
+      "rawOutputSha256": "dff6b663d95755aee21c885df1fa8f8bf006b6a0abd83df0dee2a5475d975f85",
+      "rawDimensions": [
+        624,
+        332
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/coffin.png",
+      "outputSha256": "be0013f348a70660b8c37def3753adaa900d5506637e546505101560f79dc14d",
+      "outputDimensions": [
+        560,
+        268
+      ],
+      "baselinePath": "assets/baseline4x/coffin.png",
+      "baselineSha256": "13e065f882ee7132aa0d8913e1719d9d0d61f2c88c92a4db630b67bcafa6fea5",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 6.680354921819474,
+        "visibleRgbChangedPixelCount": 84154
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "Facial identity, fangs, red bow and coffin framing preserved; SR smooths source dithering.",
+        "staticEvidence": "reports/remaster/coffin-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "enemy_dog",
+      "variant": "enemy_dog",
+      "inputPath": "assets/original/enemy_dog.png",
+      "inputSha256": "b9af2ea7635f758d2959a28c5c413e6da0df93ed0e7b54bcf0dbd41f130252fd",
+      "inputDimensions": [
+        64,
+        16
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/enemy_dog.png",
+      "inferenceInputSha256": "1006b3d2131f53c9a76c14a38dc5e54227f04478e95dca1f7f801ab76c87fce6",
+      "rawOutputPath": "assets/ai-raw/enemy_dog-fsrcnn.png",
+      "rawOutputSha256": "fab9e58f67d22dca4d1fe8c2514ab3a007a4f93608f89887372425aa840a7822",
+      "rawDimensions": [
+        320,
+        128
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/enemy_dog.png",
+      "outputSha256": "c0d91b71af03557d1d3c9ee1ca041e372bdfa66d0850f34265bdbd856d959272",
+      "outputDimensions": [
+        256,
+        64
+      ],
+      "baselinePath": "assets/baseline4x/enemy_dog.png",
+      "baselineSha256": "41d8e1ca60885d608d24ab1071b48ae371a9b9f2db139af242d100a9ef173f60",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 14.901403170522707,
+        "visibleRgbChangedPixelCount": 5872
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "Both32x16 running poses and golden-brown coat preserved; no change to limb reach or alpha.",
+        "staticEvidence": "reports/remaster/enemy_dog-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "enemy_hunter",
+      "variant": "enemy_hunter",
+      "inputPath": "assets/original/enemy_hunter.png",
+      "inputSha256": "1113101267c29aab824aa2e5c08787bd79a82a5a6afe6691ed4fd4375ffaeb84",
+      "inputDimensions": [
+        385,
+        32
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/enemy_hunter.png",
+      "inferenceInputSha256": "eed796f4d0f0f6321c3ef5b0bf24f80c9167739d4ff880ca290a59d1057aae40",
+      "rawOutputPath": "assets/ai-raw/enemy_hunter-fsrcnn.png",
+      "rawOutputSha256": "9fb62ba82a4355430e594b6b006675698f5eed8c0d0b32b9317730f0cc6125d1",
+      "rawDimensions": [
+        1604,
+        192
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/enemy_hunter.png",
+      "outputSha256": "a6b70022e0925e55b86fb5a2d3b483747e005077badbf6bdc5e887ad07c6b466",
+      "outputDimensions": [
+        1540,
+        128
+      ],
+      "baselinePath": "assets/baseline4x/enemy_hunter.png",
+      "baselineSha256": "90e945e93457b7779fc383e8faa3a0ea92026b99d90f55c05d39255e5ed449f4",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 12.90963724601556,
+        "visibleRgbChangedPixelCount": 64944
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "All12 rendered32x32 slots plus unused final source column preserved; orange hair/black coat and attack poses stable.",
+        "staticEvidence": "reports/remaster/enemy_hunter-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "enemy_wraith",
+      "variant": "enemy_wraith",
+      "inputPath": "assets/original/enemy_wraith.png",
+      "inputSha256": "c8bf9f789bf28f0342a37684f1dd42d6fa5381714efe0e9398bb8ebe83d45e2a",
+      "inputDimensions": [
+        96,
+        32
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/enemy_wraith.png",
+      "inferenceInputSha256": "1661902b8166b9726bb629cfbc8ba31f35dbfd09043f3a656f6df1deaa05ecc3",
+      "rawOutputPath": "assets/ai-raw/enemy_wraith-fsrcnn.png",
+      "rawOutputSha256": "f266540edd823fd470d4001a16da07c4440e78e62ca3a25f588a36cbea7bd888",
+      "rawDimensions": [
+        448,
+        192
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/enemy_wraith.png",
+      "outputSha256": "a01d42cc00d6c06d901877f581d56f33df7da1434b7f5d4e95a81516e32ec3e7",
+      "outputDimensions": [
+        384,
+        128
+      ],
+      "baselinePath": "assets/baseline4x/enemy_wraith.png",
+      "baselineSha256": "e51ead7f0e08893a739be8b9073f33b8cd9656d1dbda028f9044b132d6fab683",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 18.054678098676295,
+        "visibleRgbChangedPixelCount": 12437
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "All3 floating poses, gray robe, hands and source silhouette preserved.",
+        "staticEvidence": "reports/remaster/enemy_wraith-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "eve",
+      "variant": "eve",
+      "inputPath": "assets/original/eve.png",
+      "inputSha256": "b73d7453cbb48f7d48948df7bba8a98ad8742481c97ebf910562f417bb65d581",
+      "inputDimensions": [
+        140,
+        70
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/eve.png",
+      "inferenceInputSha256": "8482a3db755130e21af90e06917974f206987d9e93053b84274851bb71e23691",
+      "rawOutputPath": "assets/ai-raw/eve-fsrcnn.png",
+      "rawOutputSha256": "10bf53022794d4ef1f253c01678450501d64aa01c46b8c746eb386971a5a2353",
+      "rawDimensions": [
+        624,
+        344
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/eve.png",
+      "outputSha256": "bd58ba16e7f0fae76ce45b275bab6ef7cffb806ff8aedf1bb13eafa29978f248",
+      "outputDimensions": [
+        560,
+        280
+      ],
+      "baselinePath": "assets/baseline4x/eve.png",
+      "baselineSha256": "f8074196f3a655aaeaae74439f2caad89cd69cf78cecccf84d2257f686759c32",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 6.681205357142857,
+        "visibleRgbChangedPixelCount": 145358
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "Blue hair, red eyes/lips, face proportions and original framing preserved.",
+        "staticEvidence": "reports/remaster/eve-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "eve_title",
+      "variant": "eve_title",
+      "inputPath": "assets/original/eve_title.png",
+      "inputSha256": "744dbc99d2ebb345eb21bc7c5b48c91c33798d4781af9e1572c669675f46ad3a",
+      "inputDimensions": [
+        176,
+        208
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/eve_title.png",
+      "inferenceInputSha256": "461a665c40305fb9c5872c0e5ef3046ccb1db1b7b31f44194331c185a693dde3",
+      "rawOutputPath": "assets/ai-raw/eve_title-fsrcnn.png",
+      "rawOutputSha256": "7e93302f29ca6f8bc8d9f5e90963a9e9f5577e64730af8f42c98fc47261ed165",
+      "rawDimensions": [
+        768,
+        896
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/eve_title.png",
+      "outputSha256": "c1a2a184af02d268babad04ee38a81d4e30469563e83e91203a5b15ba2a11e26",
+      "outputDimensions": [
+        704,
+        832
+      ],
+      "baselinePath": "assets/baseline4x/eve_title.png",
+      "baselineSha256": "bcf93bed281d6fd9aca500711f4cd0ca462a073341250aeec9aee8bc9f6c6f82",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 2.911354758522727,
+        "visibleRgbChangedPixelCount": 186408
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "Full-body blue-haired Eve and red cape retain silhouette, composition and palette.",
+        "staticEvidence": "reports/remaster/eve_title-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "eyes",
+      "variant": "eyes",
+      "inputPath": "assets/original/eyes.png",
+      "inputSha256": "f90617b0a807ea0d856e03f7bbda27fe4d59c11408f92578aea840efdd7b019a",
+      "inputDimensions": [
+        29,
+        12
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/eyes.png",
+      "inferenceInputSha256": "d92ae354b192918eeb54e053db10fdb82f03fa8508c2c897020a3ebd6da5c6a7",
+      "rawOutputPath": "assets/ai-raw/eyes-fsrcnn.png",
+      "rawOutputSha256": "4a7ee08e5bfcb84259c788e3844ba1fdebdf10767439968fbb87ee7fc14fa995",
+      "rawDimensions": [
+        180,
+        112
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/eyes.png",
+      "outputSha256": "c3dcaba82d421ca7df966d2241e230c6c90c144449dfddc9e7c92da09a968f4f",
+      "outputDimensions": [
+        116,
+        48
+      ],
+      "baselinePath": "assets/baseline4x/eyes.png",
+      "baselineSha256": "0e352edd9f65a17dd7b059b89fad8203e9a90d4db95c0624124b83706494e3d5",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 13.968091475095786,
+        "visibleRgbChangedPixelCount": 5477
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "Exact eye crop preserved; enhancement stays inside original dimensions.",
+        "staticEvidence": "reports/remaster/eyes-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "gui",
+      "variant": "gui",
+      "inputPath": "assets/original/gui.png",
+      "inputSha256": "6ca7f3030bc93e38be0c16ab3b95d0d1d7e4d8837d9ee48c70570020be01ffa2",
+      "inputDimensions": [
+        83,
+        36
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/gui.png",
+      "inferenceInputSha256": "a29c2d8cea34e1b8d9d13cd15567206c0443232946d3ee15b4220c4d19458026",
+      "rawOutputPath": "assets/ai-raw/gui-fsrcnn.png",
+      "rawOutputSha256": "77d4927d00063729a13a6887a4d28e9377f5e9fba7d0167d4a0cf7952278b45e",
+      "rawDimensions": [
+        396,
+        208
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/gui.png",
+      "outputSha256": "9501ac62d5d5768a7e178b2cbfd32a4bf81d56dc8bae348259f2311e47b1ed47",
+      "outputDimensions": [
+        332,
+        144
+      ],
+      "baselinePath": "assets/baseline4x/gui.png",
+      "baselineSha256": "97c5b4a8930c46bbcc23c089ab9603e36a8948e17b3c2392cc2a5f88dcccbaff",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 7.1280824829931975,
+        "visibleRgbChangedPixelCount": 22672
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "Health frame/orb and fang/power icons retain native clipping regions and meaning.",
+        "staticEvidence": "reports/remaster/gui-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "icon",
+      "variant": "icon",
+      "inputPath": "assets/original/icon.png",
+      "inputSha256": "ffdd597b950c0b73c1fb97d384ff2a9dee755d157bfd3840b78ed0f9af6722bd",
+      "inputDimensions": [
+        15,
+        15
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/icon.png",
+      "inferenceInputSha256": "38b3c3b6047e648543f35cbde451e3357c28b9f64f7589809e0bc8df18ea0512",
+      "rawOutputPath": "assets/ai-raw/icon-fsrcnn.png",
+      "rawOutputSha256": "c9171adc80dbd6bc5717f567365c29f0b8599f6a8fdcd9323646e021382a67b4",
+      "rawDimensions": [
+        124,
+        124
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/icon.png",
+      "outputSha256": "cefc2c25a34953bb21700a9da8ccb80d4036783d3ca4954fbf1c6d0fbd32e02e",
+      "outputDimensions": [
+        60,
+        60
+      ],
+      "baselinePath": "assets/baseline4x/icon.png",
+      "baselineSha256": "bc584cd8755a2c57044f58e166ba912f23672bcaece8a7e253d0d47767744804",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 15.566574074074074,
+        "visibleRgbChangedPixelCount": 3140
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "15x15 bat icon remains same symbol and silhouette.",
+        "staticEvidence": "reports/remaster/icon-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "jvh",
+      "variant": "jvh",
+      "inputPath": "assets/original/jvh.png",
+      "inputSha256": "08ec9e6eb1737e330448323665882d9a122204293941bc64cb8ef501ae6b947f",
+      "inputDimensions": [
+        140,
+        70
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/jvh.png",
+      "inferenceInputSha256": "0f8bd404e4d08f72d53654bacd4bb062db21e13201e2708e6afaf396feaa78f7",
+      "rawOutputPath": "assets/ai-raw/jvh-fsrcnn.png",
+      "rawOutputSha256": "14182b3e4f5dbf57d86a77c1a62f8bd65d07e0704432d0ae92f9e5e4f04cec9e",
+      "rawDimensions": [
+        624,
+        344
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/jvh.png",
+      "outputSha256": "0e551d380684e33ea9a6822fb55ae292710fcf58f73b8c8b309ed4ee4a303d45",
+      "outputDimensions": [
+        560,
+        280
+      ],
+      "baselinePath": "assets/baseline4x/jvh.png",
+      "baselineSha256": "9ab14da9c3fa008731bd9d5ffd3b0b5ec88a9d16ef8ab79bcc01a34240816cb1",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 8.092287414965986,
+        "visibleRgbChangedPixelCount": 107350
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "Blonde hair, face and expression retained; no generated replacement character.",
+        "staticEvidence": "reports/remaster/jvh-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "jvh_full",
+      "variant": "jvh_full",
+      "inputPath": "assets/original/jvh_full.png",
+      "inputSha256": "c70a22fe5aee4eb62c08ea2fa7db80281507463c7ed2409181984c68a2c4d877",
+      "inputDimensions": [
+        90,
+        176
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/jvh_full.png",
+      "inferenceInputSha256": "1daa47f38e2c2e3a75e9d890bccfee90c874cab149148e38b7b2c9bbb1ac3a7b",
+      "rawOutputPath": "assets/ai-raw/jvh_full-fsrcnn.png",
+      "rawOutputSha256": "2d6653c73c1de255182f061bb9299ad66940fbee12cee16cd118009537116669",
+      "rawDimensions": [
+        424,
+        768
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/jvh_full.png",
+      "outputSha256": "aea00b1f9b9c11067cd1fd15da0a0286a7dfbbaa1fffb00523780a0c73fa02a6",
+      "outputDimensions": [
+        360,
+        704
+      ],
+      "baselinePath": "assets/baseline4x/jvh_full.png",
+      "baselineSha256": "79cb606efe2601d1a296b7759c54324aea283b65de7e6c2b562ff1a2b5c9d87f",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 5.6443444865319865,
+        "visibleRgbChangedPixelCount": 78026
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "Full-body black outfit, sword angle/length and original framing retained.",
+        "staticEvidence": "reports/remaster/jvh_full-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "letter",
+      "variant": "letter",
+      "inputPath": "assets/original/letter.png",
+      "inputSha256": "bc49cc880a0e46c770e74d1ba74a5983d9c981f039260750d12d99a5c350b076",
+      "inputDimensions": [
+        182,
+        9
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/letter.png",
+      "inferenceInputSha256": "650b8f845754ce741dbb80e65f3e7e41be9caa41c23ef8ddf8784923d840c06d",
+      "rawOutputPath": "assets/ai-raw/letter-fsrcnn.png",
+      "rawOutputSha256": "9fd95070c41c2b67b12b088ef0e9bbe1272a2a5e0bde51ddea9a1396b1b67568",
+      "rawDimensions": [
+        792,
+        100
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/letter.png",
+      "outputSha256": "4abd7bd9f1d5523e0e586e7c02cf6309ba31905757ef3f8464a238e4e085522f",
+      "outputDimensions": [
+        728,
+        36
+      ],
+      "baselinePath": "assets/baseline4x/letter.png",
+      "baselineSha256": "f6aa4f88de2966ca07df6214aaee89804a48b6ed1685b42cc4c5aaeee1f38368",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 1.125,
+        "visibleRgbChangedPixelCount": 7164
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "All26 glyph slots preserved; source alpha fixes exact strokes; variable glyph widths/advances exported.",
+        "staticEvidence": "reports/remaster/letter-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "menu",
+      "variant": "menu",
+      "inputPath": "assets/original/menu.png",
+      "inputSha256": "2c18b5b1e47c6849e52ad2708f3df7d3faa64704e3d4fbbb67ea8c8261c1bee3",
+      "inputDimensions": [
+        40,
+        27
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/menu.png",
+      "inferenceInputSha256": "ae8b56bfe9d6a168bac40c50281b342fdeb6dd6ba655556dc776d7cf2bb2911a",
+      "rawOutputPath": "assets/ai-raw/menu-fsrcnn.png",
+      "rawOutputSha256": "729dabeac05eac01a79103a55b605a4508e77b53b3d304f9fbf9818f5d7f327b",
+      "rawDimensions": [
+        224,
+        172
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/menu.png",
+      "outputSha256": "710f7e4f166ff7d1475f06ebb05bbaf684920b934123d37f918be045778bd9ec",
+      "outputDimensions": [
+        160,
+        108
+      ],
+      "baselinePath": "assets/baseline4x/menu.png",
+      "baselineSha256": "420f50b17de76cad34fc1429d085eb1984ea4df2db351b5fda0d8c3c947e22f7",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 10.15182584269663,
+        "visibleRgbChangedPixelCount": 7031
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "Borders, marks, arrows and gradient bar retain exact source clipping regions.",
+        "staticEvidence": "reports/remaster/menu-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "ngame",
+      "variant": "ngame",
+      "inputPath": "assets/original/ngame.png",
+      "inputSha256": "747afe9800abf72ed52f503fd6a2b1b2f49e8383c52b7dac2975535c50b0757a",
+      "inputDimensions": [
+        120,
+        30
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/ngame.png",
+      "inferenceInputSha256": "373eaf6fd8a3c06d85437631491eb7450013bb7ba159b02d9c622abc8e2a3f9f",
+      "rawOutputPath": "assets/ai-raw/ngame-fsrcnn.png",
+      "rawOutputSha256": "ae8a8935d1e8e0484be115f82738d5142b30ad64b5104aeba6bfc762611fbcaf",
+      "rawDimensions": [
+        544,
+        184
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/ngame.png",
+      "outputSha256": "1fc4d58f9b38b9cfa1aec9836455a4319349e46055c9453b2f9e76026c2c61b8",
+      "outputDimensions": [
+        480,
+        120
+      ],
+      "baselinePath": "assets/baseline4x/ngame.png",
+      "baselineSha256": "6d981b8001cd94e34280c8ef1aa59bc88157b83407e1cc3dd189593e31dd1796",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 7.673582175925926,
+        "visibleRgbChangedPixelCount": 19571
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "MFORMA logo and registered mark retained; no translation or substituted text.",
+        "staticEvidence": "reports/remaster/ngame-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "player",
+      "variant": "player",
+      "inputPath": "assets/original/player.png",
+      "inputSha256": "ba4a58ba62285fd4decc3190de4d641027be0e78db86588a9e27bdcad512dcd5",
+      "inputDimensions": [
+        496,
+        64
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/player.png",
+      "inferenceInputSha256": "c440975ab68722a40ae83ad6ecb434968db1e06f6e98ede7e8234cf3a3bbfb0b",
+      "rawOutputPath": "assets/ai-raw/player-fsrcnn.png",
+      "rawOutputSha256": "411b16296cda8ff8647af6939268ab0da6a9f4b41b4b3b49bc520050ab9512f1",
+      "rawDimensions": [
+        2048,
+        320
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/player.png",
+      "outputSha256": "1538a83d56891b8340916f7b6eb310237a21a345545fcf8b4145dbdba70483b3",
+      "outputDimensions": [
+        1984,
+        256
+      ],
+      "baselinePath": "assets/baseline4x/player.png",
+      "baselineSha256": "ba441f7c41f96dacef2707c484db20386bed94acbfd6b7d80f2733c269af30d2",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 15.41966172198257,
+        "visibleRgbChangedPixelCount": 176841
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "Two human rows, bat subslots, bite/transform overlap crops and blue hair/red cape preserved; source mask prevents position/silhouette drift.",
+        "staticEvidence": "reports/remaster/player-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "special",
+      "variant": "special",
+      "inputPath": "assets/original/special.png",
+      "inputSha256": "8477f6661486c28fe4aecedcd35d3841f12435507de03d5c2fbc4cbf49553dc6",
+      "inputDimensions": [
+        280,
+        9
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/special.png",
+      "inferenceInputSha256": "ffa6b8c5865e38ba6ea609f9c55b1ddb30afa5dc7d5af830ad8b26c34843257d",
+      "rawOutputPath": "assets/ai-raw/special-fsrcnn.png",
+      "rawOutputSha256": "41dcab233cd79cd125afcd1b0b60f3b5981d69e8abdd617004c4a0b85d638570",
+      "rawDimensions": [
+        1184,
+        100
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/special.png",
+      "outputSha256": "a27ba46d39f4f4bd71778a6873f6675e5844779a62c689337c5d84d50b73fa76",
+      "outputDimensions": [
+        1120,
+        36
+      ],
+      "baselinePath": "assets/baseline4x/special.png",
+      "baselineSha256": "e323aef684ad1f5903df9b2db1014260f320a6cfbff35db71cee77c6db89e8c4",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 1.125,
+        "visibleRgbChangedPixelCount": 6840
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "All40 seven-pixel slots retained,36 source width records and7 accent overlay crops exported; original glyph shapes retained.",
+        "staticEvidence": "reports/remaster/special-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "stuff",
+      "variant": "stuff",
+      "inputPath": "assets/original/stuff.png",
+      "inputSha256": "aab8fd1d593a4787196031d31c1431192a3d8e3b8f449b2056478ee006275763",
+      "inputDimensions": [
+        64,
+        104
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/stuff.png",
+      "inferenceInputSha256": "1e325ac35c1105b865fba594b09cb97f6817315153027a3f82f06215802cd1dd",
+      "rawOutputPath": "assets/ai-raw/stuff-fsrcnn.png",
+      "rawOutputSha256": "1a6015b1ba06c51023fa4fcd424460953713318bd7894aafa43e916118aa2484",
+      "rawDimensions": [
+        320,
+        480
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/stuff.png",
+      "outputSha256": "d7b056363655f2a90fa6993687a5e9487d512c8967734819cc3793d3ef5e82c3",
+      "outputDimensions": [
+        256,
+        416
+      ],
+      "baselinePath": "assets/baseline4x/stuff.png",
+      "baselineSha256": "3b1e9b5fd18d064be86c45784353c4e0ee815b255420f8c0e90a9d7b6db83874",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 12.187727203877612,
+        "visibleRgbChangedPixelCount": 48378
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "Pickups, projectiles, slash surfaces and column fragment retained; complete playback and TTL clipping fixture inspected.",
+        "staticEvidence": "reports/remaster/stuff-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "sword",
+      "variant": "sword",
+      "inputPath": "assets/original/sword.png",
+      "inputSha256": "7fa98444dbc7005d4be487f8284edf000cfc77de407364dc7f2341a3e2c479ac",
+      "inputDimensions": [
+        96,
+        32
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/sword.png",
+      "inferenceInputSha256": "b8c3b163d878a9563aa16039e76d557598ec50cafaa3c721430c96658548b2ab",
+      "rawOutputPath": "assets/ai-raw/sword-fsrcnn.png",
+      "rawOutputSha256": "cee6de3cdec9a39def9514ba1be70cba3599a7e738aaa102c30d8a09cc10b8e8",
+      "rawDimensions": [
+        448,
+        192
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/sword.png",
+      "outputSha256": "7baebc1d9f48b03eed664499ae833173efe0f3cdb5a0d7fadc1b7f31f37d3fb9",
+      "outputDimensions": [
+        384,
+        128
+      ],
+      "baselinePath": "assets/baseline4x/sword.png",
+      "baselineSha256": "fd7455ca8c88601927415868cbae84ec6101d621e0c3f9ccb6741ca206e1b871",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 11.019041218637993,
+        "visibleRgbChangedPixelCount": 2801
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "All3 sword orientations retain exact silhouettes/lengths and original per-stage attachment offsets.",
+        "staticEvidence": "reports/remaster/sword-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "tiles1",
+      "variant": "tiles1",
+      "inputPath": "assets/original/tiles1.png",
+      "inputSha256": "c7248861f39f564472581ef34543a82f9192db75d498673fb2afc5104465fa6a",
+      "inputDimensions": [
+        160,
+        16
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1,
+        "perTile": true,
+        "passes": 10
+      },
+      "preprocessing": [
+        "split source into fixed16x16 tile slots",
+        "8 source pixels of independently wrapped context for each tile; no unrelated atlas neighbor may influence an edge",
+        "same model and processing for every tile"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/tiles1-tile-montage.png",
+      "inferenceInputSha256": "d23b87a1ece4c0e05543f36dbee0c2da6fb1587a47cdcd335ec4f52d38342110",
+      "inferenceInputKind": "diagnostic montage; actual separately inferred inputs are in tilePasses",
+      "rawOutputPath": "assets/ai-raw/tiles1-tile-montage.png",
+      "rawOutputSha256": "268dc67a8ffd3b33afebb07d1078a2dce00f21f0d73a0b8c7b8720b3ea2de9c0",
+      "rawDimensions": [
+        1280,
+        128
+      ],
+      "rawOutputKind": "diagnostic montage of untouched raw tiles; actual raw model results are in tilePasses",
+      "tilePasses": [
+        {
+          "tile": 0,
+          "sourceRect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles1/tile-00.png",
+          "inputSha256": "d707272e56c2d6d5468825384416b576eb46111b7c044e30674d53f1bdcb5ce8",
+          "rawPath": "assets/ai-raw/tiles1/tile-00.png",
+          "rawSha256": "42da0240794b2885240a1021d27284b5f490a3180bb949b07f7989c43259f640",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            0,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 1,
+          "sourceRect": [
+            16,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles1/tile-01.png",
+          "inputSha256": "e92e57f77ecaac673773ecbd55d74fe575a9eb9346419673a8d880fa4643dbb3",
+          "rawPath": "assets/ai-raw/tiles1/tile-01.png",
+          "rawSha256": "80261010f6100c0a14d6f5ddd73f4fb590d2c5190407cba801b65b75d3f57e63",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            64,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 2,
+          "sourceRect": [
+            32,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles1/tile-02.png",
+          "inputSha256": "09fc86590272cf8670b390c1e15a8c6db27c96451410b6f6a11d9eda380d3c3b",
+          "rawPath": "assets/ai-raw/tiles1/tile-02.png",
+          "rawSha256": "79f4a89e391499f5f9354ba67a5313a061d8007c94d9cd5857f7a47a7e4f22db",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            128,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 3,
+          "sourceRect": [
+            48,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles1/tile-03.png",
+          "inputSha256": "a53ceccd11c68fae1b93e6a6fd8b391c903be47f8cdcb4557aee337e0a22ba1e",
+          "rawPath": "assets/ai-raw/tiles1/tile-03.png",
+          "rawSha256": "bdb18e77f8847e3556951ac96f2e995aafbaca496ddded012a493fc513d6baf3",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            192,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 4,
+          "sourceRect": [
+            64,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles1/tile-04.png",
+          "inputSha256": "fe38f50d946bac8d1f5ee97ed29261835b069654e46d3f03057fcac03f5da7f7",
+          "rawPath": "assets/ai-raw/tiles1/tile-04.png",
+          "rawSha256": "80e0fd9dcc9ecd1a3c9d01347772ca9f6de75d07e564aa109aa2cf536fd12184",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            256,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 5,
+          "sourceRect": [
+            80,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles1/tile-05.png",
+          "inputSha256": "8c0befa0d9a05acd35621f165976bad7a0a1c7d543899a8883d0c744f1b13074",
+          "rawPath": "assets/ai-raw/tiles1/tile-05.png",
+          "rawSha256": "b510d41e999167c02d0bade6d70fa3e5fa114bbba8cf90a2f2164995aac9cc0e",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            320,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 6,
+          "sourceRect": [
+            96,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles1/tile-06.png",
+          "inputSha256": "19154a7de8acc22155fedc0fb2fd92ae28fb1cc978d9420ed706a58b88ee9b60",
+          "rawPath": "assets/ai-raw/tiles1/tile-06.png",
+          "rawSha256": "15de33f6d92f52651b3f91b1d176514682f1d1808ba5ea67a7d74ff7c2d888b1",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            384,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 7,
+          "sourceRect": [
+            112,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles1/tile-07.png",
+          "inputSha256": "dc35f851977c9fd03ca63cd8954823a074d2ecefbbefbbe9642562bd94788d42",
+          "rawPath": "assets/ai-raw/tiles1/tile-07.png",
+          "rawSha256": "6a277529de45fcf7c21d08d1fc3a6eef04fc10b5ba4a7e35b46eeba7c7d7469c",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            448,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 8,
+          "sourceRect": [
+            128,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles1/tile-08.png",
+          "inputSha256": "a776c92d7f06425f9652c9dedf3b73e4ad2aa21b0a979454e59895c9dbc43ab3",
+          "rawPath": "assets/ai-raw/tiles1/tile-08.png",
+          "rawSha256": "15136a876b15f0e20a4e9da9298b1e679d3ef3456baaebc34d60513c9111f90e",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            512,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 9,
+          "sourceRect": [
+            144,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles1/tile-09.png",
+          "inputSha256": "c197a9d591c96696300bb4490878bc899965282a5bf5b61d91f6924794578ff1",
+          "rawPath": "assets/ai-raw/tiles1/tile-09.png",
+          "rawSha256": "57c06eda71150f33eaf3700ee0de635e5d91c3e3a44230b0d071e108a0b82c12",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            576,
+            0,
+            64,
+            64
+          ]
+        }
+      ],
+      "normalization": [
+        "crop32 pixels context from each128x128 raw neural output",
+        "paste64x64 central neural tile back into its original4x slot",
+        "restore source alpha4x nearest-neighbor; no RGB baseline blend"
+      ],
+      "outputPath": "assets/remastered4x/tiles1.png",
+      "outputSha256": "2265ad592658802a404396a5ee05a5eea5e190f94c2db788f5e63b64bdb2e696",
+      "outputDimensions": [
+        640,
+        64
+      ],
+      "baselinePath": "assets/baseline4x/tiles1.png",
+      "baselineSha256": "41a3473fdc781f90ec0e6db35aabb102a2b1313460930c872ccd1ce309929fda",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 8.547745768229166,
+        "visibleRgbChangedPixelCount": 40002
+      },
+      "status": "approved",
+      "review": {
+        "decision": "approved",
+        "reviewedAt": "2026-10-26T20:20:54.446156+00:00",
+        "notes": "Reprocessed each source tile with its own8px wrapped context; prior whole-atlas candidate rejected for dark grid. Live initial scene compared to original after reload; wall/water artificial grid gone. Geometry and source alpha unchanged.",
+        "evidence": [
+          "reports/browser/ai-seams-before.png",
+          "reports/browser/ai-seams-after.png",
+          "reports/browser/ai-seams-original-reference.png",
+          "reports/remaster-seam-regression.json"
+        ],
+        "scope": "asset review plus live first-stage repeated wall/water check; whole-campaign verification separate"
+      },
+      "supersedes": "reports/remaster/tiles1-atlas-rejected.json"
+    },
+    {
+      "id": "tiles2",
+      "variant": "tiles2",
+      "inputPath": "assets/original/tiles2.png",
+      "inputSha256": "a6f8aec892cb343fd70a0e725ef26def8106134b7f35fa90896c2d543a60c380",
+      "inputDimensions": [
+        160,
+        16
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1,
+        "perTile": true,
+        "passes": 10
+      },
+      "preprocessing": [
+        "split source into fixed16x16 tile slots",
+        "8 source pixels of independently wrapped context for each tile; no unrelated atlas neighbor may influence an edge",
+        "same model and processing for every tile"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/tiles2-tile-montage.png",
+      "inferenceInputSha256": "a42e0082c9956e5f441f420ca4eb15b745c3ad6ec073983edac88387952884b8",
+      "inferenceInputKind": "diagnostic montage; actual separately inferred inputs are in tilePasses",
+      "rawOutputPath": "assets/ai-raw/tiles2-tile-montage.png",
+      "rawOutputSha256": "0faeddd77ebdde83a47370a052cd2147cbbe9fcb3c8d300cd0a1d440108782c9",
+      "rawDimensions": [
+        1280,
+        128
+      ],
+      "rawOutputKind": "diagnostic montage of untouched raw tiles; actual raw model results are in tilePasses",
+      "tilePasses": [
+        {
+          "tile": 0,
+          "sourceRect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles2/tile-00.png",
+          "inputSha256": "b7266d231f837493d7e2dc039424f8ebf8aea6f05e7b3ed740fa0c1ba8b4df1b",
+          "rawPath": "assets/ai-raw/tiles2/tile-00.png",
+          "rawSha256": "81c71a9d130843e4d8e1e97b58c77840f5b513a0ce3c74788cdf4de721ef8846",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            0,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 1,
+          "sourceRect": [
+            16,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles2/tile-01.png",
+          "inputSha256": "ed3e212b2e8a1f662e85406e80c5566512b38e0c8d0f6aa200c36ffc57290f83",
+          "rawPath": "assets/ai-raw/tiles2/tile-01.png",
+          "rawSha256": "c5c03efe7b19f83c0f66c194d8bf86e982d92e45316e53e2aa821ecc4fc6dbc0",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            64,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 2,
+          "sourceRect": [
+            32,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles2/tile-02.png",
+          "inputSha256": "de02d420c38347b91c894d93577f4ce9de7dc8caee260ba84d54d7df5f666d91",
+          "rawPath": "assets/ai-raw/tiles2/tile-02.png",
+          "rawSha256": "116512708ce4888ad5d64521e139bb30f26ada7919b7d98e8b5cd87df757963b",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            128,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 3,
+          "sourceRect": [
+            48,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles2/tile-03.png",
+          "inputSha256": "88b9017c00e95bdcae8552a10e9f4d7f5c838294e3939da6ce4bd87009918be7",
+          "rawPath": "assets/ai-raw/tiles2/tile-03.png",
+          "rawSha256": "69c6df5bd5686ee6f05f9234ed13ed33a6d51e5f83259b4767c594ac1951adfb",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            192,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 4,
+          "sourceRect": [
+            64,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles2/tile-04.png",
+          "inputSha256": "9828e59a9596e1fc342f01b5c5c126357d07bd3d1fe2316d1b513b76bb1668dd",
+          "rawPath": "assets/ai-raw/tiles2/tile-04.png",
+          "rawSha256": "1bc0678efceb5e3493281a058ef9d27223888c3266c742241c7ea75aeaeda022",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            256,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 5,
+          "sourceRect": [
+            80,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles2/tile-05.png",
+          "inputSha256": "809c68094f415e4e879a1ebbada3b60a039e2a4248ee76d2dbd8c56627c5e176",
+          "rawPath": "assets/ai-raw/tiles2/tile-05.png",
+          "rawSha256": "b031d5d63392c6c1727afecba6160bad1cfeb9a85822d8689df75325eec0544e",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            320,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 6,
+          "sourceRect": [
+            96,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles2/tile-06.png",
+          "inputSha256": "7665c4d7b54b952171925686c542c453f5197f856f088abf9cc6a83818ba892c",
+          "rawPath": "assets/ai-raw/tiles2/tile-06.png",
+          "rawSha256": "895b9f49b178e7e5490fe76f8312b9dbcdc347fe249996e60efd3f36042dba20",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            384,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 7,
+          "sourceRect": [
+            112,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles2/tile-07.png",
+          "inputSha256": "48c92662fbd1ad916ddbc91713c47f930c634a7f9d37421e750d3b503f2306d3",
+          "rawPath": "assets/ai-raw/tiles2/tile-07.png",
+          "rawSha256": "29a58100bc2a7384b4d6d856f86a4edf46637c15feaf2f6b002e559c6f309c0b",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            448,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 8,
+          "sourceRect": [
+            128,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles2/tile-08.png",
+          "inputSha256": "319d28688e7c737bf12301745b9efcbbdf1a92a971d0e1ac6c44fa2a5faf78c6",
+          "rawPath": "assets/ai-raw/tiles2/tile-08.png",
+          "rawSha256": "210bbcd80c361d0c09ca53ea46a8146b512195160f63837475d4f60721090e32",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            512,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 9,
+          "sourceRect": [
+            144,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles2/tile-09.png",
+          "inputSha256": "9ebf58d7d3d0b13df43c5323f320b94265837313158faa2783e5e43dedfaeb9a",
+          "rawPath": "assets/ai-raw/tiles2/tile-09.png",
+          "rawSha256": "7ec5fdddf9bb4e57c0eb6144523eefd70677b6033ab2b79f6e70f4be831fce15",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            576,
+            0,
+            64,
+            64
+          ]
+        }
+      ],
+      "normalization": [
+        "crop32 pixels context from each128x128 raw neural output",
+        "paste64x64 central neural tile back into its original4x slot",
+        "restore source alpha4x nearest-neighbor; no RGB baseline blend"
+      ],
+      "outputPath": "assets/remastered4x/tiles2.png",
+      "outputSha256": "9cea6f8b133c60b0b177774e39a04a3a54abdc057fc3f8c7da9ee36dacf9c8ce",
+      "outputDimensions": [
+        640,
+        64
+      ],
+      "baselinePath": "assets/baseline4x/tiles2.png",
+      "baselineSha256": "84d013bf5fe70064b525ded21db7aea357ccdde4225e1d7a7a1cfa882147dfdd",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 11.320084635416666,
+        "visibleRgbChangedPixelCount": 37087
+      },
+      "status": "approved",
+      "review": {
+        "decision": "approved",
+        "reviewedAt": "2026-10-26T20:20:54.446156+00:00",
+        "notes": "Reprocessed each source tile with its own8px wrapped context; prior whole-atlas candidate rejected for dark grid. Live initial scene compared to original after reload; wall/water artificial grid gone. Geometry and source alpha unchanged.",
+        "evidence": [
+          "reports/browser/ai-seams-before.png",
+          "reports/browser/ai-seams-after.png",
+          "reports/browser/ai-seams-original-reference.png",
+          "reports/remaster-seam-regression.json"
+        ],
+        "scope": "asset review plus live first-stage repeated wall/water check; whole-campaign verification separate"
+      },
+      "supersedes": "reports/remaster/tiles2-atlas-rejected.json"
+    },
+    {
+      "id": "tiles3",
+      "variant": "tiles3",
+      "inputPath": "assets/original/tiles3.png",
+      "inputSha256": "a2e1f7d2c1692eb22d1be1d1cfef8f699e3996ce872ed78d0dd6fdac37d49cc3",
+      "inputDimensions": [
+        160,
+        16
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1,
+        "perTile": true,
+        "passes": 10
+      },
+      "preprocessing": [
+        "split source into fixed16x16 tile slots",
+        "8 source pixels of independently wrapped context for each tile; no unrelated atlas neighbor may influence an edge",
+        "same model and processing for every tile"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/tiles3-tile-montage.png",
+      "inferenceInputSha256": "ffe39f21aa0e956cf9a025232482c7c97f1d67b7633c5050bc230b873696926a",
+      "inferenceInputKind": "diagnostic montage; actual separately inferred inputs are in tilePasses",
+      "rawOutputPath": "assets/ai-raw/tiles3-tile-montage.png",
+      "rawOutputSha256": "87e2b2aa41349f62ba196756fa72d3e815b0c5a7b5058a43413bff0fa5d0b0f9",
+      "rawDimensions": [
+        1280,
+        128
+      ],
+      "rawOutputKind": "diagnostic montage of untouched raw tiles; actual raw model results are in tilePasses",
+      "tilePasses": [
+        {
+          "tile": 0,
+          "sourceRect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles3/tile-00.png",
+          "inputSha256": "682b1524c6d456c62cccacd0295e745b3de6000f5bb37819dc1dde571eeef811",
+          "rawPath": "assets/ai-raw/tiles3/tile-00.png",
+          "rawSha256": "ca5c5b7d63dbd1218a7c9d9d7b46fda447cb4eaf2cfcc1a30498c72f28dc4233",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            0,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 1,
+          "sourceRect": [
+            16,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles3/tile-01.png",
+          "inputSha256": "8b441a2a54551b1d4f8136ff0d00a4a6ed4d56956e20e63c265deb075f9ee08b",
+          "rawPath": "assets/ai-raw/tiles3/tile-01.png",
+          "rawSha256": "cb308c4b1d8b06b46f55af24eb7bd68a43e3534bea0dec51544266ce6b2e018c",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            64,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 2,
+          "sourceRect": [
+            32,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles3/tile-02.png",
+          "inputSha256": "6b0bc0ec8411fdaa65464cb6c22ee00aab778ba3055b6dd206785a055d5e865a",
+          "rawPath": "assets/ai-raw/tiles3/tile-02.png",
+          "rawSha256": "dfb9e5da18a34fc949642265634726e8f7efc9e6bcfc9dd3b9b42d932890caa8",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            128,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 3,
+          "sourceRect": [
+            48,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles3/tile-03.png",
+          "inputSha256": "83661f320f8542560b2100e2011637ff46c96134f36bfa8b61badbb9c514987d",
+          "rawPath": "assets/ai-raw/tiles3/tile-03.png",
+          "rawSha256": "75a541c5179232a5a2ba20bd7adca2cef053af3242170328baaa191cca30c922",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            192,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 4,
+          "sourceRect": [
+            64,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles3/tile-04.png",
+          "inputSha256": "fae8bd09cbc15edaec9fd4d70d62e6f82741ddf8fb0528357e9d9d051684ec0f",
+          "rawPath": "assets/ai-raw/tiles3/tile-04.png",
+          "rawSha256": "f8a8466335266ebdeb68fc8747de690508a58f4e591e6b34a182653f3ba34144",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            256,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 5,
+          "sourceRect": [
+            80,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles3/tile-05.png",
+          "inputSha256": "4e9e04689708c2a99cf259a4fc1cbc92464103d69700c22a7157a07f3188d7cf",
+          "rawPath": "assets/ai-raw/tiles3/tile-05.png",
+          "rawSha256": "c5974c8a3abed32c75696e990a65074836ab63dd91505e43f2ed23bcff684033",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            320,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 6,
+          "sourceRect": [
+            96,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles3/tile-06.png",
+          "inputSha256": "b73300b6f9a5b0c4f8c3052ef11a8d9a05b2f21ddbe9cc94b1c490e6d5b6b524",
+          "rawPath": "assets/ai-raw/tiles3/tile-06.png",
+          "rawSha256": "d66545c1fbc4f4b526eba6dc11471a764d957fa0ed6b3ef5226f3593cf182c43",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            384,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 7,
+          "sourceRect": [
+            112,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles3/tile-07.png",
+          "inputSha256": "2d86548eaed2631d80bd67182a0a2c91dd67617fd3a52ec475d3a71e990d2a05",
+          "rawPath": "assets/ai-raw/tiles3/tile-07.png",
+          "rawSha256": "7bbd3861ede699a9af4b5237207307f8011cb722333b58107e188a57b1eca73c",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            448,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 8,
+          "sourceRect": [
+            128,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles3/tile-08.png",
+          "inputSha256": "004dea9cb54025914bd53b7caeabc3ed1a62348e15758f4797084b1c46a07314",
+          "rawPath": "assets/ai-raw/tiles3/tile-08.png",
+          "rawSha256": "0bea6b56a5d38e2f0a0e39e9f88064bbe2584d08a4bf6f5c5a5397d68b85449b",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            512,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 9,
+          "sourceRect": [
+            144,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles3/tile-09.png",
+          "inputSha256": "37e992229cb4f2099639ee1fbd75b70cd4ade17f186ccd5a1378e04b592cd0ef",
+          "rawPath": "assets/ai-raw/tiles3/tile-09.png",
+          "rawSha256": "93a02dd32f73969f81629dea25457909d144acb3b387660d89ad5a6917b15c60",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            576,
+            0,
+            64,
+            64
+          ]
+        }
+      ],
+      "normalization": [
+        "crop32 pixels context from each128x128 raw neural output",
+        "paste64x64 central neural tile back into its original4x slot",
+        "restore source alpha4x nearest-neighbor; no RGB baseline blend"
+      ],
+      "outputPath": "assets/remastered4x/tiles3.png",
+      "outputSha256": "7f13c5d7af3209868b33c52f58c025eeb265ddb228990f90753a9975c0edf496",
+      "outputDimensions": [
+        640,
+        64
+      ],
+      "baselinePath": "assets/baseline4x/tiles3.png",
+      "baselineSha256": "ac917c129712171e98ace91b6922a73b4e8d2c8d51414ad91bcd9fc1e0acb0dc",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 12.133846028645833,
+        "visibleRgbChangedPixelCount": 39533
+      },
+      "status": "approved",
+      "review": {
+        "decision": "approved",
+        "reviewedAt": "2026-10-26T20:20:54.446156+00:00",
+        "notes": "Reprocessed each source tile with its own8px wrapped context; prior whole-atlas candidate rejected for dark grid. Live initial scene compared to original after reload; wall/water artificial grid gone. Geometry and source alpha unchanged.",
+        "evidence": [
+          "reports/browser/ai-seams-before.png",
+          "reports/browser/ai-seams-after.png",
+          "reports/browser/ai-seams-original-reference.png",
+          "reports/remaster-seam-regression.json"
+        ],
+        "scope": "asset review plus live first-stage repeated wall/water check; whole-campaign verification separate"
+      },
+      "supersedes": "reports/remaster/tiles3-atlas-rejected.json"
+    },
+    {
+      "id": "tiles4",
+      "variant": "tiles4",
+      "inputPath": "assets/original/tiles4.png",
+      "inputSha256": "0b0ec4e919bbd99c9c1ef533dd0b3e7d55d0199db6647c0180c4f737e4fc4553",
+      "inputDimensions": [
+        128,
+        16
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1,
+        "perTile": true,
+        "passes": 8
+      },
+      "preprocessing": [
+        "split source into fixed16x16 tile slots",
+        "8 source pixels of independently wrapped context for each tile; no unrelated atlas neighbor may influence an edge",
+        "same model and processing for every tile"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/tiles4-tile-montage.png",
+      "inferenceInputSha256": "ed2771a0cfae96ae49f4e2c19ce3da18b39f5e03c0c266e83ba4ba502f7fa510",
+      "inferenceInputKind": "diagnostic montage; actual separately inferred inputs are in tilePasses",
+      "rawOutputPath": "assets/ai-raw/tiles4-tile-montage.png",
+      "rawOutputSha256": "6cfc72006c9da767fe6963423d4253abb0fc7d430eab2d998e6832a7ab27511d",
+      "rawDimensions": [
+        1024,
+        128
+      ],
+      "rawOutputKind": "diagnostic montage of untouched raw tiles; actual raw model results are in tilePasses",
+      "tilePasses": [
+        {
+          "tile": 0,
+          "sourceRect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles4/tile-00.png",
+          "inputSha256": "c8756ea6d59f172bc30d58fb4355247b914092e8e0d51c64631b622a8a3df106",
+          "rawPath": "assets/ai-raw/tiles4/tile-00.png",
+          "rawSha256": "7e17d27fb2f3d2d92a83dae72d2491e3f51ff41395efee3cfac7e229a39ebef6",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            0,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 1,
+          "sourceRect": [
+            16,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles4/tile-01.png",
+          "inputSha256": "f1f47dac22506e6bb112e98afe908fa015a045d1642ef715864f71ea0e0fdf65",
+          "rawPath": "assets/ai-raw/tiles4/tile-01.png",
+          "rawSha256": "9071833448c3af09c9c06f35bf6eb689d92177ae3c19118a9d9256bc19710f10",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            64,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 2,
+          "sourceRect": [
+            32,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles4/tile-02.png",
+          "inputSha256": "8085e5154f6c0ec7cf225f3d6fae4c0f77d48c65571c07c8afd9c26a442276ea",
+          "rawPath": "assets/ai-raw/tiles4/tile-02.png",
+          "rawSha256": "0e023bb46a10e8b7636232c808cd6391654de3d446e7c076c3395e4ec4873b8b",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            128,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 3,
+          "sourceRect": [
+            48,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles4/tile-03.png",
+          "inputSha256": "55e6cab2006b23c07577c967b6af6750202b4008e13abcfc7016c795abd937e0",
+          "rawPath": "assets/ai-raw/tiles4/tile-03.png",
+          "rawSha256": "1235453ecb968dae4c09276f954b45140619217017f4c2122339082bb745b657",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            192,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 4,
+          "sourceRect": [
+            64,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles4/tile-04.png",
+          "inputSha256": "0edb4f1298c7e12f0100ad389e1790dfd648d08d9e91fec0783e32f875f0d4bc",
+          "rawPath": "assets/ai-raw/tiles4/tile-04.png",
+          "rawSha256": "20834fc5156ee1b0538d4fdf5c335f7b80e9a3255a46585a6208d4836be4c082",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            256,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 5,
+          "sourceRect": [
+            80,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles4/tile-05.png",
+          "inputSha256": "c79cb5c564b7231bf309df8ad3596fb3330ca60fd6a0d3d4c2dca0521e20498d",
+          "rawPath": "assets/ai-raw/tiles4/tile-05.png",
+          "rawSha256": "95a2390e933433cf164140a5186365b082cf7f49b1ab1f3ecfaf57cc8fff4d2a",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            320,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 6,
+          "sourceRect": [
+            96,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles4/tile-06.png",
+          "inputSha256": "5ea532b71f49bef71d9046ba3418f1f34e1f7f44768a13637581092a833d0c27",
+          "rawPath": "assets/ai-raw/tiles4/tile-06.png",
+          "rawSha256": "3e5e81a953fa0f062eecb1d23bab7a2978ff714e25b1c779503fb85e6fdb8d64",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            384,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "tile": 7,
+          "sourceRect": [
+            112,
+            0,
+            16,
+            16
+          ],
+          "inputPath": "assets/ai-inputs/tiles4/tile-07.png",
+          "inputSha256": "29d3bf2c78776ef6a3102d7d9fcb9d22ccaf1af2279b1ebef879b2f02f977310",
+          "rawPath": "assets/ai-raw/tiles4/tile-07.png",
+          "rawSha256": "fc15553cd65dc46fbc9badb7b636f34ed8c04fb96442057f6be7ce1297ca04f2",
+          "rawDimensions": [
+            128,
+            128
+          ],
+          "normalizationCrop": [
+            32,
+            32,
+            64,
+            64
+          ],
+          "destinationRect": [
+            448,
+            0,
+            64,
+            64
+          ]
+        }
+      ],
+      "normalization": [
+        "crop32 pixels context from each128x128 raw neural output",
+        "paste64x64 central neural tile back into its original4x slot",
+        "restore source alpha4x nearest-neighbor; no RGB baseline blend"
+      ],
+      "outputPath": "assets/remastered4x/tiles4.png",
+      "outputSha256": "22302d7db21a958d57a9c09767ed9b817f355d3a2fa7e4a0ab48b97672926b36",
+      "outputDimensions": [
+        512,
+        64
+      ],
+      "baselinePath": "assets/baseline4x/tiles4.png",
+      "baselineSha256": "44a3feb2b0362c644b275d88faeef1b7f10059bb5a70ac1590a954cbcbae07a0",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 12.9195556640625,
+        "visibleRgbChangedPixelCount": 31596
+      },
+      "status": "approved",
+      "review": {
+        "decision": "approved",
+        "reviewedAt": "2026-10-26T20:20:54.446156+00:00",
+        "notes": "Reprocessed each source tile with its own8px wrapped context; prior whole-atlas candidate rejected for dark grid. Live initial scene compared to original after reload; wall/water artificial grid gone. Geometry and source alpha unchanged.",
+        "evidence": [
+          "reports/browser/ai-seams-before.png",
+          "reports/browser/ai-seams-after.png",
+          "reports/browser/ai-seams-original-reference.png",
+          "reports/remaster-seam-regression.json"
+        ],
+        "scope": "asset review plus live first-stage repeated wall/water check; whole-campaign verification separate"
+      },
+      "supersedes": "reports/remaster/tiles4-atlas-rejected.json"
+    },
+    {
+      "id": "title",
+      "variant": "title",
+      "inputPath": "assets/original/title.png",
+      "inputSha256": "c6a67c3da3005ac6ee62b567a1142d2a1013bde463511962db8be416984f4cc9",
+      "inputDimensions": [
+        111,
+        33
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/title.png",
+      "inferenceInputSha256": "db0cfe65db03c849500918e8f7bebf2f9d19b05a9f07a7446aa016af22f7891c",
+      "rawOutputPath": "assets/ai-raw/title-fsrcnn.png",
+      "rawOutputSha256": "90affc295b6cb444299aacaa0cdf0c3f4350239d9ac98d1477f951c01b7911b3",
+      "rawDimensions": [
+        508,
+        196
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/title.png",
+      "outputSha256": "5923c1378bc896fb72fdd3a7b383fd5ff498911aa9dd2b13c3cf971613b3c2db",
+      "outputDimensions": [
+        444,
+        132
+      ],
+      "baselinePath": "assets/baseline4x/title.png",
+      "baselineSha256": "4b06a344aa1dda7f2e6acc38fa17f2622a616bd123cbb1b234918218b9d518bb",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 13.681899298916507,
+        "visibleRgbChangedPixelCount": 37267
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "VAMPIRE BLOODLINE wording, turquoise/red colors and logo geometry preserved.",
+        "staticEvidence": "reports/remaster/title-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    },
+    {
+      "id": "background",
+      "variant": "background-en",
+      "inputPath": "web/assets/original/background.png",
+      "inputSha256": "c0b396c6917415df7678e30e7ef1095de8dad5dae542e3021a5a05c48dd80012",
+      "inputDimensions": [
+        176,
+        208
+      ],
+      "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+      "toolVersion": "4.13.0",
+      "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+      "modelVersion": null,
+      "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+      "modelPath": "tools/models/FSRCNN_x4.pb",
+      "prompt": null,
+      "seed": null,
+      "parameters": {
+        "algorithm": "fsrcnn",
+        "scale": 4,
+        "backend": "OpenCV DNN CPU",
+        "threads": 1
+      },
+      "preprocessing": [
+        "RGBA conversion respecting palette transparency",
+        "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+        "8 source pixels replicate padding; complete atlas processed in one inference"
+      ],
+      "inferenceInputPath": "assets/ai-inputs/background-en.png",
+      "inferenceInputSha256": "4ad54ce7bfde2ecabc8f4b8ed531f5785954331cca46f0e766c16d6d72a810d5",
+      "rawOutputPath": "assets/ai-raw/background-en-fsrcnn.png",
+      "rawOutputSha256": "4292bebd54a3345139092b6d1f012b4e559199c14b9b7d679798e0ab98aa6e3a",
+      "rawDimensions": [
+        768,
+        896
+      ],
+      "normalization": [
+        "remove uniform 32 output pixels of inference context on each side",
+        "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+      ],
+      "outputPath": "assets/remastered4x/background-en.png",
+      "outputSha256": "83998a3c3d49333b41f2bc875b4c8a9de6874070174c83f7e1bff1d3504a3a69",
+      "outputDimensions": [
+        704,
+        832
+      ],
+      "baselinePath": "assets/baseline4x/background-en.png",
+      "baselineSha256": "05035180f401ea3aa35f544b5210ef98decfe786f9d2101e3bff28fd076ea94b",
+      "checks": {
+        "exact4x": true,
+        "alphaMatchesSource4x": true,
+        "visibleRgbMeanAbsoluteDifferenceFromNearest": 0.7148949683129371,
+        "visibleRgbChangedPixelCount": 213496
+      },
+      "status": "approved",
+      "review": {
+        "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+        "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+        "decision": "approved",
+        "notes": "Castle silhouette and dark red palette retained; English canonical runtime variant separately inferred and reviewed.",
+        "staticEvidence": "reports/remaster/background-comparison.png",
+        "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+        "knownLimitations": [
+          "FSRCNN smooths some source dithering and may produce mild local ringing",
+          "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+          "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+        ]
+      }
+    }
+  ],
+  "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+  "allNeuralOutputsApprovedAtAssetLevel": true,
+  "actualAcceptedInferencePasses": 60
+}

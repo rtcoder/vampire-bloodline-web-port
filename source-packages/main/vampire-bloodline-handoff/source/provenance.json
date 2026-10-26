@@ -1,0 +1,78 @@
+{
+  "game": "Vampire Bloodline",
+  "requested_listing_url": "https://www.mobiles24.co/downloads/s/88623-109-vampire_bloodline_176x208",
+  "requested_listing_screen": "176x208",
+  "requested_listing_size_displayed": "157 KB",
+  "retrieved_at_utc": "2026-10-26T08:22:30.875535+00:00",
+  "acquisition_status": "downloaded_from_independent_public_archive",
+  "source_listing_url": "https://archive.org/details/1000_J2ME_Games_Pack",
+  "source_archive_url": "https://archive.org/download/1000_J2ME_Games_Pack/1000JavaGames.zip",
+  "source_member": "828 Java Games/VampireBloodline.jar",
+  "download_url": "https://archive.org/download/1000_J2ME_Games_Pack/1000JavaGames.zip/828%20Java%20Games%2FVampireBloodline.jar",
+  "local_filename": "vampire-bloodline-176x208.jar",
+  "size_bytes": 160575,
+  "sha256": "ebe705c790f989af9b81c698b2f794fdac88266e75a6b704b9fbcbe94f631ab8",
+  "original_bytes_preserved": true,
+  "archive_entry_count": 61,
+  "file_count": 60,
+  "class_count": 6,
+  "png_count": 25,
+  "wav_count": 13,
+  "map_resources": [
+    "m33",
+    "m32",
+    "m31",
+    "m23",
+    "m22",
+    "m53",
+    "m21",
+    "m52",
+    "m51",
+    "m13",
+    "m12",
+    "m43",
+    "m11",
+    "m42",
+    "m41"
+  ],
+  "manifest": {
+    "Manifest-Version": "1.0",
+    "MicroEdition-Configuration": "CLDC-1.0",
+    "MIDlet-Data-Size": "256",
+    "MIDlet-Version": "1.0.0",
+    "Created-By": "1.4.1_02 (Sun Microsystems Inc.)",
+    "MIDlet-Vendor": "Mforma",
+    "MicroEdition-Profile": "MIDP-1.0",
+    "MIDlet-1": "Vampire: Bloodline, icon.png, Vampire",
+    "MIDlet-Name": "Vampire Bloodline"
+  },
+  "zip_signature_hex": "504b0304",
+  "zip_crc_check": "passed",
+  "resolution_evidence": {
+    "eve_title.png": [
+      176,
+      208
+    ],
+    "background.png": [
+      176,
+      208
+    ],
+    "nokia_fullcanvas_class_reference": true,
+    "interpretation": "Graphics and Nokia FullCanvas reference are consistent with the requested 176x208-era Nokia build. Runtime display dimensions have not been independently executed/verified."
+  },
+  "requested_source_attempt": {
+    "listing_http_status": 200,
+    "jar_http_status": 404,
+    "jad_http_status": 404,
+    "observed_download_url": "https://www.mobiles24.co/downloads/d/3WGKe5XIiw",
+    "note": "Fresh public listing GET and ordinary download GET with session/Referer returned404. Page includes a human-gate download signer; no challenge or access control was bypassed."
+  },
+  "identity_limitations": [
+    "The Mobiles24 JAR could not be retrieved, so byte-for-byte identity with that particular upload is unverified.",
+    "The archive JAR matches game identity, listed approximate size, and native title/background resolution.",
+    "This is an intact archived binary, not authenticated against a publisher-provided checksum.",
+    "Original JAD was not located or generated.",
+    "MIDlet was not executed. ZIP integrity and identity checks are not a malware-safety certification."
+  ],
+  "license_note": "The JAR and its resources remain third-party material. No new license or rights grant is asserted by this handoff."
+}

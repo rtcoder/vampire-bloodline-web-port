@@ -1,0 +1,69 @@
+{
+  "id": "coffin",
+  "variant": "coffin",
+  "inputPath": "assets/original/coffin.png",
+  "inputSha256": "87dc9aa4e08aaa4a62789b42e3125f75b80840106e5db5eb2cf84c77e0a7b8ff",
+  "inputDimensions": [
+    140,
+    67
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels replicate padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/coffin.png",
+  "inferenceInputSha256": "84c2075d54be88fcfd6d3ac2fa5c5d8eb450b376a1f16d9cfa1ea30ce5ad7645",
+  "rawOutputPath": "assets/ai-raw/coffin-fsrcnn.png",
+  "rawOutputSha256": "dff6b663d95755aee21c885df1fa8f8bf006b6a0abd83df0dee2a5475d975f85",
+  "rawDimensions": [
+    624,
+    332
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/remastered4x/coffin.png",
+  "outputSha256": "be0013f348a70660b8c37def3753adaa900d5506637e546505101560f79dc14d",
+  "outputDimensions": [
+    560,
+    268
+  ],
+  "baselinePath": "assets/baseline4x/coffin.png",
+  "baselineSha256": "13e065f882ee7132aa0d8913e1719d9d0d61f2c88c92a4db630b67bcafa6fea5",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 6.680354921819474,
+    "visibleRgbChangedPixelCount": 84154
+  },
+  "status": "approved",
+  "review": {
+    "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+    "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+    "decision": "approved",
+    "notes": "Facial identity, fangs, red bow and coffin framing preserved; SR smooths source dithering.",
+    "staticEvidence": "reports/remaster/coffin-comparison.png",
+    "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+    "knownLimitations": [
+      "FSRCNN smooths some source dithering and may produce mild local ringing",
+      "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+      "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+    ]
+  }
+}

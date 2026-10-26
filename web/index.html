@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0e0b0e"><meta name="description" content="Vampire Bloodline — port klasycznej gry Mforma. Pięć rozdziałów przygody Evy, klawiatura i dotyk.">
+<title>Vampire Bloodline</title><link rel="icon" href="assets/original/icon.png"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="cabinet">
+  <header><div class="brand"><span class="sigil" aria-hidden="true">V</span><div><h1>Vampire <span>Bloodline</span></h1><p>KRONIKA EVY · MFORMA 2003</p></div></div><button class="text-button" id="help-button" aria-label="Instrukcja i autorzy">Jak grać <span aria-hidden="true">?</span></button></header>
+  <div class="toolbar"><span id="chapter-label">Pięć rozdziałów. Jedna klątwa.</span><div><button id="sound-button" aria-label="Wycisz dźwięk" aria-pressed="false">Dźwięk: wł.</button><button id="pause-button" disabled>Pauza</button></div></div>
+  <section class="stage" aria-label="Vampire Bloodline — pole gry">
+    <canvas id="game" width="704" height="832" tabindex="0" aria-label="Pole gry 176 na 208 jednostek. Sterowanie opisano w instrukcji."></canvas>
+    <section id="overlay" class="overlay" aria-live="polite">
+      <div id="menu-panel" class="panel"><span class="eyebrow">VAMPIRE BLOODLINE</span><h2 id="panel-title">Budzi się noc.</h2><p id="panel-text">Wczytywanie gry…</p><div id="panel-actions" class="actions"></div></div>
+    </section>
+  </section>
+  <section id="controls" class="controls" aria-label="Sterowanie dotykowe">
+    <div class="dpad"><button data-action="up" class="up" aria-label="Skok lub wejście na drabinę">↑</button><button data-action="left" class="left" aria-label="Idź w lewo">←</button><button data-action="down" class="down" aria-label="Zejdź z drabiny">↓</button><button data-action="right" class="right" aria-label="Idź w prawo">→</button></div>
+    <div class="combat"><button data-action="fastJump" class="secondary" aria-label="Daleki skok">Daleki<br>skok</button><button data-action="fire" class="attack" aria-label="Atak lub ugryzienie">Atak</button></div>
+  </section>
+  <footer><span>WASD / strzałki · J atak · K daleki skok</span><button class="text-button" id="touch-button" aria-pressed="false">Pokaż dotyk</button></footer>
+  <p id="notice" class="notice" role="status"></p>
+</main>
+<dialog id="help-dialog"><form method="dialog"><button class="close" aria-label="Zamknij instrukcję">×</button></form><span class="eyebrow">PRZETRWAJ DO ŚWITU</span><h2>Sterowanie</h2>
+<dl><dt>Ruch</dt><dd>← → lub A / D (także 4 / 6).</dd><dt>Skok i drabiny</dt><dd>↑, W lub spacja. ↓ / S schodzi po drabinie (także 2 / 8).</dd><dt>Atak</dt><dd>J lub Z (także 5). Z bliska Eva gryzie przeciwnika i odzyskuje zdrowie. Z dystansu rzuca kołkiem, jeśli ma zapas.</dd><dt>Daleki skok</dt><dd>K lub X (także 3). Skok ukośnie w górę i w prawo, zgodnie z oryginałem.</dd><dt>Pauza</dt><dd>P lub Escape. Utrata focusu i ukrycie karty również zatrzymują grę.</dd><dt>Moce</dt><dd>Zbieraj przedmioty: nietoperz, para i spowolnienie działają czasowo. Nietoperzem poruszasz się we wszystkich kierunkach.</dd><dt>Dotyk</dt><dd>Trzymaj kierunek i naciskaj skok lub atak drugim palcem. Przyciski znajdują się pod polem gry.</dd><dt>Zapis</dt><dd>Automatyczny na początku etapu. „Kontynuuj” przywraca etap; „Od początku etapu” odnawia go z pełnym zdrowiem.</dd></dl>
+<div class="setting"><label for="graphics-select">Grafika</label><select id="graphics-select"><option value="original">Oryginalna</option><option value="remastered4x" disabled>Remaster AI 4×</option></select><p id="graphics-status"></p></div>
+<details><summary>Autorzy i źródła</summary><p>Projekt: Paul Jacobson, Daniel Rammelt. Kod oryginału: Daniel Rammelt. Grafika: Paul Jacobson, Matthew Risley. Producent: Nic Garner. Mforma Europe, © 2003 Mforma Group.</p><p>Angielskie tłumaczenie społecznościowe: Lanzz, 2021, projekt Kahvibreak. Polski tekst portu oparto na tej wersji. Prawa do oryginalnej gry i zasobów pozostają przy ich autorach.</p></details>
+<p class="fineprint">Pole gry i tempo odpowiadają wersji 176×208. Stan weryfikacji i rejestr obróbki grafik znajdują się w dokumentacji projektu.</p>
+</dialog>
+<script type="module" src="js/main.js"></script>
+</body></html>

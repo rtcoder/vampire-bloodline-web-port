@@ -1,0 +1,69 @@
+{
+  "id": "ngame",
+  "variant": "ngame",
+  "inputPath": "assets/original/ngame.png",
+  "inputSha256": "747afe9800abf72ed52f503fd6a2b1b2f49e8383c52b7dac2975535c50b0757a",
+  "inputDimensions": [
+    120,
+    30
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels replicate padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/ngame.png",
+  "inferenceInputSha256": "373eaf6fd8a3c06d85437631491eb7450013bb7ba159b02d9c622abc8e2a3f9f",
+  "rawOutputPath": "assets/ai-raw/ngame-fsrcnn.png",
+  "rawOutputSha256": "ae8a8935d1e8e0484be115f82738d5142b30ad64b5104aeba6bfc762611fbcaf",
+  "rawDimensions": [
+    544,
+    184
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/remastered4x/ngame.png",
+  "outputSha256": "1fc4d58f9b38b9cfa1aec9836455a4319349e46055c9453b2f9e76026c2c61b8",
+  "outputDimensions": [
+    480,
+    120
+  ],
+  "baselinePath": "assets/baseline4x/ngame.png",
+  "baselineSha256": "6d981b8001cd94e34280c8ef1aa59bc88157b83407e1cc3dd189593e31dd1796",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 7.673582175925926,
+    "visibleRgbChangedPixelCount": 19571
+  },
+  "status": "approved",
+  "review": {
+    "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+    "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+    "decision": "approved",
+    "notes": "MFORMA logo and registered mark retained; no translation or substituted text.",
+    "staticEvidence": "reports/remaster/ngame-comparison.png",
+    "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+    "knownLimitations": [
+      "FSRCNN smooths some source dithering and may produce mild local ringing",
+      "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+      "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+    ]
+  }
+}

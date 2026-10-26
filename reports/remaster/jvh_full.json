@@ -1,0 +1,69 @@
+{
+  "id": "jvh_full",
+  "variant": "jvh_full",
+  "inputPath": "assets/original/jvh_full.png",
+  "inputSha256": "c70a22fe5aee4eb62c08ea2fa7db80281507463c7ed2409181984c68a2c4d877",
+  "inputDimensions": [
+    90,
+    176
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels replicate padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/jvh_full.png",
+  "inferenceInputSha256": "1daa47f38e2c2e3a75e9d890bccfee90c874cab149148e38b7b2c9bbb1ac3a7b",
+  "rawOutputPath": "assets/ai-raw/jvh_full-fsrcnn.png",
+  "rawOutputSha256": "2d6653c73c1de255182f061bb9299ad66940fbee12cee16cd118009537116669",
+  "rawDimensions": [
+    424,
+    768
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/remastered4x/jvh_full.png",
+  "outputSha256": "aea00b1f9b9c11067cd1fd15da0a0286a7dfbbaa1fffb00523780a0c73fa02a6",
+  "outputDimensions": [
+    360,
+    704
+  ],
+  "baselinePath": "assets/baseline4x/jvh_full.png",
+  "baselineSha256": "79cb606efe2601d1a296b7759c54324aea283b65de7e6c2b562ff1a2b5c9d87f",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 5.6443444865319865,
+    "visibleRgbChangedPixelCount": 78026
+  },
+  "status": "approved",
+  "review": {
+    "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+    "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+    "decision": "approved",
+    "notes": "Full-body black outfit, sword angle/length and original framing retained.",
+    "staticEvidence": "reports/remaster/jvh_full-comparison.png",
+    "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+    "knownLimitations": [
+      "FSRCNN smooths some source dithering and may produce mild local ringing",
+      "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+      "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+    ]
+  }
+}

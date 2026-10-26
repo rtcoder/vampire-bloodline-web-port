@@ -1,0 +1,69 @@
+{
+  "id": "boss_jvh",
+  "variant": "boss_jvh",
+  "inputPath": "assets/original/boss_jvh.png",
+  "inputSha256": "99052ec7fbc2146663f91586d640df73bc2a9967e9c3b90180ed9c2e6f946fee",
+  "inputDimensions": [
+    768,
+    32
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels replicate padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/boss_jvh.png",
+  "inferenceInputSha256": "b31f7d7080f7b8169962426c7415d7c99c555edd5123cde4fcea7af35c66220b",
+  "rawOutputPath": "assets/ai-raw/boss_jvh-fsrcnn.png",
+  "rawOutputSha256": "f0dbe6772ed2c7d777d990121567f88315c171f5b1d3cb991ee4ebbaf2e82c22",
+  "rawDimensions": [
+    3136,
+    192
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/remastered4x/boss_jvh.png",
+  "outputSha256": "28ba00440e8ea6069a34847364df311e4ca4eefd382e23dafa7c3b889bfd0d97",
+  "outputDimensions": [
+    3072,
+    128
+  ],
+  "baselinePath": "assets/baseline4x/boss_jvh.png",
+  "baselineSha256": "93ee96806b7c4532c101517e91550e03a92824b73b11a34211fdf24e0a8b6ea6",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 21.77101302397792,
+    "visibleRgbChangedPixelCount": 88607
+  },
+  "status": "approved",
+  "review": {
+    "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+    "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+    "decision": "approved",
+    "notes": "All24 source slots preserved; blonde hair, black outfit, weapon and both facing sequences stable in playback.",
+    "staticEvidence": "reports/remaster/boss_jvh-comparison.png",
+    "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+    "knownLimitations": [
+      "FSRCNN smooths some source dithering and may produce mild local ringing",
+      "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+      "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+    ]
+  }
+}

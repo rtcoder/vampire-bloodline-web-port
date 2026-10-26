@@ -1,0 +1,366 @@
+{
+  "id": "tiles3",
+  "variant": "tiles3",
+  "inputPath": "assets/original/tiles3.png",
+  "inputSha256": "a2e1f7d2c1692eb22d1be1d1cfef8f699e3996ce872ed78d0dd6fdac37d49cc3",
+  "inputDimensions": [
+    160,
+    16
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1,
+    "perTile": true,
+    "passes": 10
+  },
+  "preprocessing": [
+    "split source into fixed16x16 tile slots",
+    "8 source pixels of independently wrapped context for each tile; no unrelated atlas neighbor may influence an edge",
+    "same model and processing for every tile"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/tiles3-tile-montage.png",
+  "inferenceInputSha256": "ffe39f21aa0e956cf9a025232482c7c97f1d67b7633c5050bc230b873696926a",
+  "inferenceInputKind": "diagnostic montage; actual separately inferred inputs are in tilePasses",
+  "rawOutputPath": "assets/ai-raw/tiles3-tile-montage.png",
+  "rawOutputSha256": "87e2b2aa41349f62ba196756fa72d3e815b0c5a7b5058a43413bff0fa5d0b0f9",
+  "rawDimensions": [
+    1280,
+    128
+  ],
+  "rawOutputKind": "diagnostic montage of untouched raw tiles; actual raw model results are in tilePasses",
+  "tilePasses": [
+    {
+      "tile": 0,
+      "sourceRect": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "inputPath": "assets/ai-inputs/tiles3/tile-00.png",
+      "inputSha256": "682b1524c6d456c62cccacd0295e745b3de6000f5bb37819dc1dde571eeef811",
+      "rawPath": "assets/ai-raw/tiles3/tile-00.png",
+      "rawSha256": "ca5c5b7d63dbd1218a7c9d9d7b46fda447cb4eaf2cfcc1a30498c72f28dc4233",
+      "rawDimensions": [
+        128,
+        128
+      ],
+      "normalizationCrop": [
+        32,
+        32,
+        64,
+        64
+      ],
+      "destinationRect": [
+        0,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "tile": 1,
+      "sourceRect": [
+        16,
+        0,
+        16,
+        16
+      ],
+      "inputPath": "assets/ai-inputs/tiles3/tile-01.png",
+      "inputSha256": "8b441a2a54551b1d4f8136ff0d00a4a6ed4d56956e20e63c265deb075f9ee08b",
+      "rawPath": "assets/ai-raw/tiles3/tile-01.png",
+      "rawSha256": "cb308c4b1d8b06b46f55af24eb7bd68a43e3534bea0dec51544266ce6b2e018c",
+      "rawDimensions": [
+        128,
+        128
+      ],
+      "normalizationCrop": [
+        32,
+        32,
+        64,
+        64
+      ],
+      "destinationRect": [
+        64,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "tile": 2,
+      "sourceRect": [
+        32,
+        0,
+        16,
+        16
+      ],
+      "inputPath": "assets/ai-inputs/tiles3/tile-02.png",
+      "inputSha256": "6b0bc0ec8411fdaa65464cb6c22ee00aab778ba3055b6dd206785a055d5e865a",
+      "rawPath": "assets/ai-raw/tiles3/tile-02.png",
+      "rawSha256": "dfb9e5da18a34fc949642265634726e8f7efc9e6bcfc9dd3b9b42d932890caa8",
+      "rawDimensions": [
+        128,
+        128
+      ],
+      "normalizationCrop": [
+        32,
+        32,
+        64,
+        64
+      ],
+      "destinationRect": [
+        128,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "tile": 3,
+      "sourceRect": [
+        48,
+        0,
+        16,
+        16
+      ],
+      "inputPath": "assets/ai-inputs/tiles3/tile-03.png",
+      "inputSha256": "83661f320f8542560b2100e2011637ff46c96134f36bfa8b61badbb9c514987d",
+      "rawPath": "assets/ai-raw/tiles3/tile-03.png",
+      "rawSha256": "75a541c5179232a5a2ba20bd7adca2cef053af3242170328baaa191cca30c922",
+      "rawDimensions": [
+        128,
+        128
+      ],
+      "normalizationCrop": [
+        32,
+        32,
+        64,
+        64
+      ],
+      "destinationRect": [
+        192,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "tile": 4,
+      "sourceRect": [
+        64,
+        0,
+        16,
+        16
+      ],
+      "inputPath": "assets/ai-inputs/tiles3/tile-04.png",
+      "inputSha256": "fae8bd09cbc15edaec9fd4d70d62e6f82741ddf8fb0528357e9d9d051684ec0f",
+      "rawPath": "assets/ai-raw/tiles3/tile-04.png",
+      "rawSha256": "f8a8466335266ebdeb68fc8747de690508a58f4e591e6b34a182653f3ba34144",
+      "rawDimensions": [
+        128,
+        128
+      ],
+      "normalizationCrop": [
+        32,
+        32,
+        64,
+        64
+      ],
+      "destinationRect": [
+        256,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "tile": 5,
+      "sourceRect": [
+        80,
+        0,
+        16,
+        16
+      ],
+      "inputPath": "assets/ai-inputs/tiles3/tile-05.png",
+      "inputSha256": "4e9e04689708c2a99cf259a4fc1cbc92464103d69700c22a7157a07f3188d7cf",
+      "rawPath": "assets/ai-raw/tiles3/tile-05.png",
+      "rawSha256": "c5974c8a3abed32c75696e990a65074836ab63dd91505e43f2ed23bcff684033",
+      "rawDimensions": [
+        128,
+        128
+      ],
+      "normalizationCrop": [
+        32,
+        32,
+        64,
+        64
+      ],
+      "destinationRect": [
+        320,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "tile": 6,
+      "sourceRect": [
+        96,
+        0,
+        16,
+        16
+      ],
+      "inputPath": "assets/ai-inputs/tiles3/tile-06.png",
+      "inputSha256": "b73300b6f9a5b0c4f8c3052ef11a8d9a05b2f21ddbe9cc94b1c490e6d5b6b524",
+      "rawPath": "assets/ai-raw/tiles3/tile-06.png",
+      "rawSha256": "d66545c1fbc4f4b526eba6dc11471a764d957fa0ed6b3ef5226f3593cf182c43",
+      "rawDimensions": [
+        128,
+        128
+      ],
+      "normalizationCrop": [
+        32,
+        32,
+        64,
+        64
+      ],
+      "destinationRect": [
+        384,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "tile": 7,
+      "sourceRect": [
+        112,
+        0,
+        16,
+        16
+      ],
+      "inputPath": "assets/ai-inputs/tiles3/tile-07.png",
+      "inputSha256": "2d86548eaed2631d80bd67182a0a2c91dd67617fd3a52ec475d3a71e990d2a05",
+      "rawPath": "assets/ai-raw/tiles3/tile-07.png",
+      "rawSha256": "7bbd3861ede699a9af4b5237207307f8011cb722333b58107e188a57b1eca73c",
+      "rawDimensions": [
+        128,
+        128
+      ],
+      "normalizationCrop": [
+        32,
+        32,
+        64,
+        64
+      ],
+      "destinationRect": [
+        448,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "tile": 8,
+      "sourceRect": [
+        128,
+        0,
+        16,
+        16
+      ],
+      "inputPath": "assets/ai-inputs/tiles3/tile-08.png",
+      "inputSha256": "004dea9cb54025914bd53b7caeabc3ed1a62348e15758f4797084b1c46a07314",
+      "rawPath": "assets/ai-raw/tiles3/tile-08.png",
+      "rawSha256": "0bea6b56a5d38e2f0a0e39e9f88064bbe2584d08a4bf6f5c5a5397d68b85449b",
+      "rawDimensions": [
+        128,
+        128
+      ],
+      "normalizationCrop": [
+        32,
+        32,
+        64,
+        64
+      ],
+      "destinationRect": [
+        512,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "tile": 9,
+      "sourceRect": [
+        144,
+        0,
+        16,
+        16
+      ],
+      "inputPath": "assets/ai-inputs/tiles3/tile-09.png",
+      "inputSha256": "37e992229cb4f2099639ee1fbd75b70cd4ade17f186ccd5a1378e04b592cd0ef",
+      "rawPath": "assets/ai-raw/tiles3/tile-09.png",
+      "rawSha256": "93a02dd32f73969f81629dea25457909d144acb3b387660d89ad5a6917b15c60",
+      "rawDimensions": [
+        128,
+        128
+      ],
+      "normalizationCrop": [
+        32,
+        32,
+        64,
+        64
+      ],
+      "destinationRect": [
+        576,
+        0,
+        64,
+        64
+      ]
+    }
+  ],
+  "normalization": [
+    "crop32 pixels context from each128x128 raw neural output",
+    "paste64x64 central neural tile back into its original4x slot",
+    "restore source alpha4x nearest-neighbor; no RGB baseline blend"
+  ],
+  "outputPath": "assets/remastered4x/tiles3.png",
+  "outputSha256": "7f13c5d7af3209868b33c52f58c025eeb265ddb228990f90753a9975c0edf496",
+  "outputDimensions": [
+    640,
+    64
+  ],
+  "baselinePath": "assets/baseline4x/tiles3.png",
+  "baselineSha256": "ac917c129712171e98ace91b6922a73b4e8d2c8d51414ad91bcd9fc1e0acb0dc",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 12.133846028645833,
+    "visibleRgbChangedPixelCount": 39533
+  },
+  "status": "approved",
+  "review": {
+    "decision": "approved",
+    "reviewedAt": "2026-10-26T20:20:54.446156+00:00",
+    "notes": "Reprocessed each source tile with its own8px wrapped context; prior whole-atlas candidate rejected for dark grid. Live initial scene compared to original after reload; wall/water artificial grid gone. Geometry and source alpha unchanged.",
+    "evidence": [
+      "reports/browser/ai-seams-before.png",
+      "reports/browser/ai-seams-after.png",
+      "reports/browser/ai-seams-original-reference.png",
+      "reports/remaster-seam-regression.json"
+    ],
+    "scope": "asset review plus live first-stage repeated wall/water check; whole-campaign verification separate"
+  },
+  "supersedes": "reports/remaster/tiles3-atlas-rejected.json"
+}

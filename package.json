@@ -1,0 +1,12 @@
+{
+  "name": "vampire-bloodline-web-port",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs tests/game-source-fixtures.mjs",
+    "serve": "python3 -m http.server 8080 --directory web",
+    "test:data": "python3 -m unittest discover -s tests -p 'data*_test.py'",
+    "package": "python3 tools/package_project.py"
+  }
+}

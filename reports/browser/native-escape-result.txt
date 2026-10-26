@@ -1,0 +1,25 @@
+Browser tab: 1, Title: "Vampire Bloodline", URL: "http://localhost:8080/".
+1 AXWebArea Vampire Bloodline, URL: localhost:8080/
+	2 container
+		3 heading Vampire Bloodline, Value: 1
+			4 text Vampire  Bloodline
+		5 text KRONIKA EVY · MFORMA 2003
+		6 button Description: Instrukcja i autorzy, ID: help-button
+		7 text Rozdział 1 · etap 1/3
+		8 checkbox Description: Wycisz dźwięk, Value: 0, ID: sound-button
+		9 button Wznów, ID: pause-button
+		10 container Vampire Bloodline — pole gry
+			11 image Description: Pole gry 176 na 208 jednostek. Sterowanie opisano w instrukcji., ID: game
+			12 container menu-panel
+				13 text VAMPIRE BLOODLINE
+				14 heading Noc poczeka., Value: 2, ID: panel-title
+					15 text Noc poczeka.
+				16 text Gra zatrzymana.
+				17 container panel-actions
+					18 button Wznów grę
+					19 button Od początku etapu
+					20 button Menu główne
+		21 text WASD / strzałki · J atak · K daleki skok
+		22 checkbox Pokaż dotyk, Value: 0, ID: touch-button
+
+The focused UI element is 18 button Wznów grę

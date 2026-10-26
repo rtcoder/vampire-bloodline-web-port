@@ -1,0 +1,18 @@
+{
+  "role": "primary_english_reference",
+  "local_path": "source-packages/extra/vampire-bloodline-extra-jars/jars/vampire-bloodline-176-en-patch.jar",
+  "sha256": "05f8efed4397eb5530acba56f7a98e82ba88d538a2eb1e57d08ec669f37cf1c4",
+  "size_bytes": 162713,
+  "source_collection": "Kahvibreak 1.6",
+  "archive_member": "Games/VampireBloodline-176-en-patch.jar",
+  "url": "https://archive.org/download/kahvibreakwinbuilds/Kahvibreak%201.6.zip/Games%2FVampireBloodline-176-en-patch.jar",
+  "community_translation": true,
+  "translation_credit": "English Translation by Lanzz, 2021 for Kahvibreak project.",
+  "preserved_spanish_reference": {
+    "path": "source/vampire-bloodline-176x208.jar",
+    "sha256": "ebe705c790f989af9b81c698b2f794fdac88266e75a6b704b9fbcbe94f631ab8"
+  },
+  "verification": "tools/verify_english.py",
+  "comparison_report": "reports/source-comparison.json",
+  "runtime_comparison": "unverified; no installed Java runtime or compatible emulator located"
+}

@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "normalInputsOnly": true,
+  "scope": "All six assigned later ordinary maps, independently loaded fresh and replayed with normal Game.step presentation. This report does not certify sequential campaign state or an executed original MIDlet.",
+  "results": [
+    {
+      "id": "m31",
+      "seed": 123,
+      "ticks": 1142,
+      "minimumHealth": 75,
+      "finalHealth": 100,
+      "finalPhase": "transition"
+    },
+    {
+      "id": "m32",
+      "seed": 123,
+      "ticks": 1076,
+      "minimumHealth": 15,
+      "finalHealth": 15,
+      "finalPhase": "transition"
+    },
+    {
+      "id": "m41",
+      "seed": 123,
+      "ticks": 1048,
+      "minimumHealth": 30,
+      "finalHealth": 30,
+      "finalPhase": "transition"
+    },
+    {
+      "id": "m42",
+      "seed": 123,
+      "ticks": 2267,
+      "minimumHealth": 20,
+      "finalHealth": 36,
+      "finalPhase": "transition"
+    },
+    {
+      "id": "m51",
+      "seed": 123,
+      "ticks": 1075,
+      "minimumHealth": 4,
+      "finalHealth": 4,
+      "finalPhase": "transition"
+    },
+    {
+      "id": "m52",
+      "seed": 123,
+      "ticks": 1098,
+      "minimumHealth": 53,
+      "finalHealth": 53,
+      "finalPhase": "transition"
+    }
+  ]
+}

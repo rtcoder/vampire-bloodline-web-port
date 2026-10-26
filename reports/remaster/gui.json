@@ -1,0 +1,69 @@
+{
+  "id": "gui",
+  "variant": "gui",
+  "inputPath": "assets/original/gui.png",
+  "inputSha256": "6ca7f3030bc93e38be0c16ab3b95d0d1d7e4d8837d9ee48c70570020be01ffa2",
+  "inputDimensions": [
+    83,
+    36
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels replicate padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/gui.png",
+  "inferenceInputSha256": "a29c2d8cea34e1b8d9d13cd15567206c0443232946d3ee15b4220c4d19458026",
+  "rawOutputPath": "assets/ai-raw/gui-fsrcnn.png",
+  "rawOutputSha256": "77d4927d00063729a13a6887a4d28e9377f5e9fba7d0167d4a0cf7952278b45e",
+  "rawDimensions": [
+    396,
+    208
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/remastered4x/gui.png",
+  "outputSha256": "9501ac62d5d5768a7e178b2cbfd32a4bf81d56dc8bae348259f2311e47b1ed47",
+  "outputDimensions": [
+    332,
+    144
+  ],
+  "baselinePath": "assets/baseline4x/gui.png",
+  "baselineSha256": "97c5b4a8930c46bbcc23c089ab9603e36a8948e17b3c2392cc2a5f88dcccbaff",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 7.1280824829931975,
+    "visibleRgbChangedPixelCount": 22672
+  },
+  "status": "approved",
+  "review": {
+    "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+    "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+    "decision": "approved",
+    "notes": "Health frame/orb and fang/power icons retain native clipping regions and meaning.",
+    "staticEvidence": "reports/remaster/gui-comparison.png",
+    "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+    "knownLimitations": [
+      "FSRCNN smooths some source dithering and may produce mild local ringing",
+      "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+      "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+    ]
+  }
+}

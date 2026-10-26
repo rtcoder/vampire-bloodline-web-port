@@ -1,0 +1,69 @@
+{
+  "id": "letter",
+  "variant": "letter",
+  "inputPath": "assets/original/letter.png",
+  "inputSha256": "bc49cc880a0e46c770e74d1ba74a5983d9c981f039260750d12d99a5c350b076",
+  "inputDimensions": [
+    182,
+    9
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels replicate padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/letter.png",
+  "inferenceInputSha256": "650b8f845754ce741dbb80e65f3e7e41be9caa41c23ef8ddf8784923d840c06d",
+  "rawOutputPath": "assets/ai-raw/letter-fsrcnn.png",
+  "rawOutputSha256": "9fd95070c41c2b67b12b088ef0e9bbe1272a2a5e0bde51ddea9a1396b1b67568",
+  "rawDimensions": [
+    792,
+    100
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/remastered4x/letter.png",
+  "outputSha256": "4abd7bd9f1d5523e0e586e7c02cf6309ba31905757ef3f8464a238e4e085522f",
+  "outputDimensions": [
+    728,
+    36
+  ],
+  "baselinePath": "assets/baseline4x/letter.png",
+  "baselineSha256": "f6aa4f88de2966ca07df6214aaee89804a48b6ed1685b42cc4c5aaeee1f38368",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 1.125,
+    "visibleRgbChangedPixelCount": 7164
+  },
+  "status": "approved",
+  "review": {
+    "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+    "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+    "decision": "approved",
+    "notes": "All26 glyph slots preserved; source alpha fixes exact strokes; variable glyph widths/advances exported.",
+    "staticEvidence": "reports/remaster/letter-comparison.png",
+    "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+    "knownLimitations": [
+      "FSRCNN smooths some source dithering and may produce mild local ringing",
+      "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+      "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+    ]
+  }
+}

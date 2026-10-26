@@ -1,0 +1,12 @@
+CFR 0.152, official MD5 verified: 8a85ada8cec494121246805a5562b82b
+Game SHA256: ebe705c790f989af9b81c698b2f794fdac88266e75a6b704b9fbcbe94f631ab8
+Command: java -jar <cfr-0.152.jar> source/vampire-bloodline-176x208.jar --outputdir reference/decompiled --renamedupmembers true --renameillegalidents true
+Exit code: 0
+
+Processing /workspace/scratch/48a8ba0ca2c0/vampire-bloodline-handoff/source/vampire-bloodline-176x208.jar (use silent to silence)
+Processing GraphicObjectManager
+Processing ScrollTimerTask
+Processing Sprite
+Processing Strings
+Processing Vampire
+Processing mainCanvas

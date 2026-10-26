@@ -1,0 +1,111 @@
+{
+  "status": "passed",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "results": [
+    {
+      "name": "Start i zasoby runtime",
+      "passed": true,
+      "detail": {
+        "maps": 15,
+        "images": 25,
+        "ai4x": 25
+      }
+    },
+    {
+      "name": "Menu, fabuła i nowa gra",
+      "passed": true,
+      "detail": {
+        "state": "paused",
+        "health": 100
+      }
+    },
+    {
+      "name": "13 lokalnych WAV dekoduje się w Web Audio",
+      "passed": true,
+      "detail": {
+        "decoded": 13,
+        "context": "running"
+      }
+    },
+    {
+      "name": "Renderer oryginalny i AI nie mutują stanu",
+      "passed": true,
+      "detail": "240 dodatkowych renderów bez zmiany stanu"
+    },
+    {
+      "name": "Ten sam gameplay przy 30/60/120 FPS",
+      "passed": true,
+      "detail": "Identyczny pełny stan po 200 krokach"
+    },
+    {
+      "name": "Klawiatura jednocześnie ruch + skok",
+      "passed": true,
+      "detail": {
+        "tick": 4,
+        "worldColumn": 1
+      }
+    },
+    {
+      "name": "Utrata focusu czyści wejście i zatrzymuje logikę",
+      "passed": true,
+      "detail": {
+        "tick": 4
+      }
+    },
+    {
+      "name": "Ukrycie dokumentu zatrzymuje grę i czyści wejścia (zdarzenie testowe)",
+      "passed": true,
+      "detail": "Sprawdzono rzeczywisty handler z testowym document.hidden=true"
+    },
+    {
+      "name": "pointercancel czyści wszystkie wejścia i zatrzymuje grę",
+      "passed": true,
+      "detail": "Dwa niezależne źródła wskaźnikowe wyczyszczone przez produkcyjny handler"
+    },
+    {
+      "name": "Instrukcja blokuje P i nie uruchamia gry za modalem",
+      "passed": true,
+      "detail": "Stan pozostaje paused po P"
+    },
+    {
+      "name": "Restart etapu, mute i checkpoint",
+      "passed": true,
+      "detail": {
+        "save": {
+          "version": 1,
+          "level": 1,
+          "sublevel": 1,
+          "completed": false,
+          "sound": true,
+          "graphics": "remastered4x",
+          "started": true
+        }
+      }
+    },
+    {
+      "name": "Adapter zakończenia: testowe completed pokazuje finał, credits i zapis",
+      "passed": true,
+      "detail": {
+        "pages": 4,
+        "scope": "Test adaptera z pojedynczym zdarzeniem testowym; nie dowód przejścia kampanii"
+      }
+    },
+    {
+      "name": "Widok 390×844 nie rozszerza pola gry ani nie zasłania go sterowaniem",
+      "passed": true,
+      "detail": {
+        "stage": [
+          367.514892578125,
+          433.9881286621094
+        ],
+        "controlsTop": 558.6012573242188,
+        "stageBottom": 544.6131362915039
+      }
+    },
+    {
+      "name": "Zapis odczytuje się po przeładowaniu",
+      "passed": true,
+      "detail": "Zapis rozdziału 1, etapu 1 odtworzony"
+    }
+  ]
+}

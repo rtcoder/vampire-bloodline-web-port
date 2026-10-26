@@ -1,0 +1,51 @@
+{
+  "baseline_sha256": "ebe705c790f989af9b81c698b2f794fdac88266e75a6b704b9fbcbe94f631ab8",
+  "baseline_bytes": 160575,
+  "baseline_included": false,
+  "variants": [
+    {
+      "file": "jars/vampire-bloodline-176-en-patch.jar",
+      "bytes": 162713,
+      "sha256": "05f8efed4397eb5530acba56f7a98e82ba88d538a2eb1e57d08ec669f37cf1c4",
+      "language": "English",
+      "distribution_type": "community_translation_2021_Lanzz",
+      "source_download_url": "https://archive.org/download/kahvibreakwinbuilds/Kahvibreak%201.6.zip/Games%2FVampireBloodline-176-en-patch.jar",
+      "retrieved_utc": "2026-10-26T08:37:34.469622+00:00",
+      "resolution_evidence": "176x208 assets; MIDlet not executed",
+      "zip_crc": "passed",
+      "midlet_executed": false,
+      "file_count": 60,
+      "manifest": "Manifest-Version: 1.0\r\nMicroEdition-Configuration: CLDC-1.0\r\nMIDlet-Data-Size: 256\r\nMIDlet-Version: 1.0.0\r\nCreated-By: 1.4.1_02 (Sun Microsystems Inc.)\r\nMIDlet-Vendor: Mforma\r\nMicroEdition-Profile: MIDP-1.0\r\nMIDlet-1: Vampire: Bloodline, icon.png, Vampire\r\nMIDlet-Name: Vampire Bloodline\r\n\r\n"
+    },
+    {
+      "file": "jars/vampire-bloodline-128-en-n6230.jar",
+      "bytes": 62305,
+      "sha256": "ce4d8374274cc9a7176c55675e0c011c68fd073e0da5172907e8c9ebe37d6aee",
+      "language": "English",
+      "distribution_type": "N6230_branded_distribution",
+      "source_download_url": "https://archive.org/download/kahvibreakwinbuilds/Kahvibreak%201.6.zip/Games%2FVampireBloodline-128.jar",
+      "retrieved_utc": "2026-10-26T08:37:34.517187+00:00",
+      "resolution_evidence": "128 is the collection filename designation; runtime resolution not verified",
+      "zip_crc": "passed",
+      "midlet_executed": false,
+      "file_count": 26,
+      "manifest": "Manifest-Version: 1.0\r\nMicroEdition-Configuration: CLDC-1.0\r\nMIDlet-Data-Size: 128\r\nMIDlet-Version: 1.0\r\nMIDlet-Vendor: N6230\r\nMIDlet-Info-URL: www.N6230.prv.pl\r\nMicroEdition-Profile: MIDP-1.0\r\nMIDlet-1: Vampire Bloodline, icon.png, Vampire\r\nMIDlet-CHEAT: X\r\nMIDlet-Name: Vampire_Bloodline-N6230\r\nMIDlet-Description: Game Download @ N6230 \"www.nokia-6230.prv.pl\""
+    },
+    {
+      "file": "jars/vampire-bloodline-compact-es-andrew.jar",
+      "bytes": 61478,
+      "sha256": "a20446f10bb120b9cece5e74069e7d20adfbb480162669b59c60a82a4daa80b8",
+      "language": "Spanish",
+      "distribution_type": "catalog_branded_distribution",
+      "source_download_url": "https://www.andrew-lviv.net/downloads/games_load.php?id=16410",
+      "retrieved_utc": "2026-10-26T08:37:38.684745+00:00",
+      "resolution_evidence": "Runtime resolution not verified",
+      "zip_crc": "passed",
+      "midlet_executed": false,
+      "file_count": 26,
+      "manifest": "Manifest-Version: 1.0\r\nMIDlet-Name: Vampire Bloodline\r\nMIDlet-1: Vampire: Bloodline, icon.png, Vampire\r\nMIDlet-Version: 1.0.0\r\nMIDlet-Vendor: [ANDREW-LVIV] / Mforma\r\nMIDlet-Data-Size: 256\r\nMicroEdition-Configuration: CLDC-1.0\r\nMicroEdition-Profile: MIDP-1.0\r\nMIDlet-Info-URL: http://andrew-lviv.net\r\n"
+    }
+  ],
+  "verified_utc_date": "2026-10-26",
+  "interpretation": "Three files with hashes distinct from the prior Spanish source. Static verification only."
+}

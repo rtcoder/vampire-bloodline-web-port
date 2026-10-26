@@ -1,0 +1,207 @@
+{
+  "cp_count_a": 1017,
+  "cp_count_b": 1017,
+  "changed_constant_pool_entries": [
+    {
+      "index": 827,
+      "a": {
+        "tag": 1,
+        "value": "cargando"
+      },
+      "b": {
+        "tag": 1,
+        "value": "loading"
+      }
+    },
+    {
+      "index": 828,
+      "a": {
+        "tag": 1,
+        "value": "cargando gr\u00e1ficos"
+      },
+      "b": {
+        "tag": 1,
+        "value": "Loading graphics"
+      }
+    },
+    {
+      "index": 829,
+      "a": {
+        "tag": 1,
+        "value": "vampire :"
+      },
+      "b": {
+        "tag": 1,
+        "value": "vampire:"
+      }
+    },
+    {
+      "index": 831,
+      "a": {
+        "tag": 1,
+        "value": "ayuda"
+      },
+      "b": {
+        "tag": 1,
+        "value": "Help"
+      }
+    },
+    {
+      "index": 832,
+      "a": {
+        "tag": 1,
+        "value": "sonido : on"
+      },
+      "b": {
+        "tag": 1,
+        "value": "Sound: On"
+      }
+    },
+    {
+      "index": 833,
+      "a": {
+        "tag": 1,
+        "value": "sonido : off"
+      },
+      "b": {
+        "tag": 1,
+        "value": "Sound: Off"
+      }
+    },
+    {
+      "index": 834,
+      "a": {
+        "tag": 1,
+        "value": "Men\u00fa principal"
+      },
+      "b": {
+        "tag": 1,
+        "value": "Main Menu"
+      }
+    },
+    {
+      "index": 835,
+      "a": {
+        "tag": 1,
+        "value": "jugar"
+      },
+      "b": {
+        "tag": 1,
+        "value": "play"
+      }
+    },
+    {
+      "index": 836,
+      "a": {
+        "tag": 1,
+        "value": "opciones"
+      },
+      "b": {
+        "tag": 1,
+        "value": "options"
+      }
+    },
+    {
+      "index": 837,
+      "a": {
+        "tag": 1,
+        "value": "salir del juego"
+      },
+      "b": {
+        "tag": 1,
+        "value": "Exit Game"
+      }
+    },
+    {
+      "index": 838,
+      "a": {
+        "tag": 1,
+        "value": "Dise\u00f1o: Paul Jacobson, Daniel Rammelt~~C\u00f3digo: Daniel Rammelt.~~Arte: Paul Jacobson, Matthew Risley.~~Productor: Nic Garner.~~Producido por Mforma Europe.~Software copyright 2003 Mforma Group."
+      },
+      "b": {
+        "tag": 1,
+        "value": "Design: Paul Jacobson, Daniel Rammelt ~~ Code: Daniel Rammelt. ~~ Art: Paul Jacobson, Matthew Risley. ~~ Producer: Nic Garner. ~~ Produced by Mforma Europe. ~ Software copyright 2003 Mforma Group. ~~ English Translation by Lanzz, 2021 for Kahvibreak project."
+      }
+    },
+    {
+      "index": 842,
+      "a": {
+        "tag": 1,
+        "value": "cr\u00e9ditos"
+      },
+      "b": {
+        "tag": 1,
+        "value": "Credits"
+      }
+    },
+    {
+      "index": 843,
+      "a": {
+        "tag": 1,
+        "value": "historia"
+      },
+      "b": {
+        "tag": 1,
+        "value": "Story"
+      }
+    },
+    {
+      "index": 844,
+      "a": {
+        "tag": 1,
+        "value": "ayuda general"
+      },
+      "b": {
+        "tag": 1,
+        "value": "General Help"
+      }
+    },
+    {
+      "index": 845,
+      "a": {
+        "tag": 1,
+        "value": "controles del jugador"
+      },
+      "b": {
+        "tag": 1,
+        "value": "player controls"
+      }
+    },
+    {
+      "index": 846,
+      "a": {
+        "tag": 1,
+        "value": "\u00bfContinuar?"
+      },
+      "b": {
+        "tag": 1,
+        "value": "Continue?"
+      }
+    },
+    {
+      "index": 851,
+      "a": {
+        "tag": 1,
+        "value": "reiniciar el juego?"
+      },
+      "b": {
+        "tag": 1,
+        "value": "Restart the game?"
+      }
+    },
+    {
+      "index": 852,
+      "a": {
+        "tag": 1,
+        "value": "reiniciar el juego"
+      },
+      "b": {
+        "tag": 1,
+        "value": "Reset game"
+      }
+    }
+  ],
+  "post_constant_pool_bytes_identical": true,
+  "post_constant_pool_a_sha256": "8539af88ad4efbbecaeaae2abbe8f36b835dfe4bcee453d3a190eeaa1f690968",
+  "post_constant_pool_b_sha256": "8539af88ad4efbbecaeaae2abbe8f36b835dfe4bcee453d3a190eeaa1f690968"
+}

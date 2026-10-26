@@ -1,0 +1,69 @@
+{
+  "id": "player",
+  "variant": "player",
+  "inputPath": "assets/original/player.png",
+  "inputSha256": "ba4a58ba62285fd4decc3190de4d641027be0e78db86588a9e27bdcad512dcd5",
+  "inputDimensions": [
+    496,
+    64
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels replicate padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/player.png",
+  "inferenceInputSha256": "c440975ab68722a40ae83ad6ecb434968db1e06f6e98ede7e8234cf3a3bbfb0b",
+  "rawOutputPath": "assets/ai-raw/player-fsrcnn.png",
+  "rawOutputSha256": "411b16296cda8ff8647af6939268ab0da6a9f4b41b4b3b49bc520050ab9512f1",
+  "rawDimensions": [
+    2048,
+    320
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/remastered4x/player.png",
+  "outputSha256": "1538a83d56891b8340916f7b6eb310237a21a345545fcf8b4145dbdba70483b3",
+  "outputDimensions": [
+    1984,
+    256
+  ],
+  "baselinePath": "assets/baseline4x/player.png",
+  "baselineSha256": "ba441f7c41f96dacef2707c484db20386bed94acbfd6b7d80f2733c269af30d2",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 15.41966172198257,
+    "visibleRgbChangedPixelCount": 176841
+  },
+  "status": "approved",
+  "review": {
+    "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+    "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+    "decision": "approved",
+    "notes": "Two human rows, bat subslots, bite/transform overlap crops and blue hair/red cape preserved; source mask prevents position/silhouette drift.",
+    "staticEvidence": "reports/remaster/player-comparison.png",
+    "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+    "knownLimitations": [
+      "FSRCNN smooths some source dithering and may produce mild local ringing",
+      "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+      "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+    ]
+  }
+}

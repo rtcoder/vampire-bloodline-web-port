@@ -1,0 +1,5 @@
+# Preserve reference bytes, including CRLF in original JAR manifests.
+/source/** -text
+/reference/** -text
+/source-packages/** -text
+/reports/MANIFEST.MF -text

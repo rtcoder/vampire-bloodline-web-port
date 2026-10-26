@@ -1,0 +1,69 @@
+{
+  "id": "eve_title",
+  "variant": "eve_title",
+  "inputPath": "assets/original/eve_title.png",
+  "inputSha256": "744dbc99d2ebb345eb21bc7c5b48c91c33798d4781af9e1572c669675f46ad3a",
+  "inputDimensions": [
+    176,
+    208
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels replicate padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/eve_title.png",
+  "inferenceInputSha256": "461a665c40305fb9c5872c0e5ef3046ccb1db1b7b31f44194331c185a693dde3",
+  "rawOutputPath": "assets/ai-raw/eve_title-fsrcnn.png",
+  "rawOutputSha256": "7e93302f29ca6f8bc8d9f5e90963a9e9f5577e64730af8f42c98fc47261ed165",
+  "rawDimensions": [
+    768,
+    896
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/remastered4x/eve_title.png",
+  "outputSha256": "c1a2a184af02d268babad04ee38a81d4e30469563e83e91203a5b15ba2a11e26",
+  "outputDimensions": [
+    704,
+    832
+  ],
+  "baselinePath": "assets/baseline4x/eve_title.png",
+  "baselineSha256": "bcf93bed281d6fd9aca500711f4cd0ca462a073341250aeec9aee8bc9f6c6f82",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 2.911354758522727,
+    "visibleRgbChangedPixelCount": 186408
+  },
+  "status": "approved",
+  "review": {
+    "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+    "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+    "decision": "approved",
+    "notes": "Full-body blue-haired Eve and red cape retain silhouette, composition and palette.",
+    "staticEvidence": "reports/remaster/eve_title-comparison.png",
+    "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+    "knownLimitations": [
+      "FSRCNN smooths some source dithering and may produce mild local ringing",
+      "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+      "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+    ]
+  }
+}

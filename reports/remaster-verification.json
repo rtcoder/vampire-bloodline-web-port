@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "originalsUnchanged": 25,
+  "neuralInferenceRecords": 26,
+  "actualAcceptedNeuralPasses": 60,
+  "runtimeRemasters": 25,
+  "validCropRecords": 227,
+  "playbackGroups": 41,
+  "rawNeuralRgbMatchesFinal": true,
+  "sourceAlphaExact": true,
+  "allRuntimeHashesMatch": true,
+  "artisticApprovalInferred": false
+}

@@ -1,0 +1,164 @@
+{
+  "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+  "reviewer": "Codex asset agent; parent also inspected player comparison",
+  "assets": [
+    {
+      "id": "background",
+      "status": "approved",
+      "notes": "Castle silhouette and dark red palette retained; English canonical runtime variant separately inferred and reviewed."
+    },
+    {
+      "id": "boss_jvh",
+      "status": "approved",
+      "notes": "All24 source slots preserved; blonde hair, black outfit, weapon and both facing sequences stable in playback."
+    },
+    {
+      "id": "coffin",
+      "status": "approved",
+      "notes": "Facial identity, fangs, red bow and coffin framing preserved; SR smooths source dithering."
+    },
+    {
+      "id": "enemy_dog",
+      "status": "approved",
+      "notes": "Both32x16 running poses and golden-brown coat preserved; no change to limb reach or alpha."
+    },
+    {
+      "id": "enemy_hunter",
+      "status": "approved",
+      "notes": "All12 rendered32x32 slots plus unused final source column preserved; orange hair/black coat and attack poses stable."
+    },
+    {
+      "id": "enemy_wraith",
+      "status": "approved",
+      "notes": "All3 floating poses, gray robe, hands and source silhouette preserved."
+    },
+    {
+      "id": "eve",
+      "status": "approved",
+      "notes": "Blue hair, red eyes/lips, face proportions and original framing preserved."
+    },
+    {
+      "id": "eve_title",
+      "status": "approved",
+      "notes": "Full-body blue-haired Eve and red cape retain silhouette, composition and palette."
+    },
+    {
+      "id": "eyes",
+      "status": "approved",
+      "notes": "Exact eye crop preserved; enhancement stays inside original dimensions."
+    },
+    {
+      "id": "gui",
+      "status": "approved",
+      "notes": "Health frame/orb and fang/power icons retain native clipping regions and meaning."
+    },
+    {
+      "id": "icon",
+      "status": "approved",
+      "notes": "15x15 bat icon remains same symbol and silhouette."
+    },
+    {
+      "id": "jvh",
+      "status": "approved",
+      "notes": "Blonde hair, face and expression retained; no generated replacement character."
+    },
+    {
+      "id": "jvh_full",
+      "status": "approved",
+      "notes": "Full-body black outfit, sword angle/length and original framing retained."
+    },
+    {
+      "id": "letter",
+      "status": "approved",
+      "notes": "All26 glyph slots preserved; source alpha fixes exact strokes; variable glyph widths/advances exported."
+    },
+    {
+      "id": "menu",
+      "status": "approved",
+      "notes": "Borders, marks, arrows and gradient bar retain exact source clipping regions."
+    },
+    {
+      "id": "ngame",
+      "status": "approved",
+      "notes": "MFORMA logo and registered mark retained; no translation or substituted text."
+    },
+    {
+      "id": "player",
+      "status": "approved",
+      "notes": "Two human rows, bat subslots, bite/transform overlap crops and blue hair/red cape preserved; source mask prevents position/silhouette drift."
+    },
+    {
+      "id": "special",
+      "status": "approved",
+      "notes": "All40 seven-pixel slots retained,36 source width records and7 accent overlay crops exported; original glyph shapes retained."
+    },
+    {
+      "id": "stuff",
+      "status": "approved",
+      "notes": "Pickups, projectiles, slash surfaces and column fragment retained; complete playback and TTL clipping fixture inspected."
+    },
+    {
+      "id": "sword",
+      "status": "approved",
+      "notes": "All3 sword orientations retain exact silhouettes/lengths and original per-stage attachment offsets."
+    },
+    {
+      "id": "tiles1",
+      "status": "approved",
+      "notes": "Reprocessed each source tile with its own8px wrapped context; prior whole-atlas candidate rejected for dark grid. Live initial scene compared to original after reload; wall/water artificial grid gone. Geometry and source alpha unchanged."
+    },
+    {
+      "id": "tiles2",
+      "status": "approved",
+      "notes": "Reprocessed each source tile with its own8px wrapped context; prior whole-atlas candidate rejected for dark grid. Live initial scene compared to original after reload; wall/water artificial grid gone. Geometry and source alpha unchanged."
+    },
+    {
+      "id": "tiles3",
+      "status": "approved",
+      "notes": "Reprocessed each source tile with its own8px wrapped context; prior whole-atlas candidate rejected for dark grid. Live initial scene compared to original after reload; wall/water artificial grid gone. Geometry and source alpha unchanged."
+    },
+    {
+      "id": "tiles4",
+      "status": "approved",
+      "notes": "Reprocessed each source tile with its own8px wrapped context; prior whole-atlas candidate rejected for dark grid. Live initial scene compared to original after reload; wall/water artificial grid gone. Geometry and source alpha unchanged."
+    },
+    {
+      "id": "title",
+      "status": "approved",
+      "notes": "VAMPIRE BLOODLINE wording, turquoise/red colors and logo geometry preserved."
+    },
+    {
+      "id": "background-en",
+      "status": "approved",
+      "notes": "Castle silhouette and dark red palette retained; English canonical runtime variant separately inferred and reviewed."
+    }
+  ],
+  "liveBrowser": "Codex in-app browser at http://127.0.0.1:8091/remaster-review.html",
+  "animationGroups": 37,
+  "tileAdjacencies": 339,
+  "backgroundModes": [
+    "checkerboard",
+    "white",
+    "black"
+  ],
+  "browserErrorsObserved": [],
+  "evidence": [
+    "reports/remaster/playback-top.png",
+    "reports/remaster/playback-middle.png",
+    "reports/remaster/playback-sword.png",
+    "reports/remaster/playback-effects.png",
+    "reports/remaster/alpha-white.png",
+    "reports/remaster/alpha-black.png"
+  ],
+  "comparisonToRunningJar": "not performed by this asset task",
+  "tileCorrection": {
+    "rejected": "reports/remaster/tilesN-atlas-rejected.json",
+    "reason": "Unrelated atlas neighbors darkened repeated tile borders; original static fixture review missed live grid",
+    "replacement": "38 per-tile wrapped-context neural passes, exact source slots",
+    "liveEvidence": [
+      "reports/browser/ai-seams-after.png",
+      "reports/browser/ai-seams-original-reference.png"
+    ],
+    "regression": "reports/remaster-seam-regression.json"
+  }
+}

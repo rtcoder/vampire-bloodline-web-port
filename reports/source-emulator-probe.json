@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-26",
+  "status": "blocked_no_java_or_compatible_emulator",
+  "checks": [
+    {
+      "command": [
+        "java",
+        "-version"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "The operation couldn’t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n"
+    },
+    {
+      "command": [
+        "/usr/libexec/java_home",
+        "-V"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "The operation couldn’t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n"
+    },
+    {
+      "command": [
+        "java",
+        "-jar",
+        "source-packages/extra/vampire-bloodline-extra-jars/jars/vampire-bloodline-176-en-patch.jar"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "The operation couldn’t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n"
+    }
+  ],
+  "emulatorCommands": {
+    "microemulator": null,
+    "kemulator": null,
+    "freej2me": null,
+    "freej2me-plus": null
+  },
+  "searchedPaths": [
+    "/Applications",
+    "/Library/Java/JavaVirtualMachines",
+    "/opt/homebrew",
+    "/Users/rtcoder/projekty",
+    "/Users/rtcoder/Applications",
+    "/Users/rtcoder/Downloads",
+    "/private/tmp"
+  ],
+  "result": "System java/javap executables are launch stubs. java -version, java_home -V and attempted JAR launch report no Java Runtime. No compatible local emulator found in searched paths. No emulator launch, gameplay capture or runtime comparison was possible. Static reconstruction remains unverified against executed original."
+}

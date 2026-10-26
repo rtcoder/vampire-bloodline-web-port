@@ -1,0 +1,27 @@
+{
+  "asset": "player",
+  "tool": "image_gen.imagegen",
+  "model": null,
+  "modelVersion": null,
+  "seed": null,
+  "promptPath": "reports/remaster/player-imagegen-prompt.txt",
+  "parameters": {
+    "referenced_image_paths": [
+      "assets/original/player.png"
+    ],
+    "transparent_background": true
+  },
+  "inputSha256": "ba4a58ba62285fd4decc3190de4d641027be0e78db86588a9e27bdcad512dcd5",
+  "rawPath": "assets/ai-raw/player-imagegen-rejected.png",
+  "rawSha256": "0890835b91cebe6580f5ff1a1e6be682df1007a65d0ee2efa1d0be7cc92c55c3",
+  "rawDimensions": [
+    2171,
+    724
+  ],
+  "status": "rejected",
+  "reasons": [
+    "Changed costume/cape volume and character proportions",
+    "Added large vertical padding instead of retaining exact atlas aspect ratio"
+  ],
+  "normalizedOutput": null
+}

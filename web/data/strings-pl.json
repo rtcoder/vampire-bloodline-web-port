@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "language": "pl",
+  "translatedFrom": "strings-en.json",
+  "sourceClassSha256": "3c4559d7acb0cb38d749288373b93c4696f80152de2cd0988b254b8d10093119",
+  "translationNote": "Wierne tłumaczenie angielskiego patcha Lanzz (2021, Kahvibreak). Zachowano wszystkie 4 sekcje instrukcji i 16 tablic scen; imię Eva zgodnie z hiszpańskim oryginałem. Znaki ~ oznaczają źródłowe podziały wierszy/akapitów.",
+  "ruleString": [
+    "Trzysta lat temu wampiry przemierzały ziemię, żyjąc w cieniu i mroku oraz żerując na niewinnych.~~Wielu ludzi żyło w strachu przed wampirami i ich władcą, hrabią Draculą. Zabijano go wiele razy, lecz zawsze powstawał z martwych. Wydawało się, że Dracula naprawdę jest nieśmiertelny.~~W końcu doktor Von Jäger obmyślił plan. Należało rozczłonkować Draculę i zamknąć jego szczątki w tajnych, odległych miejscach. Gdyby się udało, wampiry zostałyby ostatecznie pokonane.~~Tak też się stało i ród wampirów został zmieciony z powierzchni ziemi. Jedna jednak przeżyła — dziedziczka hrabiego Draculi, jego córka Eva! Gdyby zdołała odzyskać wszystkie części ciała Draculi i połączyć je, mógłby się odrodzić. Tylko on miał moc, by odbudować dynastię wampirów...",
+    "Układ ekranu~~~Lewy górny róg — wskaźnik zdrowia. Gdy Eva traci zdrowie, ze szklanej kuli ubywa krwi. Kula napełnia się, kiedy Eva się pożywia.~~Prawy dolny róg — wskaźnik broni. Pokazuje liczbę kołków Evy lub możliwość ugryzienia przeciwnika.~~Moce~~Eva może je zbierać, aby na krótko się przemienić lub przyspieszyć.~~Nietoperz — steruj nim w górę, w dół, w lewo i w prawo zwykłymi przyciskami kierunkowymi.~~Superprędkość — zwykłe sterowanie, ale przeciwnicy poruszają się wolniej.~~Para — zwykłe sterowanie. Eva staje się niewidzialna dla przeciwników.",
+    "4 / Lewo — ruch w lewo.~~6 / Prawo — ruch w prawo.~~2 / Góra — skok w górę (w trakcie skoku można sterować Evą przyciskami w lewo i w prawo). Jeśli Eva stoi przy drabinie, naciśnij 2, aby się po niej wspięła.~~8 / Dół — schodzenie po drabinie.~~Dodatkowe przyciski~~3 — szybki skok. Eva skacze ukośnie w górę i w prawo.~~5 / Ogień — atak. Jeśli Eva ma kołki, naciśnięcie 5 spowoduje rzut jednym z nich. Gdy Eva znajduje się blisko łowcy wampirów, ugryzie go i odzyska trochę energii.",
+    "2 / Lewo — ruch w lewo.~~* / Prawo — ruch w prawo.~~1 / Góra — skok (w trakcie skoku można sterować Evą przyciskami w lewo i w prawo). Jeśli Eva stoi przy drabinie, naciśnij 1 / Góra, aby się po niej wspięła.~~3 / Dół — schodzenie po drabinie.~~0 — szybki skok. Eva skacze ukośnie w górę i w prawo.~~# / Ogień — atak. Jeśli Eva ma kołki, naciśnij # / Ogień, aby jednym rzuciła. Gdy Eva znajdzie się blisko łowcy wampirów, spróbuje go ugryźć i odzyskać trochę energii."
+  ],
+  "cutString": [
+    [
+      "Poziom 1",
+      "Pierwsza część szczątków mojego ojca jest gdzieś tutaj ukryta. Muszę jednak uważać — może być pilnie strzeżona..."
+    ],
+    [
+      "Poziom 2",
+      "Na pewno to tutaj ukryli. Po co inaczej kręciłoby się tu tylu łowców wampirów?"
+    ],
+    [
+      "Poziom 3",
+      "A więc wreszcie się spotykamy.",
+      "A ty to kto?",
+      "Joanna Von Jäger.",
+      "Von Jäger!!!",
+      "TAK! Dokończę teraz to, co rozpoczął mój dziadek, i oczyszczę Ziemię z plugastwa twojego rodzaju. Na zawsze!!!"
+    ],
+    [
+      "Tym razem miałaś szczęście, wampirzyco!",
+      "Poziom 4",
+      "Jestem pewna, że już tu byłam. Zabijałam tu i pożywiałam się!"
+    ],
+    [
+      "Poziom 5",
+      "Cholera! Zaraz wzejdzie słońce. Jeśli się nie pospieszę, przeniosą szczątki. Muszę zaryzykować."
+    ],
+    [
+      "Poziom 6",
+      "Wygląda na to, że jesteś silniejsza, niż myślałam.",
+      "Tym razem wypiję twoją krew!",
+      "NIGDY!!",
+      "Zabiłam już wielu z twojej armii, a teraz do nich dołączysz.",
+      "GIŃ!!!"
+    ],
+    [
+      "Niech cię szlag! Chyba złamałam paznokieć!",
+      "Poziom 7",
+      "Wyczuwam tu szczątki Draculi. Pewnie są gdzieś wyżej, w jakiejś jaskini."
+    ],
+    [
+      "Poziom 8",
+      "HSSSS, znowu świt! Dlaczego to tyle trwa?"
+    ],
+    [
+      "Poziom 9",
+      "Naprawdę jesteś potężną wojowniczką, skoro dotarłaś tak daleko i nadal żyjesz.",
+      "Tak, a ty słabniesz. Oddaj szczątki mojego ojca, a zabiję cię szybko.",
+      "Nigdy nie dostaniesz szczątków Draculi!"
+    ],
+    [
+      "Hrmmph!",
+      "Poziom 10",
+      "Nie wierzę! Ten zamek jest... BYŁ mojego ojca. Von Jägerowie będą za to płacić przez całą wieczność!"
+    ],
+    [
+      "Poziom 11",
+      "Wciąż pamiętam niektóre ukryte przejścia. Poskładam ciało ojca szybciej, niż się spodziewają."
+    ],
+    [
+      "Poziom 12",
+      "HA, ha, ha, ha! Głupia, naprawdę myślałaś, że nie wiemy o ukrytych przejściach? Celowo cię tutaj sprowadziliśmy.",
+      "Pokonałam cię trzy razy. Nie masz szans z córką hrabiego Draculi!",
+      "Draculę pokonał Von Jäger i ciebie spotka to samo!"
+    ],
+    [
+      "Znowu wygrałaś, wampirzyco, ale ostatniej części nie znajdziesz za nic!",
+      "Poziom 13",
+      "Już prawie koniec. Jestem taka zmęczona, lecz wkrótce mój ojciec powróci, a mrok znów zapanuje niepodzielnie."
+    ],
+    [
+      "Poziom 14",
+      "Ha! Ukryli serce mojego ojca w jego własnej krypcie! Jakże stosowne, że właśnie tu nastąpi jego odrodzenie."
+    ],
+    [
+      "Poziom 15",
+      "Liczyłam, że dotrzesz aż tutaj.",
+      "Żebyś wreszcie mogła mnie zabić? HA!",
+      "Możesz się śmiać, ale cię zniszczę.",
+      "Zgotuję ci najgorszy los. Staniesz się pierwszą z naszej nowej dynastii wampirów.",
+      "NIGDY!!! To się kończy TERAZ…"
+    ],
+    [
+      "Nie! Nieeeeeee!",
+      "A teraz mój ojciec się odrodzi i ciebie weźmie jako pierwszą!",
+      "...",
+      "ODRODZIŁEM SIĘ!!!"
+    ]
+  ],
+  "creditString": "Projekt: Paul Jacobson, Daniel Rammelt~~Kod: Daniel Rammelt.~~Grafika: Paul Jacobson, Matthew Risley.~~Producent: Nic Garner.~~Produkcja: Mforma Europe.~Software copyright 2003 Mforma Group.",
+  "translationCredit": "Tłumaczenie angielskie: Lanzz, 2021, projekt Kahvibreak. Polska warstwa tekstowa: przekład angielskiego patcha przygotowany dla tego portu.",
+  "ui": {
+    "String1": "Koniec gry!",
+    "String2": "vampire:",
+    "String3": "bloodline",
+    "String5": "graj",
+    "String6": "pomoc",
+    "String7": "opcje",
+    "String8": "wyjdź z gry",
+    "String10": "dźwięk",
+    "String11": "wł.",
+    "String12": "wył.",
+    "String13": "Menu główne",
+    "String14": "wstecz",
+    "String15": "wyjdź",
+    "String16": "Kontynuować?",
+    "String19": "wczytywanie",
+    "String24": "twórcy",
+    "String25": "historia",
+    "String26": "pomoc ogólna",
+    "String27": "sterowanie",
+    "String30": "zresetuj grę",
+    "String31": "grafika",
+    "String32": "sprite’y"
+  },
+  "runtimeUI": {
+    "loading": "wczytywanie",
+    "loadingGraphics": "Wczytywanie grafiki",
+    "title": "vampire:",
+    "help": "Pomoc",
+    "soundOn": "Dźwięk: wł.",
+    "soundOff": "Dźwięk: wył.",
+    "mainMenu": "Menu główne",
+    "play": "graj",
+    "options": "opcje",
+    "exitGame": "Wyjdź z gry",
+    "credits": "Projekt: Paul Jacobson, Daniel Rammelt~~Kod: Daniel Rammelt.~~Grafika: Paul Jacobson, Matthew Risley.~~Producent: Nic Garner.~~Produkcja: Mforma Europe.~Software copyright 2003 Mforma Group.~~Tłumaczenie angielskie: Lanzz, 2021, projekt Kahvibreak. Polska warstwa tekstowa: przekład angielskiego patcha przygotowany dla tego portu.",
+    "creditsTitle": "Twórcy",
+    "story": "Historia",
+    "generalHelp": "Pomoc ogólna",
+    "playerControls": "sterowanie",
+    "continue": "Kontynuować?",
+    "restartQuestion": "Zrestartować grę?",
+    "resetGame": "Reset gry"
+  }
+}

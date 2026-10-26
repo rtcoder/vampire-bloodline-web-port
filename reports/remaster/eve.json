@@ -1,0 +1,69 @@
+{
+  "id": "eve",
+  "variant": "eve",
+  "inputPath": "assets/original/eve.png",
+  "inputSha256": "b73d7453cbb48f7d48948df7bba8a98ad8742481c97ebf910562f417bb65d581",
+  "inputDimensions": [
+    140,
+    70
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels replicate padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/eve.png",
+  "inferenceInputSha256": "8482a3db755130e21af90e06917974f206987d9e93053b84274851bb71e23691",
+  "rawOutputPath": "assets/ai-raw/eve-fsrcnn.png",
+  "rawOutputSha256": "10bf53022794d4ef1f253c01678450501d64aa01c46b8c746eb386971a5a2353",
+  "rawDimensions": [
+    624,
+    344
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/remastered4x/eve.png",
+  "outputSha256": "bd58ba16e7f0fae76ce45b275bab6ef7cffb806ff8aedf1bb13eafa29978f248",
+  "outputDimensions": [
+    560,
+    280
+  ],
+  "baselinePath": "assets/baseline4x/eve.png",
+  "baselineSha256": "f8074196f3a655aaeaae74439f2caad89cd69cf78cecccf84d2257f686759c32",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 6.681205357142857,
+    "visibleRgbChangedPixelCount": 145358
+  },
+  "status": "approved",
+  "review": {
+    "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+    "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+    "decision": "approved",
+    "notes": "Blue hair, red eyes/lips, face proportions and original framing preserved.",
+    "staticEvidence": "reports/remaster/eve-comparison.png",
+    "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+    "knownLimitations": [
+      "FSRCNN smooths some source dithering and may produce mild local ringing",
+      "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+      "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+    ]
+  }
+}

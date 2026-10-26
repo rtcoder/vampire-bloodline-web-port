@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "mode": "read_only_static_verification; MIDlet not executed",
+  "expected_jar": {
+    "name": "vampire-bloodline-176x208.jar",
+    "bytes": 160575,
+    "sha256": "ebe705c790f989af9b81c698b2f794fdac88266e75a6b704b9fbcbe94f631ab8"
+  },
+  "verified": {
+    "jar_members": 60,
+    "verified_member_hashes": 60,
+    "verified_exports": 54,
+    "verified_manifest_copy": true,
+    "verified_remaster_assets": 25
+  },
+  "errors": [],
+  "remaster_plan": {
+    "status": "passed",
+    "scope": "Source mapping, hashes, PNG dimensions and 4x targets; AI workflow status and generated output quality are not certified."
+  },
+  "zip_crc": "passed"
+}

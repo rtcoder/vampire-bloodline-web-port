@@ -1,0 +1,69 @@
+{
+  "id": "background",
+  "variant": "background-en",
+  "inputPath": "web/assets/original/background.png",
+  "inputSha256": "c0b396c6917415df7678e30e7ef1095de8dad5dae542e3021a5a05c48dd80012",
+  "inputDimensions": [
+    176,
+    208
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels replicate padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/background-en.png",
+  "inferenceInputSha256": "4ad54ce7bfde2ecabc8f4b8ed531f5785954331cca46f0e766c16d6d72a810d5",
+  "rawOutputPath": "assets/ai-raw/background-en-fsrcnn.png",
+  "rawOutputSha256": "4292bebd54a3345139092b6d1f012b4e559199c14b9b7d679798e0ab98aa6e3a",
+  "rawDimensions": [
+    768,
+    896
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/remastered4x/background-en.png",
+  "outputSha256": "83998a3c3d49333b41f2bc875b4c8a9de6874070174c83f7e1bff1d3504a3a69",
+  "outputDimensions": [
+    704,
+    832
+  ],
+  "baselinePath": "assets/baseline4x/background-en.png",
+  "baselineSha256": "05035180f401ea3aa35f544b5210ef98decfe786f9d2101e3bff28fd076ea94b",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 0.7148949683129371,
+    "visibleRgbChangedPixelCount": 213496
+  },
+  "status": "approved",
+  "review": {
+    "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+    "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+    "decision": "approved",
+    "notes": "Castle silhouette and dark red palette retained; English canonical runtime variant separately inferred and reviewed.",
+    "staticEvidence": "reports/remaster/background-comparison.png",
+    "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+    "knownLimitations": [
+      "FSRCNN smooths some source dithering and may produce mild local ringing",
+      "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+      "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+    ]
+  }
+}

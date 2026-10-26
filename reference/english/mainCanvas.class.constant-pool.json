@@ -1,0 +1,4076 @@
+{
+  "pool": [
+    null,
+    {
+      "tag": 10,
+      "value": "0121024a"
+    },
+    {
+      "tag": 9,
+      "value": "0120024b"
+    },
+    {
+      "tag": 9,
+      "value": "0120024c"
+    },
+    {
+      "tag": 9,
+      "value": "0120024d"
+    },
+    {
+      "tag": 9,
+      "value": "0120024e"
+    },
+    {
+      "tag": 9,
+      "value": "0120024f"
+    },
+    {
+      "tag": 9,
+      "value": "01200250"
+    },
+    {
+      "tag": 9,
+      "value": "01200251"
+    },
+    {
+      "tag": 9,
+      "value": "01200252"
+    },
+    {
+      "tag": 9,
+      "value": "01200253"
+    },
+    {
+      "tag": 9,
+      "value": "01200254"
+    },
+    {
+      "tag": 9,
+      "value": "01200255"
+    },
+    {
+      "tag": 9,
+      "value": "01200256"
+    },
+    {
+      "tag": 9,
+      "value": "01200257"
+    },
+    {
+      "tag": 9,
+      "value": "01200258"
+    },
+    {
+      "tag": 9,
+      "value": "01200259"
+    },
+    {
+      "tag": 9,
+      "value": "0120025a"
+    },
+    {
+      "tag": 9,
+      "value": "0120025b"
+    },
+    {
+      "tag": 9,
+      "value": "0120025c"
+    },
+    {
+      "tag": 9,
+      "value": "0120025d"
+    },
+    {
+      "tag": 9,
+      "value": "0120025e"
+    },
+    {
+      "tag": 9,
+      "value": "0120025f"
+    },
+    {
+      "tag": 9,
+      "value": "01200260"
+    },
+    {
+      "tag": 7,
+      "value": "01ee"
+    },
+    {
+      "tag": 9,
+      "value": "01200261"
+    },
+    {
+      "tag": 9,
+      "value": "01200262"
+    },
+    {
+      "tag": 9,
+      "value": "01200263"
+    },
+    {
+      "tag": 9,
+      "value": "01200264"
+    },
+    {
+      "tag": 9,
+      "value": "01200265"
+    },
+    {
+      "tag": 9,
+      "value": "01200266"
+    },
+    {
+      "tag": 9,
+      "value": "01200267"
+    },
+    {
+      "tag": 9,
+      "value": "01200268"
+    },
+    {
+      "tag": 9,
+      "value": "01200269"
+    },
+    {
+      "tag": 9,
+      "value": "0120026a"
+    },
+    {
+      "tag": 9,
+      "value": "0120026b"
+    },
+    {
+      "tag": 9,
+      "value": "0120026c"
+    },
+    {
+      "tag": 9,
+      "value": "0120026d"
+    },
+    {
+      "tag": 9,
+      "value": "0120026e"
+    },
+    {
+      "tag": 9,
+      "value": "0120026f"
+    },
+    {
+      "tag": 9,
+      "value": "01200270"
+    },
+    {
+      "tag": 9,
+      "value": "01200271"
+    },
+    {
+      "tag": 9,
+      "value": "01200272"
+    },
+    {
+      "tag": 9,
+      "value": "01200273"
+    },
+    {
+      "tag": 9,
+      "value": "01200274"
+    },
+    {
+      "tag": 9,
+      "value": "01200275"
+    },
+    {
+      "tag": 9,
+      "value": "01200276"
+    },
+    {
+      "tag": 9,
+      "value": "01200277"
+    },
+    {
+      "tag": 9,
+      "value": "01200278"
+    },
+    {
+      "tag": 9,
+      "value": "01200279"
+    },
+    {
+      "tag": 9,
+      "value": "0120027a"
+    },
+    {
+      "tag": 9,
+      "value": "0120027b"
+    },
+    {
+      "tag": 9,
+      "value": "0120027c"
+    },
+    {
+      "tag": 9,
+      "value": "0120027d"
+    },
+    {
+      "tag": 9,
+      "value": "0120027e"
+    },
+    {
+      "tag": 9,
+      "value": "0120027f"
+    },
+    {
+      "tag": 9,
+      "value": "01200280"
+    },
+    {
+      "tag": 7,
+      "value": "0281"
+    },
+    {
+      "tag": 9,
+      "value": "01200282"
+    },
+    {
+      "tag": 10,
+      "value": "02830284"
+    },
+    {
+      "tag": 9,
+      "value": "01200285"
+    },
+    {
+      "tag": 9,
+      "value": "01200286"
+    },
+    {
+      "tag": 9,
+      "value": "01200287"
+    },
+    {
+      "tag": 9,
+      "value": "01200288"
+    },
+    {
+      "tag": 9,
+      "value": "0289028a"
+    },
+    {
+      "tag": 10,
+      "value": "028b028c"
+    },
+    {
+      "tag": 9,
+      "value": "0120028d"
+    },
+    {
+      "tag": 10,
+      "value": "0121028e"
+    },
+    {
+      "tag": 10,
+      "value": "0121028f"
+    },
+    {
+      "tag": 9,
+      "value": "01200290"
+    },
+    {
+      "tag": 9,
+      "value": "01200291"
+    },
+    {
+      "tag": 9,
+      "value": "01200292"
+    },
+    {
+      "tag": 9,
+      "value": "01200293"
+    },
+    {
+      "tag": 9,
+      "value": "01200294"
+    },
+    {
+      "tag": 9,
+      "value": "01200295"
+    },
+    {
+      "tag": 9,
+      "value": "01200296"
+    },
+    {
+      "tag": 9,
+      "value": "01200297"
+    },
+    {
+      "tag": 10,
+      "value": "02980299"
+    },
+    {
+      "tag": 9,
+      "value": "0120029a"
+    },
+    {
+      "tag": 7,
+      "value": "029b"
+    },
+    {
+      "tag": 10,
+      "value": "004f029c"
+    },
+    {
+      "tag": 9,
+      "value": "0120029d"
+    },
+    {
+      "tag": 9,
+      "value": "0120029e"
+    },
+    {
+      "tag": 9,
+      "value": "0120029f"
+    },
+    {
+      "tag": 9,
+      "value": "012002a0"
+    },
+    {
+      "tag": 8,
+      "value": "02a1"
+    },
+    {
+      "tag": 10,
+      "value": "004f02a2"
+    },
+    {
+      "tag": 9,
+      "value": "012002a3"
+    },
+    {
+      "tag": 8,
+      "value": "02a4"
+    },
+    {
+      "tag": 9,
+      "value": "012002a5"
+    },
+    {
+      "tag": 8,
+      "value": "02a6"
+    },
+    {
+      "tag": 9,
+      "value": "012002a7"
+    },
+    {
+      "tag": 8,
+      "value": "02a8"
+    },
+    {
+      "tag": 10,
+      "value": "029802a9"
+    },
+    {
+      "tag": 9,
+      "value": "012002aa"
+    },
+    {
+      "tag": 7,
+      "value": "02ab"
+    },
+    {
+      "tag": 8,
+      "value": "02ac"
+    },
+    {
+      "tag": 9,
+      "value": "012002ad"
+    },
+    {
+      "tag": 8,
+      "value": "02ae"
+    },
+    {
+      "tag": 9,
+      "value": "012002af"
+    },
+    {
+      "tag": 8,
+      "value": "02b0"
+    },
+    {
+      "tag": 9,
+      "value": "012002b1"
+    },
+    {
+      "tag": 8,
+      "value": "02b2"
+    },
+    {
+      "tag": 9,
+      "value": "012002b3"
+    },
+    {
+      "tag": 8,
+      "value": "02b4"
+    },
+    {
+      "tag": 9,
+      "value": "012002b5"
+    },
+    {
+      "tag": 8,
+      "value": "02b6"
+    },
+    {
+      "tag": 9,
+      "value": "012002b7"
+    },
+    {
+      "tag": 10,
+      "value": "004f02b8"
+    },
+    {
+      "tag": 8,
+      "value": "02b9"
+    },
+    {
+      "tag": 10,
+      "value": "012002ba"
+    },
+    {
+      "tag": 8,
+      "value": "02bb"
+    },
+    {
+      "tag": 8,
+      "value": "02bc"
+    },
+    {
+      "tag": 8,
+      "value": "02bd"
+    },
+    {
+      "tag": 8,
+      "value": "02be"
+    },
+    {
+      "tag": 8,
+      "value": "02bf"
+    },
+    {
+      "tag": 8,
+      "value": "02c0"
+    },
+    {
+      "tag": 8,
+      "value": "02c1"
+    },
+    {
+      "tag": 8,
+      "value": "02c2"
+    },
+    {
+      "tag": 9,
+      "value": "012002c3"
+    },
+    {
+      "tag": 10,
+      "value": "012002c4"
+    },
+    {
+      "tag": 8,
+      "value": "02c5"
+    },
+    {
+      "tag": 10,
+      "value": "02c602c7"
+    },
+    {
+      "tag": 8,
+      "value": "02c8"
+    },
+    {
+      "tag": 10,
+      "value": "028b02c9"
+    },
+    {
+      "tag": 7,
+      "value": "02ca"
+    },
+    {
+      "tag": 10,
+      "value": "007d024a"
+    },
+    {
+      "tag": 9,
+      "value": "012002cb"
+    },
+    {
+      "tag": 7,
+      "value": "02cc"
+    },
+    {
+      "tag": 10,
+      "value": "008002cd"
+    },
+    {
+      "tag": 9,
+      "value": "012002ce"
+    },
+    {
+      "tag": 5,
+      "value": "0000000000000064"
+    },
+    null,
+    {
+      "tag": 10,
+      "value": "007d02cf"
+    },
+    {
+      "tag": 9,
+      "value": "008002d0"
+    },
+    {
+      "tag": 8,
+      "value": "02d1"
+    },
+    {
+      "tag": 10,
+      "value": "02d202d3"
+    },
+    {
+      "tag": 10,
+      "value": "02d202d4"
+    },
+    {
+      "tag": 10,
+      "value": "02d202d5"
+    },
+    {
+      "tag": 7,
+      "value": "02d6"
+    },
+    {
+      "tag": 10,
+      "value": "012002d7"
+    },
+    {
+      "tag": 10,
+      "value": "02d202d8"
+    },
+    {
+      "tag": 10,
+      "value": "02d202d9"
+    },
+    {
+      "tag": 10,
+      "value": "02d202da"
+    },
+    {
+      "tag": 10,
+      "value": "02db02dc"
+    },
+    {
+      "tag": 7,
+      "value": "02dd"
+    },
+    {
+      "tag": 10,
+      "value": "0091024a"
+    },
+    {
+      "tag": 8,
+      "value": "02de"
+    },
+    {
+      "tag": 10,
+      "value": "009102df"
+    },
+    {
+      "tag": 10,
+      "value": "009102e0"
+    },
+    {
+      "tag": 10,
+      "value": "02e102e2"
+    },
+    {
+      "tag": 10,
+      "value": "02e302e4"
+    },
+    {
+      "tag": 10,
+      "value": "02e302e5"
+    },
+    {
+      "tag": 10,
+      "value": "02e302e6"
+    },
+    {
+      "tag": 10,
+      "value": "003902e7"
+    },
+    {
+      "tag": 10,
+      "value": "003902e8"
+    },
+    {
+      "tag": 10,
+      "value": "02e902ea"
+    },
+    {
+      "tag": 10,
+      "value": "003902eb"
+    },
+    {
+      "tag": 9,
+      "value": "00800255"
+    },
+    {
+      "tag": 10,
+      "value": "02c602ec"
+    },
+    {
+      "tag": 7,
+      "value": "02ed"
+    },
+    {
+      "tag": 10,
+      "value": "00a0024a"
+    },
+    {
+      "tag": 10,
+      "value": "028b02ee"
+    },
+    {
+      "tag": 9,
+      "value": "012002ef"
+    },
+    {
+      "tag": 7,
+      "value": "02f0"
+    },
+    {
+      "tag": 10,
+      "value": "00a402f1"
+    },
+    {
+      "tag": 10,
+      "value": "00a002f2"
+    },
+    {
+      "tag": 9,
+      "value": "012002f3"
+    },
+    {
+      "tag": 9,
+      "value": "012002f4"
+    },
+    {
+      "tag": 9,
+      "value": "012002f5"
+    },
+    {
+      "tag": 10,
+      "value": "012002f6"
+    },
+    {
+      "tag": 10,
+      "value": "00a002f7"
+    },
+    {
+      "tag": 9,
+      "value": "012002f8"
+    },
+    {
+      "tag": 10,
+      "value": "00a002f9"
+    },
+    {
+      "tag": 10,
+      "value": "00a402fa"
+    },
+    {
+      "tag": 10,
+      "value": "004f02fb"
+    },
+    {
+      "tag": 8,
+      "value": "02fc"
+    },
+    {
+      "tag": 10,
+      "value": "009102fd"
+    },
+    {
+      "tag": 8,
+      "value": "02fe"
+    },
+    {
+      "tag": 7,
+      "value": "02ff"
+    },
+    {
+      "tag": 10,
+      "value": "00b30300"
+    },
+    {
+      "tag": 10,
+      "value": "00b30301"
+    },
+    {
+      "tag": 8,
+      "value": "0302"
+    },
+    {
+      "tag": 8,
+      "value": "0303"
+    },
+    {
+      "tag": 10,
+      "value": "004f0304"
+    },
+    {
+      "tag": 9,
+      "value": "01200305"
+    },
+    {
+      "tag": 10,
+      "value": "00b302e4"
+    },
+    {
+      "tag": 9,
+      "value": "01200306"
+    },
+    {
+      "tag": 10,
+      "value": "00bd0307"
+    },
+    {
+      "tag": 7,
+      "value": "0308"
+    },
+    {
+      "tag": 10,
+      "value": "00bd0309"
+    },
+    {
+      "tag": 10,
+      "value": "00bd030a"
+    },
+    {
+      "tag": 9,
+      "value": "00bd030b"
+    },
+    {
+      "tag": 9,
+      "value": "004f030c"
+    },
+    {
+      "tag": 10,
+      "value": "02e9030d"
+    },
+    {
+      "tag": 9,
+      "value": "0120030e"
+    },
+    {
+      "tag": 9,
+      "value": "0120030f"
+    },
+    {
+      "tag": 10,
+      "value": "03100311"
+    },
+    {
+      "tag": 10,
+      "value": "02c60312"
+    },
+    {
+      "tag": 10,
+      "value": "03130314"
+    },
+    {
+      "tag": 10,
+      "value": "03130315"
+    },
+    {
+      "tag": 10,
+      "value": "03130316"
+    },
+    {
+      "tag": 10,
+      "value": "03130317"
+    },
+    {
+      "tag": 10,
+      "value": "03130318"
+    },
+    {
+      "tag": 8,
+      "value": "0319"
+    },
+    {
+      "tag": 10,
+      "value": "0091031a"
+    },
+    {
+      "tag": 9,
+      "value": "0120031b"
+    },
+    {
+      "tag": 9,
+      "value": "0120031c"
+    },
+    {
+      "tag": 10,
+      "value": "028b031d"
+    },
+    {
+      "tag": 10,
+      "value": "028b031e"
+    },
+    {
+      "tag": 10,
+      "value": "0120031f"
+    },
+    {
+      "tag": 9,
+      "value": "00bd0320"
+    },
+    {
+      "tag": 9,
+      "value": "00bd0321"
+    },
+    {
+      "tag": 10,
+      "value": "01200322"
+    },
+    {
+      "tag": 9,
+      "value": "00bd0323"
+    },
+    {
+      "tag": 10,
+      "value": "00a00324"
+    },
+    {
+      "tag": 11,
+      "value": "03250326"
+    },
+    {
+      "tag": 11,
+      "value": "03250327"
+    },
+    {
+      "tag": 10,
+      "value": "02830328"
+    },
+    {
+      "tag": 10,
+      "value": "01200329"
+    },
+    {
+      "tag": 10,
+      "value": "032a032b"
+    },
+    {
+      "tag": 10,
+      "value": "032a032c"
+    },
+    {
+      "tag": 8,
+      "value": "032d"
+    },
+    {
+      "tag": 10,
+      "value": "0091032e"
+    },
+    {
+      "tag": 8,
+      "value": "032f"
+    },
+    {
+      "tag": 10,
+      "value": "03130330"
+    },
+    {
+      "tag": 10,
+      "value": "004f0331"
+    },
+    {
+      "tag": 10,
+      "value": "004f0332"
+    },
+    {
+      "tag": 10,
+      "value": "004f0333"
+    },
+    {
+      "tag": 10,
+      "value": "03130334"
+    },
+    {
+      "tag": 3,
+      "value": "00e02020"
+    },
+    {
+      "tag": 3,
+      "value": "00f8da70"
+    },
+    {
+      "tag": 3,
+      "value": "00aaaaaa"
+    },
+    {
+      "tag": 9,
+      "value": "00bd0335"
+    },
+    {
+      "tag": 9,
+      "value": "00bd0336"
+    },
+    {
+      "tag": 9,
+      "value": "00bd0337"
+    },
+    {
+      "tag": 10,
+      "value": "03130338"
+    },
+    {
+      "tag": 10,
+      "value": "03130339"
+    },
+    {
+      "tag": 10,
+      "value": "0120033a"
+    },
+    {
+      "tag": 8,
+      "value": "033b"
+    },
+    {
+      "tag": 8,
+      "value": "033c"
+    },
+    {
+      "tag": 8,
+      "value": "033d"
+    },
+    {
+      "tag": 8,
+      "value": "033e"
+    },
+    {
+      "tag": 8,
+      "value": "033f"
+    },
+    {
+      "tag": 8,
+      "value": "0340"
+    },
+    {
+      "tag": 8,
+      "value": "0341"
+    },
+    {
+      "tag": 8,
+      "value": "0342"
+    },
+    {
+      "tag": 8,
+      "value": "0343"
+    },
+    {
+      "tag": 8,
+      "value": "0344"
+    },
+    {
+      "tag": 8,
+      "value": "0345"
+    },
+    {
+      "tag": 8,
+      "value": "0346"
+    },
+    {
+      "tag": 10,
+      "value": "01200347"
+    },
+    {
+      "tag": 9,
+      "value": "01200348"
+    },
+    {
+      "tag": 9,
+      "value": "01200349"
+    },
+    {
+      "tag": 8,
+      "value": "034a"
+    },
+    {
+      "tag": 8,
+      "value": "034b"
+    },
+    {
+      "tag": 8,
+      "value": "034c"
+    },
+    {
+      "tag": 8,
+      "value": "034d"
+    },
+    {
+      "tag": 8,
+      "value": "034e"
+    },
+    {
+      "tag": 8,
+      "value": "034f"
+    },
+    {
+      "tag": 8,
+      "value": "0350"
+    },
+    {
+      "tag": 9,
+      "value": "02890351"
+    },
+    {
+      "tag": 10,
+      "value": "01200352"
+    },
+    {
+      "tag": 8,
+      "value": "0353"
+    },
+    {
+      "tag": 8,
+      "value": "0354"
+    },
+    {
+      "tag": 9,
+      "value": "00bd0355"
+    },
+    {
+      "tag": 10,
+      "value": "01200356"
+    },
+    {
+      "tag": 10,
+      "value": "00b302e5"
+    },
+    {
+      "tag": 10,
+      "value": "01200357"
+    },
+    {
+      "tag": 9,
+      "value": "00bd0358"
+    },
+    {
+      "tag": 10,
+      "value": "01200359"
+    },
+    {
+      "tag": 10,
+      "value": "0120035a"
+    },
+    {
+      "tag": 10,
+      "value": "0283035b"
+    },
+    {
+      "tag": 10,
+      "value": "004f035c"
+    },
+    {
+      "tag": 10,
+      "value": "0120035d"
+    },
+    {
+      "tag": 10,
+      "value": "0120035e"
+    },
+    {
+      "tag": 9,
+      "value": "0120035f"
+    },
+    {
+      "tag": 9,
+      "value": "01200360"
+    },
+    {
+      "tag": 9,
+      "value": "01200361"
+    },
+    {
+      "tag": 10,
+      "value": "01200362"
+    },
+    {
+      "tag": 9,
+      "value": "02e90363"
+    },
+    {
+      "tag": 8,
+      "value": "0364"
+    },
+    {
+      "tag": 8,
+      "value": "0365"
+    },
+    {
+      "tag": 8,
+      "value": "0366"
+    },
+    {
+      "tag": 10,
+      "value": "03670368"
+    },
+    {
+      "tag": 8,
+      "value": "0369"
+    },
+    {
+      "tag": 10,
+      "value": "00a0036a"
+    },
+    {
+      "tag": 10,
+      "value": "00bd036b"
+    },
+    {
+      "tag": 7,
+      "value": "036d"
+    },
+    {
+      "tag": 7,
+      "value": "036e"
+    },
+    {
+      "tag": 1,
+      "value": "vampire"
+    },
+    {
+      "tag": 1,
+      "value": "LVampire;"
+    },
+    {
+      "tag": 1,
+      "value": "state_idle"
+    },
+    {
+      "tag": 1,
+      "value": "I"
+    },
+    {
+      "tag": 1,
+      "value": "ConstantValue"
+    },
+    {
+      "tag": 3,
+      "value": "00000000"
+    },
+    {
+      "tag": 1,
+      "value": "state_right"
+    },
+    {
+      "tag": 3,
+      "value": "00000001"
+    },
+    {
+      "tag": 1,
+      "value": "state_left"
+    },
+    {
+      "tag": 3,
+      "value": "00000002"
+    },
+    {
+      "tag": 1,
+      "value": "state_fire"
+    },
+    {
+      "tag": 3,
+      "value": "00000003"
+    },
+    {
+      "tag": 1,
+      "value": "state_use"
+    },
+    {
+      "tag": 3,
+      "value": "00000004"
+    },
+    {
+      "tag": 1,
+      "value": "state_look"
+    },
+    {
+      "tag": 3,
+      "value": "00000005"
+    },
+    {
+      "tag": 1,
+      "value": "state_up"
+    },
+    {
+      "tag": 3,
+      "value": "00000006"
+    },
+    {
+      "tag": 1,
+      "value": "state_down"
+    },
+    {
+      "tag": 3,
+      "value": "00000007"
+    },
+    {
+      "tag": 1,
+      "value": "state_ladder"
+    },
+    {
+      "tag": 3,
+      "value": "00000008"
+    },
+    {
+      "tag": 1,
+      "value": "state_death"
+    },
+    {
+      "tag": 3,
+      "value": "00000009"
+    },
+    {
+      "tag": 1,
+      "value": "state_scratch"
+    },
+    {
+      "tag": 3,
+      "value": "0000000a"
+    },
+    {
+      "tag": 1,
+      "value": "state_duck"
+    },
+    {
+      "tag": 3,
+      "value": "0000000b"
+    },
+    {
+      "tag": 1,
+      "value": "state_bat"
+    },
+    {
+      "tag": 3,
+      "value": "0000000c"
+    },
+    {
+      "tag": 1,
+      "value": "state_vapor"
+    },
+    {
+      "tag": 3,
+      "value": "0000000d"
+    },
+    {
+      "tag": 1,
+      "value": "state_slow"
+    },
+    {
+      "tag": 3,
+      "value": "0000000e"
+    },
+    {
+      "tag": 1,
+      "value": "state_bitten"
+    },
+    {
+      "tag": 3,
+      "value": "0000000f"
+    },
+    {
+      "tag": 1,
+      "value": "state_bite"
+    },
+    {
+      "tag": 3,
+      "value": "00000010"
+    },
+    {
+      "tag": 1,
+      "value": "state_melee"
+    },
+    {
+      "tag": 3,
+      "value": "00000011"
+    },
+    {
+      "tag": 1,
+      "value": "state_fjump"
+    },
+    {
+      "tag": 3,
+      "value": "00000012"
+    },
+    {
+      "tag": 1,
+      "value": "state_call_stake"
+    },
+    {
+      "tag": 3,
+      "value": "00000013"
+    },
+    {
+      "tag": 1,
+      "value": "state_call_ray"
+    },
+    {
+      "tag": 3,
+      "value": "00000014"
+    },
+    {
+      "tag": 1,
+      "value": "CELL_SIZE"
+    },
+    {
+      "tag": 1,
+      "value": "LEFT_SOFTKEY"
+    },
+    {
+      "tag": 3,
+      "value": "fffffffa"
+    },
+    {
+      "tag": 1,
+      "value": "RIGHT_SOFTKEY"
+    },
+    {
+      "tag": 3,
+      "value": "fffffff9"
+    },
+    {
+      "tag": 1,
+      "value": "MAX_BLOOD"
+    },
+    {
+      "tag": 1,
+      "value": "BLOOD_COLOUR"
+    },
+    {
+      "tag": 1,
+      "value": "SPARK_COLOUR"
+    },
+    {
+      "tag": 1,
+      "value": "SMOKE_COLOUR"
+    },
+    {
+      "tag": 1,
+      "value": "WATER_COLOUR"
+    },
+    {
+      "tag": 3,
+      "value": "000070dd"
+    },
+    {
+      "tag": 1,
+      "value": "TEXT_HEIGHT"
+    },
+    {
+      "tag": 1,
+      "value": "TEXT_SPACEHEIGHT"
+    },
+    {
+      "tag": 1,
+      "value": "TEXT_WIDTH"
+    },
+    {
+      "tag": 1,
+      "value": "TEXT_SPACE_WIDTH"
+    },
+    {
+      "tag": 1,
+      "value": "TEXT_PADDING_WIDTH"
+    },
+    {
+      "tag": 1,
+      "value": "TOPLEFT"
+    },
+    {
+      "tag": 1,
+      "value": "cutScreenLines"
+    },
+    {
+      "tag": 1,
+      "value": "TYPE_EMPTY"
+    },
+    {
+      "tag": 1,
+      "value": "TYPE_BLOCK"
+    },
+    {
+      "tag": 1,
+      "value": "TYPE_UP_SLOPE_B"
+    },
+    {
+      "tag": 1,
+      "value": "TYPE_UP_SLOPE_T"
+    },
+    {
+      "tag": 1,
+      "value": "TYPE_DOWN_SLOPE_T"
+    },
+    {
+      "tag": 1,
+      "value": "TYPE_DOWN_SLOPE_B"
+    },
+    {
+      "tag": 1,
+      "value": "TYPE_LADDER"
+    },
+    {
+      "tag": 1,
+      "value": "TYPE_START"
+    },
+    {
+      "tag": 1,
+      "value": "TYPE_END"
+    },
+    {
+      "tag": 1,
+      "value": "S_SLOW"
+    },
+    {
+      "tag": 1,
+      "value": "S_BAT"
+    },
+    {
+      "tag": 1,
+      "value": "S_VAPOR"
+    },
+    {
+      "tag": 1,
+      "value": "S_FJUMP"
+    },
+    {
+      "tag": 1,
+      "value": "S_SUCK"
+    },
+    {
+      "tag": 1,
+      "value": "S_SUN"
+    },
+    {
+      "tag": 1,
+      "value": "S_SWORD"
+    },
+    {
+      "tag": 1,
+      "value": "S_THROW"
+    },
+    {
+      "tag": 1,
+      "value": "S_DIE"
+    },
+    {
+      "tag": 1,
+      "value": "screen_menu"
+    },
+    {
+      "tag": 1,
+      "value": "screen_credits"
+    },
+    {
+      "tag": 1,
+      "value": "screen_play"
+    },
+    {
+      "tag": 1,
+      "value": "screen_ngame"
+    },
+    {
+      "tag": 1,
+      "value": "screen_intro"
+    },
+    {
+      "tag": 1,
+      "value": "screen_startmenu"
+    },
+    {
+      "tag": 1,
+      "value": "screen_load"
+    },
+    {
+      "tag": 1,
+      "value": "screen_setplay"
+    },
+    {
+      "tag": 1,
+      "value": "screen_ingameoption"
+    },
+    {
+      "tag": 3,
+      "value": "00000015"
+    },
+    {
+      "tag": 1,
+      "value": "screen_mapload"
+    },
+    {
+      "tag": 3,
+      "value": "00000019"
+    },
+    {
+      "tag": 1,
+      "value": "screen_wait"
+    },
+    {
+      "tag": 3,
+      "value": "0000001d"
+    },
+    {
+      "tag": 1,
+      "value": "screen_startingameoption"
+    },
+    {
+      "tag": 3,
+      "value": "0000001e"
+    },
+    {
+      "tag": 1,
+      "value": "screen_continue"
+    },
+    {
+      "tag": 3,
+      "value": "0000001f"
+    },
+    {
+      "tag": 1,
+      "value": "screen_mission"
+    },
+    {
+      "tag": 3,
+      "value": "00000020"
+    },
+    {
+      "tag": 1,
+      "value": "screen_progress"
+    },
+    {
+      "tag": 3,
+      "value": "00000024"
+    },
+    {
+      "tag": 1,
+      "value": "screen_help_menu"
+    },
+    {
+      "tag": 3,
+      "value": "00000027"
+    },
+    {
+      "tag": 1,
+      "value": "screen_parse_help"
+    },
+    {
+      "tag": 3,
+      "value": "00000028"
+    },
+    {
+      "tag": 1,
+      "value": "screen_parse_credits"
+    },
+    {
+      "tag": 3,
+      "value": "00000029"
+    },
+    {
+      "tag": 1,
+      "value": "screen_help"
+    },
+    {
+      "tag": 1,
+      "value": "screen_start_continue"
+    },
+    {
+      "tag": 3,
+      "value": "0000002a"
+    },
+    {
+      "tag": 1,
+      "value": "screen_cut"
+    },
+    {
+      "tag": 3,
+      "value": "0000002b"
+    },
+    {
+      "tag": 1,
+      "value": "screen_end"
+    },
+    {
+      "tag": 3,
+      "value": "0000002c"
+    },
+    {
+      "tag": 1,
+      "value": "screen_reset"
+    },
+    {
+      "tag": 3,
+      "value": "0000002d"
+    },
+    {
+      "tag": 1,
+      "value": "screen_loadgfx"
+    },
+    {
+      "tag": 3,
+      "value": "0000002e"
+    },
+    {
+      "tag": 1,
+      "value": "screen_option"
+    },
+    {
+      "tag": 3,
+      "value": "00000030"
+    },
+    {
+      "tag": 1,
+      "value": "letterSize"
+    },
+    {
+      "tag": 1,
+      "value": "[I"
+    },
+    {
+      "tag": 1,
+      "value": "specialSize"
+    },
+    {
+      "tag": 1,
+      "value": "BUTTON_MORE"
+    },
+    {
+      "tag": 1,
+      "value": "BUTTON_TICK"
+    },
+    {
+      "tag": 1,
+      "value": "BUTTON_CROSS"
+    },
+    {
+      "tag": 1,
+      "value": "STD_MENU_WIDTH"
+    },
+    {
+      "tag": 3,
+      "value": "00000093"
+    },
+    {
+      "tag": 1,
+      "value": "WIDE_MENU_WIDTH"
+    },
+    {
+      "tag": 1,
+      "value": "STD_MENU_HEIGHT"
+    },
+    {
+      "tag": 3,
+      "value": "00000073"
+    },
+    {
+      "tag": 1,
+      "value": "TALL_MENU_HEIGHT"
+    },
+    {
+      "tag": 1,
+      "value": "playerLatch"
+    },
+    {
+      "tag": 1,
+      "value": "curScreen"
+    },
+    {
+      "tag": 1,
+      "value": "Ljavax/microedition/lcdui/Image;"
+    },
+    {
+      "tag": 1,
+      "value": "spriteManager"
+    },
+    {
+      "tag": 1,
+      "value": "LGraphicObjectManager;"
+    },
+    {
+      "tag": 1,
+      "value": "width"
+    },
+    {
+      "tag": 1,
+      "value": "height"
+    },
+    {
+      "tag": 1,
+      "value": "halfWidth"
+    },
+    {
+      "tag": 1,
+      "value": "halfHeight"
+    },
+    {
+      "tag": 1,
+      "value": "gameWidth"
+    },
+    {
+      "tag": 1,
+      "value": "gameHeight"
+    },
+    {
+      "tag": 1,
+      "value": "halfGameWidth"
+    },
+    {
+      "tag": 1,
+      "value": "halfGameHeight"
+    },
+    {
+      "tag": 1,
+      "value": "screenType"
+    },
+    {
+      "tag": 1,
+      "value": "gametimer"
+    },
+    {
+      "tag": 1,
+      "value": "Ljava/util/Timer;"
+    },
+    {
+      "tag": 1,
+      "value": "scrolltimertask"
+    },
+    {
+      "tag": 1,
+      "value": "LScrollTimerTask;"
+    },
+    {
+      "tag": 1,
+      "value": "spacePos"
+    },
+    {
+      "tag": 1,
+      "value": "lineWidth"
+    },
+    {
+      "tag": 1,
+      "value": "startTextPos"
+    },
+    {
+      "tag": 1,
+      "value": "nextTextPos"
+    },
+    {
+      "tag": 1,
+      "value": "currentTextPos"
+    },
+    {
+      "tag": 1,
+      "value": "currentLine"
+    },
+    {
+      "tag": 1,
+      "value": "Ljava/lang/String;"
+    },
+    {
+      "tag": 1,
+      "value": "curpos"
+    },
+    {
+      "tag": 1,
+      "value": "charSize"
+    },
+    {
+      "tag": 1,
+      "value": "strLen"
+    },
+    {
+      "tag": 1,
+      "value": "alignValue"
+    },
+    {
+      "tag": 1,
+      "value": "curChar"
+    },
+    {
+      "tag": 1,
+      "value": "C"
+    },
+    {
+      "tag": 1,
+      "value": "thisStrLen"
+    },
+    {
+      "tag": 1,
+      "value": "letter"
+    },
+    {
+      "tag": 1,
+      "value": "menu"
+    },
+    {
+      "tag": 1,
+      "value": "special"
+    },
+    {
+      "tag": 1,
+      "value": "intro_image"
+    },
+    {
+      "tag": 1,
+      "value": "gui"
+    },
+    {
+      "tag": 1,
+      "value": "jvhface"
+    },
+    {
+      "tag": 1,
+      "value": "eveface"
+    },
+    {
+      "tag": 1,
+      "value": "ngame"
+    },
+    {
+      "tag": 1,
+      "value": "title"
+    },
+    {
+      "tag": 1,
+      "value": "intro"
+    },
+    {
+      "tag": 1,
+      "value": "ofsX"
+    },
+    {
+      "tag": 1,
+      "value": "ofsY"
+    },
+    {
+      "tag": 1,
+      "value": "timeCount"
+    },
+    {
+      "tag": 1,
+      "value": "playerSprite"
+    },
+    {
+      "tag": 1,
+      "value": "LSprite;"
+    },
+    {
+      "tag": 1,
+      "value": "totalLoaded"
+    },
+    {
+      "tag": 1,
+      "value": "totalToLoad"
+    },
+    {
+      "tag": 1,
+      "value": "adjustFrame"
+    },
+    {
+      "tag": 1,
+      "value": "Z"
+    },
+    {
+      "tag": 1,
+      "value": "menuFrame"
+    },
+    {
+      "tag": 1,
+      "value": "menuSelect"
+    },
+    {
+      "tag": 1,
+      "value": "menuGraphicHeight"
+    },
+    {
+      "tag": 1,
+      "value": "menuLines"
+    },
+    {
+      "tag": 1,
+      "value": "menuLength"
+    },
+    {
+      "tag": 1,
+      "value": "menuItem"
+    },
+    {
+      "tag": 1,
+      "value": "menuStart"
+    },
+    {
+      "tag": 1,
+      "value": "pagemargin"
+    },
+    {
+      "tag": 1,
+      "value": "S"
+    },
+    {
+      "tag": 1,
+      "value": "ruleBreaks"
+    },
+    {
+      "tag": 1,
+      "value": "[S"
+    },
+    {
+      "tag": 1,
+      "value": "ingame"
+    },
+    {
+      "tag": 1,
+      "value": "gameLoaded"
+    },
+    {
+      "tag": 1,
+      "value": "gameLoading"
+    },
+    {
+      "tag": 1,
+      "value": "helpScreen"
+    },
+    {
+      "tag": 1,
+      "value": "numMenuItems"
+    },
+    {
+      "tag": 1,
+      "value": "game_sound"
+    },
+    {
+      "tag": 1,
+      "value": "tileArray"
+    },
+    {
+      "tag": 1,
+      "value": "[[I"
+    },
+    {
+      "tag": 1,
+      "value": "BUFFER_WIDTH"
+    },
+    {
+      "tag": 1,
+      "value": "BUFFER_HEIGHT"
+    },
+    {
+      "tag": 1,
+      "value": "mapBuffer"
+    },
+    {
+      "tag": 1,
+      "value": "level"
+    },
+    {
+      "tag": 1,
+      "value": "sublevel"
+    },
+    {
+      "tag": 1,
+      "value": "mapLoaded"
+    },
+    {
+      "tag": 1,
+      "value": "map_file"
+    },
+    {
+      "tag": 1,
+      "value": "Ljava/io/DataInputStream;"
+    },
+    {
+      "tag": 1,
+      "value": "moveX"
+    },
+    {
+      "tag": 1,
+      "value": "moveY"
+    },
+    {
+      "tag": 1,
+      "value": "jumpAmount"
+    },
+    {
+      "tag": 1,
+      "value": "fastJumpAmount"
+    },
+    {
+      "tag": 1,
+      "value": "deathArc"
+    },
+    {
+      "tag": 1,
+      "value": "jumpCount"
+    },
+    {
+      "tag": 1,
+      "value": "jumping"
+    },
+    {
+      "tag": 1,
+      "value": "inAir"
+    },
+    {
+      "tag": 1,
+      "value": "batMode"
+    },
+    {
+      "tag": 1,
+      "value": "vaporMode"
+    },
+    {
+      "tag": 1,
+      "value": "slowMode"
+    },
+    {
+      "tag": 1,
+      "value": "biteMove"
+    },
+    {
+      "tag": 1,
+      "value": "stakes"
+    },
+    {
+      "tag": 1,
+      "value": "ticker"
+    },
+    {
+      "tag": 1,
+      "value": "streamBlip"
+    },
+    {
+      "tag": 1,
+      "value": "streamX"
+    },
+    {
+      "tag": 1,
+      "value": "streamY"
+    },
+    {
+      "tag": 1,
+      "value": "streamCount"
+    },
+    {
+      "tag": 1,
+      "value": "streamType"
+    },
+    {
+      "tag": 1,
+      "value": "drawX"
+    },
+    {
+      "tag": 1,
+      "value": "drawY"
+    },
+    {
+      "tag": 1,
+      "value": "RESOURCE_FILE"
+    },
+    {
+      "tag": 8,
+      "value": "036f"
+    },
+    {
+      "tag": 1,
+      "value": "movedCount"
+    },
+    {
+      "tag": 1,
+      "value": "selectLength"
+    },
+    {
+      "tag": 1,
+      "value": "lockScreen"
+    },
+    {
+      "tag": 1,
+      "value": "showCut"
+    },
+    {
+      "tag": 1,
+      "value": "bossDead"
+    },
+    {
+      "tag": 1,
+      "value": "levelCheat"
+    },
+    {
+      "tag": 1,
+      "value": "frameTic"
+    },
+    {
+      "tag": 1,
+      "value": "specialTic"
+    },
+    {
+      "tag": 1,
+      "value": "gameSound"
+    },
+    {
+      "tag": 1,
+      "value": "jumpLocked"
+    },
+    {
+      "tag": 1,
+      "value": "runOffEnd"
+    },
+    {
+      "tag": 1,
+      "value": "gameCompleted"
+    },
+    {
+      "tag": 1,
+      "value": "gfxLoaded"
+    },
+    {
+      "tag": 1,
+      "value": "sounds"
+    },
+    {
+      "tag": 1,
+      "value": "[Lcom/nokia/mid/sound/Sound;"
+    },
+    {
+      "tag": 1,
+      "value": "is3650"
+    },
+    {
+      "tag": 1,
+      "value": "midPosition"
+    },
+    {
+      "tag": 1,
+      "value": "currentValue"
+    },
+    {
+      "tag": 1,
+      "value": "J"
+    },
+    {
+      "tag": 1,
+      "value": "<init>"
+    },
+    {
+      "tag": 1,
+      "value": "(LVampire;)V"
+    },
+    {
+      "tag": 1,
+      "value": "Code"
+    },
+    {
+      "tag": 1,
+      "value": "readRecords"
+    },
+    {
+      "tag": 1,
+      "value": "()V"
+    },
+    {
+      "tag": 1,
+      "value": "writeRecords"
+    },
+    {
+      "tag": 1,
+      "value": "loadWAV"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljava/lang/String;)Lcom/nokia/mid/sound/Sound;"
+    },
+    {
+      "tag": 1,
+      "value": "playSound"
+    },
+    {
+      "tag": 1,
+      "value": "(I)V"
+    },
+    {
+      "tag": 1,
+      "value": "pause"
+    },
+    {
+      "tag": 1,
+      "value": "ParseString"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljava/lang/String;)V"
+    },
+    {
+      "tag": 1,
+      "value": "loadMap"
+    },
+    {
+      "tag": 1,
+      "value": "loadCol"
+    },
+    {
+      "tag": 1,
+      "value": "exitGame"
+    },
+    {
+      "tag": 1,
+      "value": "clearScreen"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljavax/microedition/lcdui/Graphics;III)V"
+    },
+    {
+      "tag": 1,
+      "value": "drawMenu"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljavax/microedition/lcdui/Graphics;IIIZ)V"
+    },
+    {
+      "tag": 1,
+      "value": "getResource"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljava/lang/String;)[B"
+    },
+    {
+      "tag": 1,
+      "value": "charWidth"
+    },
+    {
+      "tag": 1,
+      "value": "(C)I"
+    },
+    {
+      "tag": 1,
+      "value": "drawGraphicString"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljavax/microedition/lcdui/Graphics;Ljava/lang/String;IICI)V"
+    },
+    {
+      "tag": 1,
+      "value": "showIntroText"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljavax/microedition/lcdui/Graphics;ILjava/lang/String;IZ)Z"
+    },
+    {
+      "tag": 1,
+      "value": "gameLoader"
+    },
+    {
+      "tag": 1,
+      "value": "paint"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljavax/microedition/lcdui/Graphics;)V"
+    },
+    {
+      "tag": 1,
+      "value": "keyPressed"
+    },
+    {
+      "tag": 1,
+      "value": "keyReleased"
+    },
+    {
+      "tag": 1,
+      "value": "getTileVal"
+    },
+    {
+      "tag": 1,
+      "value": "(IIIII)I"
+    },
+    {
+      "tag": 1,
+      "value": "addParticle"
+    },
+    {
+      "tag": 1,
+      "value": "(IIII)V"
+    },
+    {
+      "tag": 1,
+      "value": "adjustOnSlope"
+    },
+    {
+      "tag": 1,
+      "value": "(II)V"
+    },
+    {
+      "tag": 1,
+      "value": "updateGame"
+    },
+    {
+      "tag": 1,
+      "value": "<clinit>"
+    },
+    {
+      "tag": 12,
+      "value": "02210225"
+    },
+    {
+      "tag": 12,
+      "value": "01bd0125"
+    },
+    {
+      "tag": 12,
+      "value": "01be0125"
+    },
+    {
+      "tag": 12,
+      "value": "01bf0125"
+    },
+    {
+      "tag": 12,
+      "value": "01c20125"
+    },
+    {
+      "tag": 12,
+      "value": "01c30125"
+    },
+    {
+      "tag": 12,
+      "value": "01c40125"
+    },
+    {
+      "tag": 12,
+      "value": "01c50125"
+    },
+    {
+      "tag": 12,
+      "value": "01c80125"
+    },
+    {
+      "tag": 12,
+      "value": "01d30125"
+    },
+    {
+      "tag": 12,
+      "value": "01d40125"
+    },
+    {
+      "tag": 12,
+      "value": "01d50125"
+    },
+    {
+      "tag": 12,
+      "value": "01d80125"
+    },
+    {
+      "tag": 12,
+      "value": "01d90125"
+    },
+    {
+      "tag": 12,
+      "value": "01da01db"
+    },
+    {
+      "tag": 12,
+      "value": "01dc0125"
+    },
+    {
+      "tag": 12,
+      "value": "01dd0125"
+    },
+    {
+      "tag": 12,
+      "value": "01e701db"
+    },
+    {
+      "tag": 12,
+      "value": "01e801db"
+    },
+    {
+      "tag": 12,
+      "value": "01e901db"
+    },
+    {
+      "tag": 12,
+      "value": "01ea0125"
+    },
+    {
+      "tag": 12,
+      "value": "01eb0125"
+    },
+    {
+      "tag": 12,
+      "value": "01ec01db"
+    },
+    {
+      "tag": 12,
+      "value": "01f101ee"
+    },
+    {
+      "tag": 12,
+      "value": "01f20125"
+    },
+    {
+      "tag": 12,
+      "value": "01f30125"
+    },
+    {
+      "tag": 12,
+      "value": "01f401db"
+    },
+    {
+      "tag": 12,
+      "value": "01f501f6"
+    },
+    {
+      "tag": 12,
+      "value": "01fc0125"
+    },
+    {
+      "tag": 12,
+      "value": "01fd01db"
+    },
+    {
+      "tag": 12,
+      "value": "01fe01db"
+    },
+    {
+      "tag": 12,
+      "value": "01ff01db"
+    },
+    {
+      "tag": 12,
+      "value": "020001db"
+    },
+    {
+      "tag": 12,
+      "value": "020101db"
+    },
+    {
+      "tag": 12,
+      "value": "02020125"
+    },
+    {
+      "tag": 12,
+      "value": "02030125"
+    },
+    {
+      "tag": 12,
+      "value": "02040125"
+    },
+    {
+      "tag": 12,
+      "value": "0205019e"
+    },
+    {
+      "tag": 12,
+      "value": "0206019e"
+    },
+    {
+      "tag": 12,
+      "value": "0207019e"
+    },
+    {
+      "tag": 12,
+      "value": "0208019e"
+    },
+    {
+      "tag": 12,
+      "value": "0209019e"
+    },
+    {
+      "tag": 12,
+      "value": "020e0125"
+    },
+    {
+      "tag": 12,
+      "value": "020f0125"
+    },
+    {
+      "tag": 12,
+      "value": "021001db"
+    },
+    {
+      "tag": 12,
+      "value": "02110125"
+    },
+    {
+      "tag": 12,
+      "value": "021201db"
+    },
+    {
+      "tag": 12,
+      "value": "021301db"
+    },
+    {
+      "tag": 12,
+      "value": "02140125"
+    },
+    {
+      "tag": 12,
+      "value": "02150125"
+    },
+    {
+      "tag": 12,
+      "value": "021601db"
+    },
+    {
+      "tag": 12,
+      "value": "021701db"
+    },
+    {
+      "tag": 12,
+      "value": "021801db"
+    },
+    {
+      "tag": 12,
+      "value": "021901db"
+    },
+    {
+      "tag": 12,
+      "value": "021a01db"
+    },
+    {
+      "tag": 1,
+      "value": "com/nokia/mid/sound/Sound"
+    },
+    {
+      "tag": 12,
+      "value": "021b021c"
+    },
+    {
+      "tag": 7,
+      "value": "0370"
+    },
+    {
+      "tag": 12,
+      "value": "03710372"
+    },
+    {
+      "tag": 12,
+      "value": "021d01db"
+    },
+    {
+      "tag": 12,
+      "value": "021e0125"
+    },
+    {
+      "tag": 12,
+      "value": "021f0220"
+    },
+    {
+      "tag": 12,
+      "value": "01220123"
+    },
+    {
+      "tag": 7,
+      "value": "0373"
+    },
+    {
+      "tag": 12,
+      "value": "03740375"
+    },
+    {
+      "tag": 7,
+      "value": "0376"
+    },
+    {
+      "tag": 12,
+      "value": "03770378"
+    },
+    {
+      "tag": 12,
+      "value": "01ae0125"
+    },
+    {
+      "tag": 12,
+      "value": "0379037a"
+    },
+    {
+      "tag": 12,
+      "value": "037b037a"
+    },
+    {
+      "tag": 12,
+      "value": "01af0125"
+    },
+    {
+      "tag": 12,
+      "value": "01b00125"
+    },
+    {
+      "tag": 12,
+      "value": "01b10125"
+    },
+    {
+      "tag": 12,
+      "value": "01b20125"
+    },
+    {
+      "tag": 12,
+      "value": "01b30125"
+    },
+    {
+      "tag": 12,
+      "value": "01f00125"
+    },
+    {
+      "tag": 12,
+      "value": "01b40125"
+    },
+    {
+      "tag": 12,
+      "value": "01b50125"
+    },
+    {
+      "tag": 7,
+      "value": "037c"
+    },
+    {
+      "tag": 12,
+      "value": "037d037e"
+    },
+    {
+      "tag": 12,
+      "value": "01aa01ab"
+    },
+    {
+      "tag": 1,
+      "value": "GraphicObjectManager"
+    },
+    {
+      "tag": 12,
+      "value": "0221037f"
+    },
+    {
+      "tag": 12,
+      "value": "01ac01ad"
+    },
+    {
+      "tag": 12,
+      "value": "020a0125"
+    },
+    {
+      "tag": 12,
+      "value": "020b0125"
+    },
+    {
+      "tag": 12,
+      "value": "01a90125"
+    },
+    {
+      "tag": 1,
+      "value": "special.png"
+    },
+    {
+      "tag": 12,
+      "value": "03800381"
+    },
+    {
+      "tag": 12,
+      "value": "01cb01ab"
+    },
+    {
+      "tag": 1,
+      "value": "letter.png"
+    },
+    {
+      "tag": 12,
+      "value": "01c901ab"
+    },
+    {
+      "tag": 1,
+      "value": "background.png"
+    },
+    {
+      "tag": 12,
+      "value": "01d201ab"
+    },
+    {
+      "tag": 1,
+      "value": "/menu.png"
+    },
+    {
+      "tag": 12,
+      "value": "037d0381"
+    },
+    {
+      "tag": 12,
+      "value": "01ca01ab"
+    },
+    {
+      "tag": 1,
+      "value": "java/lang/Exception"
+    },
+    {
+      "tag": 1,
+      "value": "eve_title.png"
+    },
+    {
+      "tag": 12,
+      "value": "01cc01ab"
+    },
+    {
+      "tag": 1,
+      "value": "gui.png"
+    },
+    {
+      "tag": 12,
+      "value": "01cd01ab"
+    },
+    {
+      "tag": 1,
+      "value": "eve.png"
+    },
+    {
+      "tag": 12,
+      "value": "01cf01ab"
+    },
+    {
+      "tag": 1,
+      "value": "jvh.png"
+    },
+    {
+      "tag": 12,
+      "value": "01ce01ab"
+    },
+    {
+      "tag": 1,
+      "value": "ngame.png"
+    },
+    {
+      "tag": 12,
+      "value": "01d001ab"
+    },
+    {
+      "tag": 1,
+      "value": "title.png"
+    },
+    {
+      "tag": 12,
+      "value": "01d101ab"
+    },
+    {
+      "tag": 12,
+      "value": "03820225"
+    },
+    {
+      "tag": 1,
+      "value": "slow.wav"
+    },
+    {
+      "tag": 12,
+      "value": "02270228"
+    },
+    {
+      "tag": 1,
+      "value": "bat.wav"
+    },
+    {
+      "tag": 1,
+      "value": "vapor.wav"
+    },
+    {
+      "tag": 1,
+      "value": "fjump.wav"
+    },
+    {
+      "tag": 1,
+      "value": "suck.wav"
+    },
+    {
+      "tag": 1,
+      "value": "sun.wav"
+    },
+    {
+      "tag": 1,
+      "value": "sword.wav"
+    },
+    {
+      "tag": 1,
+      "value": "throw.wav"
+    },
+    {
+      "tag": 1,
+      "value": "die.wav"
+    },
+    {
+      "tag": 12,
+      "value": "01b60125"
+    },
+    {
+      "tag": 12,
+      "value": "02240225"
+    },
+    {
+      "tag": 1,
+      "value": "MIDlet-CHEAT"
+    },
+    {
+      "tag": 7,
+      "value": "0383"
+    },
+    {
+      "tag": 12,
+      "value": "03840385"
+    },
+    {
+      "tag": 1,
+      "value": "THINGSTHATDONTEXIST"
+    },
+    {
+      "tag": 12,
+      "value": "03860387"
+    },
+    {
+      "tag": 1,
+      "value": "java/util/Timer"
+    },
+    {
+      "tag": 12,
+      "value": "01b701b8"
+    },
+    {
+      "tag": 1,
+      "value": "ScrollTimerTask"
+    },
+    {
+      "tag": 12,
+      "value": "02210388"
+    },
+    {
+      "tag": 12,
+      "value": "01b901ba"
+    },
+    {
+      "tag": 12,
+      "value": "0389038a"
+    },
+    {
+      "tag": 12,
+      "value": "038b0125"
+    },
+    {
+      "tag": 1,
+      "value": "r"
+    },
+    {
+      "tag": 7,
+      "value": "038c"
+    },
+    {
+      "tag": 12,
+      "value": "038d038e"
+    },
+    {
+      "tag": 12,
+      "value": "038f0390"
+    },
+    {
+      "tag": 12,
+      "value": "03910225"
+    },
+    {
+      "tag": 1,
+      "value": "javax/microedition/rms/RecordStoreNotFoundException"
+    },
+    {
+      "tag": 12,
+      "value": "02260225"
+    },
+    {
+      "tag": 12,
+      "value": "0392037a"
+    },
+    {
+      "tag": 12,
+      "value": "03930394"
+    },
+    {
+      "tag": 12,
+      "value": "03950396"
+    },
+    {
+      "tag": 7,
+      "value": "0397"
+    },
+    {
+      "tag": 12,
+      "value": "03980399"
+    },
+    {
+      "tag": 1,
+      "value": "java/lang/StringBuffer"
+    },
+    {
+      "tag": 1,
+      "value": "/"
+    },
+    {
+      "tag": 12,
+      "value": "039a039b"
+    },
+    {
+      "tag": 12,
+      "value": "039c039d"
+    },
+    {
+      "tag": 7,
+      "value": "039e"
+    },
+    {
+      "tag": 12,
+      "value": "039f03a0"
+    },
+    {
+      "tag": 7,
+      "value": "03a1"
+    },
+    {
+      "tag": 12,
+      "value": "03a2037a"
+    },
+    {
+      "tag": 12,
+      "value": "03a30225"
+    },
+    {
+      "tag": 12,
+      "value": "03a203a4"
+    },
+    {
+      "tag": 12,
+      "value": "022103a5"
+    },
+    {
+      "tag": 12,
+      "value": "03a603a5"
+    },
+    {
+      "tag": 7,
+      "value": "03a7"
+    },
+    {
+      "tag": 12,
+      "value": "03a80225"
+    },
+    {
+      "tag": 12,
+      "value": "03a9022a"
+    },
+    {
+      "tag": 12,
+      "value": "03aa0225"
+    },
+    {
+      "tag": 1,
+      "value": "java/util/Vector"
+    },
+    {
+      "tag": 12,
+      "value": "03ab037a"
+    },
+    {
+      "tag": 12,
+      "value": "01df0125"
+    },
+    {
+      "tag": 1,
+      "value": "java/lang/Integer"
+    },
+    {
+      "tag": 12,
+      "value": "0221022a"
+    },
+    {
+      "tag": 12,
+      "value": "03ac03ad"
+    },
+    {
+      "tag": 12,
+      "value": "01bc0125"
+    },
+    {
+      "tag": 12,
+      "value": "01c601c7"
+    },
+    {
+      "tag": 12,
+      "value": "01bb0125"
+    },
+    {
+      "tag": 12,
+      "value": "02370238"
+    },
+    {
+      "tag": 12,
+      "value": "03ae037a"
+    },
+    {
+      "tag": 12,
+      "value": "01e501e6"
+    },
+    {
+      "tag": 12,
+      "value": "03af03b0"
+    },
+    {
+      "tag": 12,
+      "value": "03b1037a"
+    },
+    {
+      "tag": 12,
+      "value": "03b203b3"
+    },
+    {
+      "tag": 1,
+      "value": "m"
+    },
+    {
+      "tag": 12,
+      "value": "039a03b4"
+    },
+    {
+      "tag": 1,
+      "value": ""
+    },
+    {
+      "tag": 1,
+      "value": "java/io/DataInputStream"
+    },
+    {
+      "tag": 12,
+      "value": "022103b5"
+    },
+    {
+      "tag": 12,
+      "value": "03b603b7"
+    },
+    {
+      "tag": 1,
+      "value": "tiles"
+    },
+    {
+      "tag": 1,
+      "value": ".png"
+    },
+    {
+      "tag": 12,
+      "value": "03b8022d"
+    },
+    {
+      "tag": 12,
+      "value": "01ed01ee"
+    },
+    {
+      "tag": 12,
+      "value": "01d601d7"
+    },
+    {
+      "tag": 12,
+      "value": "03b90247"
+    },
+    {
+      "tag": 1,
+      "value": "Sprite"
+    },
+    {
+      "tag": 12,
+      "value": "022103ba"
+    },
+    {
+      "tag": 12,
+      "value": "03bb0245"
+    },
+    {
+      "tag": 12,
+      "value": "03bc0125"
+    },
+    {
+      "tag": 12,
+      "value": "03bd03be"
+    },
+    {
+      "tag": 12,
+      "value": "03bf03c0"
+    },
+    {
+      "tag": 12,
+      "value": "01f70125"
+    },
+    {
+      "tag": 12,
+      "value": "01f80125"
+    },
+    {
+      "tag": 7,
+      "value": "03c1"
+    },
+    {
+      "tag": 12,
+      "value": "03c203c3"
+    },
+    {
+      "tag": 12,
+      "value": "03c40225"
+    },
+    {
+      "tag": 7,
+      "value": "03c5"
+    },
+    {
+      "tag": 12,
+      "value": "03c603ba"
+    },
+    {
+      "tag": 12,
+      "value": "03c70245"
+    },
+    {
+      "tag": 12,
+      "value": "03c80245"
+    },
+    {
+      "tag": 12,
+      "value": "03c903ca"
+    },
+    {
+      "tag": 12,
+      "value": "03cb0245"
+    },
+    {
+      "tag": 1,
+      "value": "/dracula.lmp"
+    },
+    {
+      "tag": 12,
+      "value": "039a03cc"
+    },
+    {
+      "tag": 12,
+      "value": "019f019e"
+    },
+    {
+      "tag": 12,
+      "value": "019d019e"
+    },
+    {
+      "tag": 12,
+      "value": "03cd039d"
+    },
+    {
+      "tag": 12,
+      "value": "03ce03cf"
+    },
+    {
+      "tag": 12,
+      "value": "0239023a"
+    },
+    {
+      "tag": 12,
+      "value": "03d001db"
+    },
+    {
+      "tag": 12,
+      "value": "03d10125"
+    },
+    {
+      "tag": 12,
+      "value": "022e0225"
+    },
+    {
+      "tag": 12,
+      "value": "03d20125"
+    },
+    {
+      "tag": 12,
+      "value": "03d303d4"
+    },
+    {
+      "tag": 7,
+      "value": "03d5"
+    },
+    {
+      "tag": 12,
+      "value": "03d603d7"
+    },
+    {
+      "tag": 12,
+      "value": "03d803d9"
+    },
+    {
+      "tag": 12,
+      "value": "03da0225"
+    },
+    {
+      "tag": 12,
+      "value": "02310232"
+    },
+    {
+      "tag": 7,
+      "value": "03db"
+    },
+    {
+      "tag": 12,
+      "value": "03dc03dd"
+    },
+    {
+      "tag": 12,
+      "value": "03de03df"
+    },
+    {
+      "tag": 1,
+      "value": "[MEM:"
+    },
+    {
+      "tag": 12,
+      "value": "039a03e0"
+    },
+    {
+      "tag": 1,
+      "value": "]"
+    },
+    {
+      "tag": 12,
+      "value": "03e10247"
+    },
+    {
+      "tag": 12,
+      "value": "023e03e2"
+    },
+    {
+      "tag": 12,
+      "value": "03e3023f"
+    },
+    {
+      "tag": 12,
+      "value": "03e403e5"
+    },
+    {
+      "tag": 12,
+      "value": "03c6022a"
+    },
+    {
+      "tag": 12,
+      "value": "03e60125"
+    },
+    {
+      "tag": 12,
+      "value": "03e70125"
+    },
+    {
+      "tag": 12,
+      "value": "03e80125"
+    },
+    {
+      "tag": 12,
+      "value": "03e9037a"
+    },
+    {
+      "tag": 12,
+      "value": "03ea037a"
+    },
+    {
+      "tag": 12,
+      "value": "02330234"
+    },
+    {
+      "tag": 1,
+      "value": "loading"
+    },
+    {
+      "tag": 1,
+      "value": "Loading graphics"
+    },
+    {
+      "tag": 1,
+      "value": "vampire:"
+    },
+    {
+      "tag": 1,
+      "value": "bloodline"
+    },
+    {
+      "tag": 1,
+      "value": "Help"
+    },
+    {
+      "tag": 1,
+      "value": "Sound: On"
+    },
+    {
+      "tag": 1,
+      "value": "Sound: Off"
+    },
+    {
+      "tag": 1,
+      "value": "Main Menu"
+    },
+    {
+      "tag": 1,
+      "value": "play"
+    },
+    {
+      "tag": 1,
+      "value": "options"
+    },
+    {
+      "tag": 1,
+      "value": "Exit Game"
+    },
+    {
+      "tag": 1,
+      "value": "Design: Paul Jacobson, Daniel Rammelt ~~ Code: Daniel Rammelt. ~~ Art: Paul Jacobson, Matthew Risley. ~~ Producer: Nic Garner. ~~ Produced by Mforma Europe. ~ Software copyright 2003 Mforma Group. ~~ English Translation by Lanzz, 2021 for Kahvibreak project."
+    },
+    {
+      "tag": 12,
+      "value": "022c022d"
+    },
+    {
+      "tag": 12,
+      "value": "01e20125"
+    },
+    {
+      "tag": 12,
+      "value": "01e00125"
+    },
+    {
+      "tag": 1,
+      "value": "Credits"
+    },
+    {
+      "tag": 1,
+      "value": "Story"
+    },
+    {
+      "tag": 1,
+      "value": "General Help"
+    },
+    {
+      "tag": 1,
+      "value": "player controls"
+    },
+    {
+      "tag": 1,
+      "value": "Continue?"
+    },
+    {
+      "tag": 1,
+      "value": "coffin.png"
+    },
+    {
+      "tag": 1,
+      "value": "eyes.png"
+    },
+    {
+      "tag": 12,
+      "value": "03eb03ec"
+    },
+    {
+      "tag": 12,
+      "value": "023b023c"
+    },
+    {
+      "tag": 1,
+      "value": "Restart the game?"
+    },
+    {
+      "tag": 1,
+      "value": "Reset game"
+    },
+    {
+      "tag": 12,
+      "value": "03ed0125"
+    },
+    {
+      "tag": 12,
+      "value": "02420243"
+    },
+    {
+      "tag": 12,
+      "value": "022f0225"
+    },
+    {
+      "tag": 12,
+      "value": "03ee0125"
+    },
+    {
+      "tag": 12,
+      "value": "02300225"
+    },
+    {
+      "tag": 12,
+      "value": "023d0225"
+    },
+    {
+      "tag": 12,
+      "value": "03ef0372"
+    },
+    {
+      "tag": 12,
+      "value": "03f00372"
+    },
+    {
+      "tag": 12,
+      "value": "0229022a"
+    },
+    {
+      "tag": 12,
+      "value": "02440245"
+    },
+    {
+      "tag": 12,
+      "value": "01fb019e"
+    },
+    {
+      "tag": 12,
+      "value": "01fa019e"
+    },
+    {
+      "tag": 12,
+      "value": "01f9019e"
+    },
+    {
+      "tag": 12,
+      "value": "02460247"
+    },
+    {
+      "tag": 12,
+      "value": "03f103f2"
+    },
+    {
+      "tag": 1,
+      "value": "1 - ap: "
+    },
+    {
+      "tag": 1,
+      "value": " - as: "
+    },
+    {
+      "tag": 1,
+      "value": ", "
+    },
+    {
+      "tag": 7,
+      "value": "03f3"
+    },
+    {
+      "tag": 12,
+      "value": "03f4022d"
+    },
+    {
+      "tag": 1,
+      "value": "2 - ap: "
+    },
+    {
+      "tag": 12,
+      "value": "03f503f6"
+    },
+    {
+      "tag": 12,
+      "value": "03f703f8"
+    },
+    {
+      "tag": 7,
+      "value": "03fa"
+    },
+    {
+      "tag": 1,
+      "value": "mainCanvas"
+    },
+    {
+      "tag": 1,
+      "value": "com/nokia/mid/ui/FullCanvas"
+    },
+    {
+      "tag": 1,
+      "value": "dracula.lmp"
+    },
+    {
+      "tag": 1,
+      "value": "javax/microedition/lcdui/Canvas"
+    },
+    {
+      "tag": 1,
+      "value": "getGameAction"
+    },
+    {
+      "tag": 1,
+      "value": "(I)I"
+    },
+    {
+      "tag": 1,
+      "value": "Strings"
+    },
+    {
+      "tag": 1,
+      "value": "ruleString"
+    },
+    {
+      "tag": 1,
+      "value": "[Ljava/lang/String;"
+    },
+    {
+      "tag": 1,
+      "value": "java/lang/String"
+    },
+    {
+      "tag": 1,
+      "value": "charAt"
+    },
+    {
+      "tag": 1,
+      "value": "(I)C"
+    },
+    {
+      "tag": 1,
+      "value": "getWidth"
+    },
+    {
+      "tag": 1,
+      "value": "()I"
+    },
+    {
+      "tag": 1,
+      "value": "getHeight"
+    },
+    {
+      "tag": 1,
+      "value": "javax/microedition/lcdui/Image"
+    },
+    {
+      "tag": 1,
+      "value": "createImage"
+    },
+    {
+      "tag": 1,
+      "value": "(II)Ljavax/microedition/lcdui/Image;"
+    },
+    {
+      "tag": 1,
+      "value": "(LmainCanvas;Ljavax/microedition/lcdui/Image;)V"
+    },
+    {
+      "tag": 1,
+      "value": "loadImage"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljava/lang/String;)Ljavax/microedition/lcdui/Image;"
+    },
+    {
+      "tag": 1,
+      "value": "loadSpriteGFX"
+    },
+    {
+      "tag": 1,
+      "value": "javax/microedition/midlet/MIDlet"
+    },
+    {
+      "tag": 1,
+      "value": "getAppProperty"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljava/lang/String;)Ljava/lang/String;"
+    },
+    {
+      "tag": 1,
+      "value": "compareTo"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljava/lang/String;)I"
+    },
+    {
+      "tag": 1,
+      "value": "(LmainCanvas;)V"
+    },
+    {
+      "tag": 1,
+      "value": "schedule"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljava/util/TimerTask;JJ)V"
+    },
+    {
+      "tag": 1,
+      "value": "splashType"
+    },
+    {
+      "tag": 1,
+      "value": "javax/microedition/rms/RecordStore"
+    },
+    {
+      "tag": 1,
+      "value": "openRecordStore"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljava/lang/String;Z)Ljavax/microedition/rms/RecordStore;"
+    },
+    {
+      "tag": 1,
+      "value": "getRecord"
+    },
+    {
+      "tag": 1,
+      "value": "(I)[B"
+    },
+    {
+      "tag": 1,
+      "value": "closeRecordStore"
+    },
+    {
+      "tag": 1,
+      "value": "getNumRecords"
+    },
+    {
+      "tag": 1,
+      "value": "addRecord"
+    },
+    {
+      "tag": 1,
+      "value": "([BII)I"
+    },
+    {
+      "tag": 1,
+      "value": "setRecord"
+    },
+    {
+      "tag": 1,
+      "value": "(I[BII)V"
+    },
+    {
+      "tag": 1,
+      "value": "java/lang/Object"
+    },
+    {
+      "tag": 1,
+      "value": "getClass"
+    },
+    {
+      "tag": 1,
+      "value": "()Ljava/lang/Class;"
+    },
+    {
+      "tag": 1,
+      "value": "append"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljava/lang/String;)Ljava/lang/StringBuffer;"
+    },
+    {
+      "tag": 1,
+      "value": "toString"
+    },
+    {
+      "tag": 1,
+      "value": "()Ljava/lang/String;"
+    },
+    {
+      "tag": 1,
+      "value": "java/lang/Class"
+    },
+    {
+      "tag": 1,
+      "value": "getResourceAsStream"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljava/lang/String;)Ljava/io/InputStream;"
+    },
+    {
+      "tag": 1,
+      "value": "java/io/InputStream"
+    },
+    {
+      "tag": 1,
+      "value": "read"
+    },
+    {
+      "tag": 1,
+      "value": "close"
+    },
+    {
+      "tag": 1,
+      "value": "([B)I"
+    },
+    {
+      "tag": 1,
+      "value": "([BI)V"
+    },
+    {
+      "tag": 1,
+      "value": "init"
+    },
+    {
+      "tag": 1,
+      "value": "java/lang/System"
+    },
+    {
+      "tag": 1,
+      "value": "gc"
+    },
+    {
+      "tag": 1,
+      "value": "play"
+    },
+    {
+      "tag": 1,
+      "value": "notifyPaused"
+    },
+    {
+      "tag": 1,
+      "value": "length"
+    },
+    {
+      "tag": 1,
+      "value": "addElement"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljava/lang/Object;)V"
+    },
+    {
+      "tag": 1,
+      "value": "size"
+    },
+    {
+      "tag": 1,
+      "value": "elementAt"
+    },
+    {
+      "tag": 1,
+      "value": "(I)Ljava/lang/Object;"
+    },
+    {
+      "tag": 1,
+      "value": "intValue"
+    },
+    {
+      "tag": 1,
+      "value": "initializeSpriteManager"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljavax/microedition/lcdui/Image;)V"
+    },
+    {
+      "tag": 1,
+      "value": "(I)Ljava/lang/StringBuffer;"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljava/io/InputStream;)V"
+    },
+    {
+      "tag": 1,
+      "value": "readByte"
+    },
+    {
+      "tag": 1,
+      "value": "()B"
+    },
+    {
+      "tag": 1,
+      "value": "loadResource"
+    },
+    {
+      "tag": 1,
+      "value": "setPosition"
+    },
+    {
+      "tag": 1,
+      "value": "(III)V"
+    },
+    {
+      "tag": 1,
+      "value": "setCollisionRectangle"
+    },
+    {
+      "tag": 1,
+      "value": "state"
+    },
+    {
+      "tag": 1,
+      "value": "spriteVector"
+    },
+    {
+      "tag": 1,
+      "value": "Ljava/util/Vector;"
+    },
+    {
+      "tag": 1,
+      "value": "arraycopy"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljava/lang/Object;ILjava/lang/Object;II)V"
+    },
+    {
+      "tag": 1,
+      "value": "Vampire"
+    },
+    {
+      "tag": 1,
+      "value": "destroyApp"
+    },
+    {
+      "tag": 1,
+      "value": "(Z)V"
+    },
+    {
+      "tag": 1,
+      "value": "notifyDestroyed"
+    },
+    {
+      "tag": 1,
+      "value": "javax/microedition/lcdui/Graphics"
+    },
+    {
+      "tag": 1,
+      "value": "setColor"
+    },
+    {
+      "tag": 1,
+      "value": "setClip"
+    },
+    {
+      "tag": 1,
+      "value": "fillRect"
+    },
+    {
+      "tag": 1,
+      "value": "drawImage"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljavax/microedition/lcdui/Image;III)V"
+    },
+    {
+      "tag": 1,
+      "value": "drawLine"
+    },
+    {
+      "tag": 1,
+      "value": "(C)Ljava/lang/StringBuffer;"
+    },
+    {
+      "tag": 1,
+      "value": "toLowerCase"
+    },
+    {
+      "tag": 1,
+      "value": "substring"
+    },
+    {
+      "tag": 1,
+      "value": "(II)Ljava/lang/String;"
+    },
+    {
+      "tag": 1,
+      "value": "lastDir"
+    },
+    {
+      "tag": 1,
+      "value": "health"
+    },
+    {
+      "tag": 1,
+      "value": "yPos"
+    },
+    {
+      "tag": 1,
+      "value": "elements"
+    },
+    {
+      "tag": 1,
+      "value": "()Ljava/util/Enumeration;"
+    },
+    {
+      "tag": 1,
+      "value": "java/util/Enumeration"
+    },
+    {
+      "tag": 1,
+      "value": "nextElement"
+    },
+    {
+      "tag": 1,
+      "value": "()Ljava/lang/Object;"
+    },
+    {
+      "tag": 1,
+      "value": "hasMoreElements"
+    },
+    {
+      "tag": 1,
+      "value": "()Z"
+    },
+    {
+      "tag": 1,
+      "value": "repaint"
+    },
+    {
+      "tag": 1,
+      "value": "java/lang/Runtime"
+    },
+    {
+      "tag": 1,
+      "value": "getRuntime"
+    },
+    {
+      "tag": 1,
+      "value": "()Ljava/lang/Runtime;"
+    },
+    {
+      "tag": 1,
+      "value": "freeMemory"
+    },
+    {
+      "tag": 1,
+      "value": "()J"
+    },
+    {
+      "tag": 1,
+      "value": "(J)Ljava/lang/StringBuffer;"
+    },
+    {
+      "tag": 1,
+      "value": "translate"
+    },
+    {
+      "tag": 1,
+      "value": "(IIILjavax/microedition/lcdui/Image;)V"
+    },
+    {
+      "tag": 1,
+      "value": "paintSprites"
+    },
+    {
+      "tag": 1,
+      "value": "drawPlayer"
+    },
+    {
+      "tag": 1,
+      "value": "(LSprite;Ljavax/microedition/lcdui/Graphics;)V"
+    },
+    {
+      "tag": 1,
+      "value": "refireTime"
+    },
+    {
+      "tag": 1,
+      "value": "type"
+    },
+    {
+      "tag": 1,
+      "value": "xPos"
+    },
+    {
+      "tag": 1,
+      "value": "getTranslateX"
+    },
+    {
+      "tag": 1,
+      "value": "getTranslateY"
+    },
+    {
+      "tag": 1,
+      "value": "cutString"
+    },
+    {
+      "tag": 1,
+      "value": "[[Ljava/lang/String;"
+    },
+    {
+      "tag": 1,
+      "value": "frame"
+    },
+    {
+      "tag": 1,
+      "value": "ttl"
+    },
+    {
+      "tag": 1,
+      "value": "getKeyCode"
+    },
+    {
+      "tag": 1,
+      "value": "getRandom"
+    },
+    {
+      "tag": 1,
+      "value": "out"
+    },
+    {
+      "tag": 1,
+      "value": "Ljava/io/PrintStream;"
+    },
+    {
+      "tag": 1,
+      "value": "java/io/PrintStream"
+    },
+    {
+      "tag": 1,
+      "value": "println"
+    },
+    {
+      "tag": 1,
+      "value": "removeElement"
+    },
+    {
+      "tag": 1,
+      "value": "(Ljava/lang/Object;)Z"
+    },
+    {
+      "tag": 1,
+      "value": "isCollidingWith"
+    },
+    {
+      "tag": 1,
+      "value": "(LSprite;)Z"
+    },
+    {
+      "tag": 1,
+      "value": "StackMap"
+    },
+    {
+      "tag": 1,
+      "value": "[B"
+    }
+  ],
+  "bodyOffset": 9849,
+  "bodySha256": "8539af88ad4efbbecaeaae2abbe8f36b835dfe4bcee453d3a190eeaa1f690968"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "enemy_dog",
+  "variant": "enemy_dog",
+  "inputPath": "assets/original/enemy_dog.png",
+  "inputSha256": "b9af2ea7635f758d2959a28c5c413e6da0df93ed0e7b54bcf0dbd41f130252fd",
+  "inputDimensions": [
+    64,
+    16
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels replicate padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/enemy_dog.png",
+  "inferenceInputSha256": "1006b3d2131f53c9a76c14a38dc5e54227f04478e95dca1f7f801ab76c87fce6",
+  "rawOutputPath": "assets/ai-raw/enemy_dog-fsrcnn.png",
+  "rawOutputSha256": "fab9e58f67d22dca4d1fe8c2514ab3a007a4f93608f89887372425aa840a7822",
+  "rawDimensions": [
+    320,
+    128
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/remastered4x/enemy_dog.png",
+  "outputSha256": "c0d91b71af03557d1d3c9ee1ca041e372bdfa66d0850f34265bdbd856d959272",
+  "outputDimensions": [
+    256,
+    64
+  ],
+  "baselinePath": "assets/baseline4x/enemy_dog.png",
+  "baselineSha256": "41d8e1ca60885d608d24ab1071b48ae371a9b9f2db139af242d100a9ef173f60",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 14.901403170522707,
+    "visibleRgbChangedPixelCount": 5872
+  },
+  "status": "approved",
+  "review": {
+    "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+    "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+    "decision": "approved",
+    "notes": "Both32x16 running poses and golden-brown coat preserved; no change to limb reach or alpha.",
+    "staticEvidence": "reports/remaster/enemy_dog-comparison.png",
+    "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+    "knownLimitations": [
+      "FSRCNN smooths some source dithering and may produce mild local ringing",
+      "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+      "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+    ]
+  }
+}

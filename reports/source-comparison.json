@@ -1,0 +1,543 @@
+{
+  "status": "passed",
+  "esSha256": "ebe705c790f989af9b81c698b2f794fdac88266e75a6b704b9fbcbe94f631ab8",
+  "enSha256": "05f8efed4397eb5530acba56f7a98e82ba88d538a2eb1e57d08ec669f37cf1c4",
+  "errors": [],
+  "entryCounts": {
+    "es": 60,
+    "en": 60
+  },
+  "added": [],
+  "removed": [],
+  "changedEntries": [
+    "Strings.class",
+    "background.png",
+    "mainCanvas.class"
+  ],
+  "unchangedEntries": [
+    "GraphicObjectManager.class",
+    "META-INF/MANIFEST.MF",
+    "ScrollTimerTask.class",
+    "Sprite.class",
+    "Vampire.class",
+    "bat.wav",
+    "bighit.wav",
+    "boss_jvh.png",
+    "coffin.png",
+    "die.wav",
+    "enemy_dog.png",
+    "enemy_hunter.png",
+    "enemy_wraith.png",
+    "eve.png",
+    "eve_title.png",
+    "eyes.png",
+    "fjump.wav",
+    "gui.png",
+    "hit.wav",
+    "icon.png",
+    "jvh.png",
+    "jvh_full.png",
+    "letter.png",
+    "m11",
+    "m12",
+    "m13",
+    "m21",
+    "m22",
+    "m23",
+    "m31",
+    "m32",
+    "m33",
+    "m41",
+    "m42",
+    "m43",
+    "m51",
+    "m52",
+    "m53",
+    "menu.png",
+    "ngame.png",
+    "player.png",
+    "slow.wav",
+    "smallhit.wav",
+    "special.png",
+    "stuff.png",
+    "suck.wav",
+    "sun.wav",
+    "sword.png",
+    "sword.wav",
+    "throw.wav",
+    "tiles1.png",
+    "tiles2.png",
+    "tiles3.png",
+    "tiles4.png",
+    "title.png",
+    "vapor.wav",
+    "vapour.wav"
+  ],
+  "members": [
+    {
+      "name": "GraphicObjectManager.class",
+      "esSha256": "c335b368396ccce4324f673bb9f67ea6ba1112e7224a5a6c2746104c40ac5753",
+      "enSha256": "c335b368396ccce4324f673bb9f67ea6ba1112e7224a5a6c2746104c40ac5753",
+      "equal": true
+    },
+    {
+      "name": "META-INF/MANIFEST.MF",
+      "esSha256": "74b7fb7a7ad86684f9458a38e79f5bc53f6795b2806a97f7341a786f9afde41b",
+      "enSha256": "74b7fb7a7ad86684f9458a38e79f5bc53f6795b2806a97f7341a786f9afde41b",
+      "equal": true
+    },
+    {
+      "name": "ScrollTimerTask.class",
+      "esSha256": "7cc41af6851fc484ec09ce28d02fdee23502d9a0af93e49a187766a73a6324bb",
+      "enSha256": "7cc41af6851fc484ec09ce28d02fdee23502d9a0af93e49a187766a73a6324bb",
+      "equal": true
+    },
+    {
+      "name": "Sprite.class",
+      "esSha256": "174e773c2a46a613be7db295ca87fc2e2179b1ebd2cdf06e94515ea499fbe244",
+      "enSha256": "174e773c2a46a613be7db295ca87fc2e2179b1ebd2cdf06e94515ea499fbe244",
+      "equal": true
+    },
+    {
+      "name": "Strings.class",
+      "esSha256": "e4f76c94f3375ae5bd3713367744d0ccf768af887c81a4e5bd2d2254ed8cdbe1",
+      "enSha256": "3c4559d7acb0cb38d749288373b93c4696f80152de2cd0988b254b8d10093119",
+      "equal": false
+    },
+    {
+      "name": "Vampire.class",
+      "esSha256": "1fb7e81e034997d47a2e0ea58fcefe91af2a805c82fdb95f95b1a9bbadac17d5",
+      "enSha256": "1fb7e81e034997d47a2e0ea58fcefe91af2a805c82fdb95f95b1a9bbadac17d5",
+      "equal": true
+    },
+    {
+      "name": "background.png",
+      "esSha256": "0e91ddc9df646b63edc37e5c6d5dcf9632ff5b2449190efed76313691942b55b",
+      "enSha256": "c0b396c6917415df7678e30e7ef1095de8dad5dae542e3021a5a05c48dd80012",
+      "equal": false
+    },
+    {
+      "name": "bat.wav",
+      "esSha256": "0cd5a070a61c9ec2a7050cd7c83d57ab4ca83ee08ea1718c0d202b4bc744e7b0",
+      "enSha256": "0cd5a070a61c9ec2a7050cd7c83d57ab4ca83ee08ea1718c0d202b4bc744e7b0",
+      "equal": true
+    },
+    {
+      "name": "bighit.wav",
+      "esSha256": "00d85a4ab55dd46a39a209968e95ec4c98a821e61c7cb354d8676b61c8d00700",
+      "enSha256": "00d85a4ab55dd46a39a209968e95ec4c98a821e61c7cb354d8676b61c8d00700",
+      "equal": true
+    },
+    {
+      "name": "boss_jvh.png",
+      "esSha256": "99052ec7fbc2146663f91586d640df73bc2a9967e9c3b90180ed9c2e6f946fee",
+      "enSha256": "99052ec7fbc2146663f91586d640df73bc2a9967e9c3b90180ed9c2e6f946fee",
+      "equal": true
+    },
+    {
+      "name": "coffin.png",
+      "esSha256": "87dc9aa4e08aaa4a62789b42e3125f75b80840106e5db5eb2cf84c77e0a7b8ff",
+      "enSha256": "87dc9aa4e08aaa4a62789b42e3125f75b80840106e5db5eb2cf84c77e0a7b8ff",
+      "equal": true
+    },
+    {
+      "name": "die.wav",
+      "esSha256": "8445288b8b42647ab91f8007e5875c9160771063371f38a2ef4dcd98bf4697d2",
+      "enSha256": "8445288b8b42647ab91f8007e5875c9160771063371f38a2ef4dcd98bf4697d2",
+      "equal": true
+    },
+    {
+      "name": "enemy_dog.png",
+      "esSha256": "b9af2ea7635f758d2959a28c5c413e6da0df93ed0e7b54bcf0dbd41f130252fd",
+      "enSha256": "b9af2ea7635f758d2959a28c5c413e6da0df93ed0e7b54bcf0dbd41f130252fd",
+      "equal": true
+    },
+    {
+      "name": "enemy_hunter.png",
+      "esSha256": "1113101267c29aab824aa2e5c08787bd79a82a5a6afe6691ed4fd4375ffaeb84",
+      "enSha256": "1113101267c29aab824aa2e5c08787bd79a82a5a6afe6691ed4fd4375ffaeb84",
+      "equal": true
+    },
+    {
+      "name": "enemy_wraith.png",
+      "esSha256": "c8bf9f789bf28f0342a37684f1dd42d6fa5381714efe0e9398bb8ebe83d45e2a",
+      "enSha256": "c8bf9f789bf28f0342a37684f1dd42d6fa5381714efe0e9398bb8ebe83d45e2a",
+      "equal": true
+    },
+    {
+      "name": "eve.png",
+      "esSha256": "b73d7453cbb48f7d48948df7bba8a98ad8742481c97ebf910562f417bb65d581",
+      "enSha256": "b73d7453cbb48f7d48948df7bba8a98ad8742481c97ebf910562f417bb65d581",
+      "equal": true
+    },
+    {
+      "name": "eve_title.png",
+      "esSha256": "744dbc99d2ebb345eb21bc7c5b48c91c33798d4781af9e1572c669675f46ad3a",
+      "enSha256": "744dbc99d2ebb345eb21bc7c5b48c91c33798d4781af9e1572c669675f46ad3a",
+      "equal": true
+    },
+    {
+      "name": "eyes.png",
+      "esSha256": "f90617b0a807ea0d856e03f7bbda27fe4d59c11408f92578aea840efdd7b019a",
+      "enSha256": "f90617b0a807ea0d856e03f7bbda27fe4d59c11408f92578aea840efdd7b019a",
+      "equal": true
+    },
+    {
+      "name": "fjump.wav",
+      "esSha256": "2f8cd6e36a5c129666d59c42beb0b91007959dff28c6fb70c7867a64a0540b49",
+      "enSha256": "2f8cd6e36a5c129666d59c42beb0b91007959dff28c6fb70c7867a64a0540b49",
+      "equal": true
+    },
+    {
+      "name": "gui.png",
+      "esSha256": "6ca7f3030bc93e38be0c16ab3b95d0d1d7e4d8837d9ee48c70570020be01ffa2",
+      "enSha256": "6ca7f3030bc93e38be0c16ab3b95d0d1d7e4d8837d9ee48c70570020be01ffa2",
+      "equal": true
+    },
+    {
+      "name": "hit.wav",
+      "esSha256": "0b201ac5e8f9ad98b705ff672048aa26cc085d5f071a8e22d22f573499c0a31c",
+      "enSha256": "0b201ac5e8f9ad98b705ff672048aa26cc085d5f071a8e22d22f573499c0a31c",
+      "equal": true
+    },
+    {
+      "name": "icon.png",
+      "esSha256": "ffdd597b950c0b73c1fb97d384ff2a9dee755d157bfd3840b78ed0f9af6722bd",
+      "enSha256": "ffdd597b950c0b73c1fb97d384ff2a9dee755d157bfd3840b78ed0f9af6722bd",
+      "equal": true
+    },
+    {
+      "name": "jvh.png",
+      "esSha256": "08ec9e6eb1737e330448323665882d9a122204293941bc64cb8ef501ae6b947f",
+      "enSha256": "08ec9e6eb1737e330448323665882d9a122204293941bc64cb8ef501ae6b947f",
+      "equal": true
+    },
+    {
+      "name": "jvh_full.png",
+      "esSha256": "c70a22fe5aee4eb62c08ea2fa7db80281507463c7ed2409181984c68a2c4d877",
+      "enSha256": "c70a22fe5aee4eb62c08ea2fa7db80281507463c7ed2409181984c68a2c4d877",
+      "equal": true
+    },
+    {
+      "name": "letter.png",
+      "esSha256": "bc49cc880a0e46c770e74d1ba74a5983d9c981f039260750d12d99a5c350b076",
+      "enSha256": "bc49cc880a0e46c770e74d1ba74a5983d9c981f039260750d12d99a5c350b076",
+      "equal": true
+    },
+    {
+      "name": "m11",
+      "esSha256": "02d74d7479ccec8f35d3657f4538cb09f0631ff39bba56f5913433d1dc6e2ca7",
+      "enSha256": "02d74d7479ccec8f35d3657f4538cb09f0631ff39bba56f5913433d1dc6e2ca7",
+      "equal": true
+    },
+    {
+      "name": "m12",
+      "esSha256": "912fabd3cd7cae4ad09d1124b027cb89ea3508a1e747e994865355d58e48d2f8",
+      "enSha256": "912fabd3cd7cae4ad09d1124b027cb89ea3508a1e747e994865355d58e48d2f8",
+      "equal": true
+    },
+    {
+      "name": "m13",
+      "esSha256": "86e2727fd2d36931b0ca7f287900051f2d4ab33aaa5c46a52f37bb7903ebad16",
+      "enSha256": "86e2727fd2d36931b0ca7f287900051f2d4ab33aaa5c46a52f37bb7903ebad16",
+      "equal": true
+    },
+    {
+      "name": "m21",
+      "esSha256": "5c59ae9915f0bf5f8c6de817cdf5ad717bc21b9150410a106fcafc7f89173ed1",
+      "enSha256": "5c59ae9915f0bf5f8c6de817cdf5ad717bc21b9150410a106fcafc7f89173ed1",
+      "equal": true
+    },
+    {
+      "name": "m22",
+      "esSha256": "3d2725c66c9a6b8a392dd96c4cfefbee97ef82c763ad99c28b0b30d028be664b",
+      "enSha256": "3d2725c66c9a6b8a392dd96c4cfefbee97ef82c763ad99c28b0b30d028be664b",
+      "equal": true
+    },
+    {
+      "name": "m23",
+      "esSha256": "5786832c572b685cdde535baf6f9b662a54ef3c66a727edfeaaa94e4c50a327d",
+      "enSha256": "5786832c572b685cdde535baf6f9b662a54ef3c66a727edfeaaa94e4c50a327d",
+      "equal": true
+    },
+    {
+      "name": "m31",
+      "esSha256": "9fc7db947b387d403969853e6d16eba2ffa1228bfa9c6c55583baa380c37d988",
+      "enSha256": "9fc7db947b387d403969853e6d16eba2ffa1228bfa9c6c55583baa380c37d988",
+      "equal": true
+    },
+    {
+      "name": "m32",
+      "esSha256": "971d9b4cd648d4320d2a71e8edc44a4c51cf1ae92337bf372d6a17d207a62d11",
+      "enSha256": "971d9b4cd648d4320d2a71e8edc44a4c51cf1ae92337bf372d6a17d207a62d11",
+      "equal": true
+    },
+    {
+      "name": "m33",
+      "esSha256": "93ef63391d3770c9f68e43d13c7712c8f81ae6a2d5ec6ffe64cbe0649c1c3c58",
+      "enSha256": "93ef63391d3770c9f68e43d13c7712c8f81ae6a2d5ec6ffe64cbe0649c1c3c58",
+      "equal": true
+    },
+    {
+      "name": "m41",
+      "esSha256": "12cba31d599b429c9f46a53e1334663cbc28739f3a840578599f756a76f0e333",
+      "enSha256": "12cba31d599b429c9f46a53e1334663cbc28739f3a840578599f756a76f0e333",
+      "equal": true
+    },
+    {
+      "name": "m42",
+      "esSha256": "818667c666cce2d8784d5bcc649bcde2d5ac058a0903e251fc0f13b66ca87e60",
+      "enSha256": "818667c666cce2d8784d5bcc649bcde2d5ac058a0903e251fc0f13b66ca87e60",
+      "equal": true
+    },
+    {
+      "name": "m43",
+      "esSha256": "54b658df6a941304ef700ec302069e62abec1a011b87b8ae71553a5234c45434",
+      "enSha256": "54b658df6a941304ef700ec302069e62abec1a011b87b8ae71553a5234c45434",
+      "equal": true
+    },
+    {
+      "name": "m51",
+      "esSha256": "3c455fa0db3d4ab0964314885bb2db8f7baf71e8b4374d7a39029acc59663fb9",
+      "enSha256": "3c455fa0db3d4ab0964314885bb2db8f7baf71e8b4374d7a39029acc59663fb9",
+      "equal": true
+    },
+    {
+      "name": "m52",
+      "esSha256": "329b5f8312630b247a1c125261ce542dfd9783ad82f3828a48f2717670ed822c",
+      "enSha256": "329b5f8312630b247a1c125261ce542dfd9783ad82f3828a48f2717670ed822c",
+      "equal": true
+    },
+    {
+      "name": "m53",
+      "esSha256": "d3a98b5d1a66875e11f6f026ac838ca03563c66fe2a7323031323a59597cb954",
+      "enSha256": "d3a98b5d1a66875e11f6f026ac838ca03563c66fe2a7323031323a59597cb954",
+      "equal": true
+    },
+    {
+      "name": "mainCanvas.class",
+      "esSha256": "d42977d9e539b9dcce4010787cef26a2e8d2706704308abb5a48e5fdf2b6fcac",
+      "enSha256": "4f4ab0c27e88df3675a85c5d224a4d5596b0c1556b6e79cbec4b6cc376029670",
+      "equal": false
+    },
+    {
+      "name": "menu.png",
+      "esSha256": "2c18b5b1e47c6849e52ad2708f3df7d3faa64704e3d4fbbb67ea8c8261c1bee3",
+      "enSha256": "2c18b5b1e47c6849e52ad2708f3df7d3faa64704e3d4fbbb67ea8c8261c1bee3",
+      "equal": true
+    },
+    {
+      "name": "ngame.png",
+      "esSha256": "747afe9800abf72ed52f503fd6a2b1b2f49e8383c52b7dac2975535c50b0757a",
+      "enSha256": "747afe9800abf72ed52f503fd6a2b1b2f49e8383c52b7dac2975535c50b0757a",
+      "equal": true
+    },
+    {
+      "name": "player.png",
+      "esSha256": "ba4a58ba62285fd4decc3190de4d641027be0e78db86588a9e27bdcad512dcd5",
+      "enSha256": "ba4a58ba62285fd4decc3190de4d641027be0e78db86588a9e27bdcad512dcd5",
+      "equal": true
+    },
+    {
+      "name": "slow.wav",
+      "esSha256": "6735a8c45905d5a48dce539f7878f1d45546f1a1e514e4aa16d7f10f7470da20",
+      "enSha256": "6735a8c45905d5a48dce539f7878f1d45546f1a1e514e4aa16d7f10f7470da20",
+      "equal": true
+    },
+    {
+      "name": "smallhit.wav",
+      "esSha256": "acbc94f112a437b5c4e301daedc1a9252feed2455531984b29cdf326e4ec1cca",
+      "enSha256": "acbc94f112a437b5c4e301daedc1a9252feed2455531984b29cdf326e4ec1cca",
+      "equal": true
+    },
+    {
+      "name": "special.png",
+      "esSha256": "8477f6661486c28fe4aecedcd35d3841f12435507de03d5c2fbc4cbf49553dc6",
+      "enSha256": "8477f6661486c28fe4aecedcd35d3841f12435507de03d5c2fbc4cbf49553dc6",
+      "equal": true
+    },
+    {
+      "name": "stuff.png",
+      "esSha256": "aab8fd1d593a4787196031d31c1431192a3d8e3b8f449b2056478ee006275763",
+      "enSha256": "aab8fd1d593a4787196031d31c1431192a3d8e3b8f449b2056478ee006275763",
+      "equal": true
+    },
+    {
+      "name": "suck.wav",
+      "esSha256": "e8f648842be67e2f4c5405f8685a48cadd0e1a32270a6c61e11ef0cd8db69168",
+      "enSha256": "e8f648842be67e2f4c5405f8685a48cadd0e1a32270a6c61e11ef0cd8db69168",
+      "equal": true
+    },
+    {
+      "name": "sun.wav",
+      "esSha256": "d16e5fad22710518e959a4d8c1ab37cfcca6ad39b9da96de578009c22a64bec2",
+      "enSha256": "d16e5fad22710518e959a4d8c1ab37cfcca6ad39b9da96de578009c22a64bec2",
+      "equal": true
+    },
+    {
+      "name": "sword.png",
+      "esSha256": "7fa98444dbc7005d4be487f8284edf000cfc77de407364dc7f2341a3e2c479ac",
+      "enSha256": "7fa98444dbc7005d4be487f8284edf000cfc77de407364dc7f2341a3e2c479ac",
+      "equal": true
+    },
+    {
+      "name": "sword.wav",
+      "esSha256": "3690606624bc8144218cc9950dd0a4fd03e05e5ccf1361c2c2194c7a47100ed9",
+      "enSha256": "3690606624bc8144218cc9950dd0a4fd03e05e5ccf1361c2c2194c7a47100ed9",
+      "equal": true
+    },
+    {
+      "name": "throw.wav",
+      "esSha256": "0c21e59d862fa33a4525e20788add7fc3ee367caa2553ebe283178db4dc791b6",
+      "enSha256": "0c21e59d862fa33a4525e20788add7fc3ee367caa2553ebe283178db4dc791b6",
+      "equal": true
+    },
+    {
+      "name": "tiles1.png",
+      "esSha256": "c7248861f39f564472581ef34543a82f9192db75d498673fb2afc5104465fa6a",
+      "enSha256": "c7248861f39f564472581ef34543a82f9192db75d498673fb2afc5104465fa6a",
+      "equal": true
+    },
+    {
+      "name": "tiles2.png",
+      "esSha256": "a6f8aec892cb343fd70a0e725ef26def8106134b7f35fa90896c2d543a60c380",
+      "enSha256": "a6f8aec892cb343fd70a0e725ef26def8106134b7f35fa90896c2d543a60c380",
+      "equal": true
+    },
+    {
+      "name": "tiles3.png",
+      "esSha256": "a2e1f7d2c1692eb22d1be1d1cfef8f699e3996ce872ed78d0dd6fdac37d49cc3",
+      "enSha256": "a2e1f7d2c1692eb22d1be1d1cfef8f699e3996ce872ed78d0dd6fdac37d49cc3",
+      "equal": true
+    },
+    {
+      "name": "tiles4.png",
+      "esSha256": "0b0ec4e919bbd99c9c1ef533dd0b3e7d55d0199db6647c0180c4f737e4fc4553",
+      "enSha256": "0b0ec4e919bbd99c9c1ef533dd0b3e7d55d0199db6647c0180c4f737e4fc4553",
+      "equal": true
+    },
+    {
+      "name": "title.png",
+      "esSha256": "c6a67c3da3005ac6ee62b567a1142d2a1013bde463511962db8be416984f4cc9",
+      "enSha256": "c6a67c3da3005ac6ee62b567a1142d2a1013bde463511962db8be416984f4cc9",
+      "equal": true
+    },
+    {
+      "name": "vapor.wav",
+      "esSha256": "cbfa5fcd9726d17c53279c7e28c991a5767157ad1eaff6708ec122d3e37f3179",
+      "enSha256": "cbfa5fcd9726d17c53279c7e28c991a5767157ad1eaff6708ec122d3e37f3179",
+      "equal": true
+    },
+    {
+      "name": "vapour.wav",
+      "esSha256": "9ce603f57688b7a270316d62e06e805bbd2fd052a09f7358eb938515c37d59bc",
+      "enSha256": "9ce603f57688b7a270316d62e06e805bbd2fd052a09f7358eb938515c37d59bc",
+      "equal": true
+    }
+  ],
+  "mainCanvas": {
+    "utf8Changes": [
+      {
+        "index": 827,
+        "es": "cargando",
+        "en": "loading"
+      },
+      {
+        "index": 828,
+        "es": "cargando gráficos",
+        "en": "Loading graphics"
+      },
+      {
+        "index": 829,
+        "es": "vampire :",
+        "en": "vampire:"
+      },
+      {
+        "index": 831,
+        "es": "ayuda",
+        "en": "Help"
+      },
+      {
+        "index": 832,
+        "es": "sonido : on",
+        "en": "Sound: On"
+      },
+      {
+        "index": 833,
+        "es": "sonido : off",
+        "en": "Sound: Off"
+      },
+      {
+        "index": 834,
+        "es": "Menú principal",
+        "en": "Main Menu"
+      },
+      {
+        "index": 835,
+        "es": "jugar",
+        "en": "play"
+      },
+      {
+        "index": 836,
+        "es": "opciones",
+        "en": "options"
+      },
+      {
+        "index": 837,
+        "es": "salir del juego",
+        "en": "Exit Game"
+      },
+      {
+        "index": 838,
+        "es": "Diseño: Paul Jacobson, Daniel Rammelt~~Código: Daniel Rammelt.~~Arte: Paul Jacobson, Matthew Risley.~~Productor: Nic Garner.~~Producido por Mforma Europe.~Software copyright 2003 Mforma Group.",
+        "en": "Design: Paul Jacobson, Daniel Rammelt ~~ Code: Daniel Rammelt. ~~ Art: Paul Jacobson, Matthew Risley. ~~ Producer: Nic Garner. ~~ Produced by Mforma Europe. ~ Software copyright 2003 Mforma Group. ~~ English Translation by Lanzz, 2021 for Kahvibreak project."
+      },
+      {
+        "index": 842,
+        "es": "créditos",
+        "en": "Credits"
+      },
+      {
+        "index": 843,
+        "es": "historia",
+        "en": "Story"
+      },
+      {
+        "index": 844,
+        "es": "ayuda general",
+        "en": "General Help"
+      },
+      {
+        "index": 845,
+        "es": "controles del jugador",
+        "en": "player controls"
+      },
+      {
+        "index": 846,
+        "es": "¿Continuar?",
+        "en": "Continue?"
+      },
+      {
+        "index": 851,
+        "es": "reiniciar el juego?",
+        "en": "Restart the game?"
+      },
+      {
+        "index": 852,
+        "es": "reiniciar el juego",
+        "en": "Reset game"
+      }
+    ],
+    "nonUtf8Changes": [],
+    "constantPoolCountsEqual": true,
+    "postConstantPoolEqual": true,
+    "esBodyOffset": 9833,
+    "enBodyOffset": 9849,
+    "bodyBytes": 38107,
+    "bodySha256": "8539af88ad4efbbecaeaae2abbe8f36b835dfe4bcee453d3a190eeaa1f690968"
+  },
+  "crc": {
+    "es": null,
+    "en": null
+  }
+}

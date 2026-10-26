@@ -1,0 +1,69 @@
+{
+  "id": "icon",
+  "variant": "icon",
+  "inputPath": "assets/original/icon.png",
+  "inputSha256": "ffdd597b950c0b73c1fb97d384ff2a9dee755d157bfd3840b78ed0f9af6722bd",
+  "inputDimensions": [
+    15,
+    15
+  ],
+  "tool": "OpenCV dnn_superres.DnnSuperResImpl.upsample",
+  "toolVersion": "4.13.0",
+  "model": "FSRCNN x4 (Saafke/FSRCNN_Tensorflow)",
+  "modelVersion": null,
+  "modelSha256": "5c68d18db561aed8ead4ffedf1b897ea615baaf60ebf6c35f8e641f8fa4a21bf",
+  "modelPath": "tools/models/FSRCNN_x4.pb",
+  "prompt": null,
+  "seed": null,
+  "parameters": {
+    "algorithm": "fsrcnn",
+    "scale": 4,
+    "backend": "OpenCV DNN CPU",
+    "threads": 1
+  },
+  "preprocessing": [
+    "RGBA conversion respecting palette transparency",
+    "nearest visible RGB extension into transparent pixels (distanceTransformWithLabels)",
+    "8 source pixels replicate padding; complete atlas processed in one inference"
+  ],
+  "inferenceInputPath": "assets/ai-inputs/icon.png",
+  "inferenceInputSha256": "38b3c3b6047e648543f35cbde451e3357c28b9f64f7589809e0bc8df18ea0512",
+  "rawOutputPath": "assets/ai-raw/icon-fsrcnn.png",
+  "rawOutputSha256": "c9171adc80dbd6bc5717f567365c29f0b8599f6a8fdcd9323646e021382a67b4",
+  "rawDimensions": [
+    124,
+    124
+  ],
+  "normalization": [
+    "remove uniform 32 output pixels of inference context on each side",
+    "restore original alpha enlarged with nearest-neighbor; RGB remains 100% neural output, no baseline RGB blend"
+  ],
+  "outputPath": "assets/remastered4x/icon.png",
+  "outputSha256": "cefc2c25a34953bb21700a9da8ccb80d4036783d3ca4954fbf1c6d0fbd32e02e",
+  "outputDimensions": [
+    60,
+    60
+  ],
+  "baselinePath": "assets/baseline4x/icon.png",
+  "baselineSha256": "bc584cd8755a2c57044f58e166ba912f23672bcaece8a7e253d0d47767744804",
+  "checks": {
+    "exact4x": true,
+    "alphaMatchesSource4x": true,
+    "visibleRgbMeanAbsoluteDifferenceFromNearest": 15.566574074074074,
+    "visibleRgbChangedPixelCount": 3140
+  },
+  "status": "approved",
+  "review": {
+    "reviewedAt": "2026-10-26T20:15:41.372900+00:00",
+    "scope": "asset-level visual/layout/alpha review; original game timing and whole campaign are separate verification",
+    "decision": "approved",
+    "notes": "15x15 bat icon remains same symbol and silhouette.",
+    "staticEvidence": "reports/remaster/icon-comparison.png",
+    "motionEvidence": "web/remaster-review.html; reports/remaster/animations/",
+    "knownLimitations": [
+      "FSRCNN smooths some source dithering and may produce mild local ringing",
+      "Original alpha restored exactly: silhouette remains source pixel outline at4x",
+      "Diagnostic playback includes all exported crops; conditional gameplay timing is controlled by source state, not inferred from preview"
+    ]
+  }
+}
